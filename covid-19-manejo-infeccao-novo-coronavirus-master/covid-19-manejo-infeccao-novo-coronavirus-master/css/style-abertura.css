@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+
+# Configurações para página de introdução do cursoo
+
+--------------------------------------------------------------*/
+
+#header.programa #logo {
+  position: relative;
+  left:50%;
+  margin-left:-70px;
+}
+
+#intro.programa .description {
+  padding-top:40px;
+  margin-bottom:0;
+}
+
+#intro.programa h2 {font-size:60px;}
+
+#intro p {
+  color: var(--branco);
+  margin-bottom: 20px;
+  padding: 0 15px;
+  font-size: 24px;
+}
+
+#intro.programa p{
+  font-size:16px;
+  text-align:left;
+  font-style: italic;
+}
+
+#intro.programa .headline-small {
+  text-align: center;
+  margin-bottom:0;
+  font-size:22px;
+}
+
+/*Configuração dos box dos módulos*/

@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84826737-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-84826737-6');
+  </script>
+
+  <meta charset="utf-8">
+  <title>Módulo 3 | Aula 1 - Detecção precoce e classificação da severidade dos pacientes com síndrome respiratória aguda grave (SRAG)</title>
+  <meta content="index, follow" name="robots">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Ciência, Fiocruz, Curso, coronavírus, COVID-19" name="keywords">
+  <meta content="Módulo 3 | Manejo clínico: Casos graves; Aula 1: Detecção precoce e classificação da severidade dos pacientes com síndrome respiratória aguda grave (SRAG)" name="description">
+
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/8bfaea11f7.js" crossorigin="anonymous"></script>
+
+  <!-- Favicons -->
+  <link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/favicon.ico" rel="icon">
+  <link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/indice.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap CSS --> 
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Biblioteca CSS -->
+  <link href="../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet"><!--Ionicons-->
+   <link href="../lib/aos/aos.css" rel="stylesheet">
+  <link href="../lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="../lib/quiz/modulo1/aula1/quiz.css" rel="stylesheet">
+
+  <!-- CSS geral das aulas e recursos visuais -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style-visual-resources.css">
+
+
+  <!-- JS de Includes-->
+  <script src="../js/include.js"></script>
+
+  <!-- JS das Atividades (H5p) -->
+  <script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+
+</head>
+
+<body id="acessibilidade">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="https://campusvirtual.fiocruz.br/portal/formacao-modular/ciencia-aberta" class="scrollto"><img src="../img/logo-cv-white.svg" alt="Ir para o Campus Virtual" title="Campus Virtual"/> </a>
+      </div>
+
+
+    
+      <!-- Menu de Navegação -->
+      <nav id="nav-menu-container">
+        <ul class="nav-menu sf-js-enabled sf-arrows" id="menu-curso1" style="touch-action: pan-y;">
+          <li><a href="#" data-toggle="modal" data-target="#modal-apresentacao">Apresentação do curso</a></li>
+          <li class="menu-has-children"><a href="" class="sf-with-ul">Módulos</a>
+            <ul style="display: none;">
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 1</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Introdução ao novo coronavírus</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo1/aula1.html">Aula 1: Novo coronavírus: Conceitos básicos</a></li>
+                  <li><a href="../modulo1/aula2.html">Aula 2: Transmissão, sintomas e prevenção</a></li>
+                  <li><a href="../modulo1/aula3.html">Aula 3: O que fazer se você estiver doente</a></li>
+                </ul>
+              </li>
+
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 2</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Manejo Clínico</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo2/aula1.html">Aula 1: Organizando sua UBS para a Pandemia</a></li>
+                  <li><a href="../modulo2/aula2.html">Aula 2: Manejo Clínico da COVID-19</a></li>
+                  <li><a href="../modulo2/aula3.html">Aula 3: Como conduzir isolamento domiciliar</a></li>
+                  <li><a href="../modulo2/aula4.html">Aula 4: Protegendo os profissionais de saúde</a></li>
+                </ul>
+              </li>
+
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 3</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Manejo clínico: Casos graves</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo3/aula1.html">Aula 1: Detecção precoce e classificação da severidade dos pacientes com síndrome respiratória aguda grave (SRAG)</a></li>
+                  <li><a href="../modulo3/aula2.html">Aula 2: Manejo clínico inicial dos pacientes com síndrome respiratória aguda grave</a></li>
+                  <li><a href="../modulo3/aula3.html">Aula 3: Investigação de imagem, laboratorial e diagnóstico diferencial da COVID-19</a></li>
+                  <li><a href="../modulo3/aula4.html">Aula 4: Suporte farmacológico a pacientes com COVID-19</a></li>
+                  <li><a href="../modulo3/aula5.html">Aula 5: Suporte respiratório a pacientes com COVID-19</a></li>
+                  <li><a href="../modulo3/aula6.html">Aula 6: Manejo Clínico da gestante no contexto da COVID-19</a></li>
+                  <li><a href="../modulo3/aula7.html">Aula 7: Procedimentos de proteção e controle de infecção em ambiente hospitalar</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="#" data-toggle="modal" data-target="#modal-bibliografia">Bibliografia</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#modal-creditos">Créditos</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#modal-material-complementar">Material Complementar</a></li>
+          <li><a class="cta-btn" href="../faq.html" target="_blank">FAQ</a></li>
+          
+        </ul>
+      </nav>
+      <!-- Fim do Menu de Navegação -->
+
+    </div>
+
+
+    <!--Breadcrumb-->
+    <div id="breadcrumb" class="d-none serie3">
+      <div class="container">
+        <div class="row" data-aos="flip-right">
+          <div class="col-12">
+            <ul class="nav-menu">
+              <li><a href='aula1.html' target='_blank'><i class="fas fa-home"></i> Módulo 3</a> > <a href='aula1.html' target='_blank'>Aula 1</a></li>
+              <li class="float-right">            
+                <div id="font-setting-buttons">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary decrease-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary reset-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary increase-me"><i class="fas fa-font"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!--Fim do Breadcrumb-->  
+
+  </header><!-- #header -->
+
+  <main id="main">
+
+    <!--==========================
+      Intro Section
+    ============================-->
+    <section id="intro" class="triangle" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0">
+      <div class="intro-text">
+        <p class="headline-small serie3" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">Módulo 3 | Manejo clínico:<br/> Casos graves</p>
+        <h1 data-aos="fade-in" data-aos-duration="850" data-aos-delay="600">COVID-19<br><span>Manejo da infecção causada  pelo novo coronavírus</span></h1>
+        
+      </div>
+
+    </section><!-- #intro --> 
+
+    <!--==========================
+      Bloco 1  - Aula 1
+    ============================-->
+    <section id="bloco1" class="pb-5 pt-5" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="1000">
+      <div class="container">
+        <div class="section-header">
+          <p class="headline-small text-center">Aula 1</p>
+          <h2 class="section-title">Detecção precoce e classificação da severidade dos pacientes com síndrome respiratória aguda grave (SRAG)</h2>
+          <span class="section-divider middle"></span>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <p>Esta é a Aula 1 do Módulo 3 do curso COVID-19 Fiocruz.</p>
+            <p> Nesta aula, vamos compartilhar conhecimento científico para o manejo clínico em situações graves.</p>
+            <p>Ao final, você será capaz de:</p>
+            <ul>
+              <li>descrever a importância da detecção precoce da Síndrome Respiratória Aguda Grave (SRAG); e</li>
+              <li>descrever os critérios para classificação da severidade de pacientes com Síndrome Respiratória Aguda Grave (SRAG).</li>
+            </ul>
+            <p>Esta aula está voltada para os ambientes hospitalares (emergências hospitalares) e aqueles voltados à urgência e emergência fora do ambiente hospitalar (Unidades de Pronto Atendimento – Upas). A cada dia mais pacientes com quadros graves têm chegado às Unidades Básicas de Saúde, o que torna o que discutiremos aqui relevante para os profissionais de saúde em toda a linha de cuidado voltada à COVID-19.</p>
+
+            <p>Os materiais básicos de referência são:</p>
+             <ul>
+              <li><a href="https://portalarquivos.saude.gov.br/images/pdf/2020/April/14/Protocolo-de-Manejo-Cl--nico-para-o-Covid-19.pdf" target="_blank">Protocolo de Manejo Clínico da COVID-19 na Atenção Especializada</a> e <a href="https://portalarquivos.saude.gov.br/images/pdf/2020/April/14/Protocolo-de-Manejo-Cl--nico-para-o-Covid-19.pdf">Protocolo de Manejo Clínico do coronavírus na Atenção Primária à Saúde (versão 7), preconizados pelo Ministério da Saúde;</a></li>
+              <li><a href="https://portalarquivos.saude.gov.br/images/pdf/2020/April/13/Diretrizes-COVID-13-4.pdf" target="_blank">Diretrizes para Diagnóstico e Tratamento da COVID-19 da Secretaria de Ciência, Tecnologia, Inovação e Insumos Estratégicos em Saúde (SCTIE)</a>; e</li>
+              <li>Plano de Ação para Manejo de Casos de Infecção pelo novo coronavírus (SARS-cov2), do Instituto Nacional de Infectologia Evandro Chagas, da Fundação Oswaldo Cruz (INI/FIOCRUZ).</li>
+
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!--fim do bloco1-->
+
+    <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Síndrome Respiratória Aguda Grave (SRAG)</h1>
+          </div>
+         </div>
+      </div>
+    </section>
+    <!-- #call-to-action -->
+
+    <!--==========================
+      Bloco 2 - SRAG
+    ============================-->
+    <section id="bloco2" class="pb-5 pt-5">
+        <div class="container">
+          <div class="row justify-content-center">
+           <div class="col-12 col-lg-8">
+           <p>A COVID-19 já acometeu em todo o mundo, até o dia 12 de maio, 4.262.051 pessoas e provocou 291.261 óbitos. O período de incubação médio estimado é de 4 a 5 dias, podendo durar até 14 dias após o momento de exposição. A doença tem um espectro de pacientes assintomáticos até a pneumonia severa com síndrome de angústia respiratória e morte.</p>
+
+           <p>Segundo estudo de <a href="https://jamanetwork.com/journals/jama/fullarticle/2762130" target="_blank">Wu e McGoogan</a>, em uma coorte de 72.314 pessoas com COVID-19 na China, 81% dos casos foram leves; 14% foram severos e 5% críticos.</p>
+
+            <!--Início tabela horizontal-->
+            <div class="row mt-3 mb-5">
+              <div class="col-12">
+                <div class="table-responsive serie3" data-aos="fade-up">
+                  <table class="table table-bordered section-bg">
+                    <thead>
+                      <tr>
+                        <th class="text-center">CASOS SUSPEITOS PARA COVID-19</th>
+                      </tr>
+                    </thead>
+
+                    <tr>
+                        <td class="text-left">
+                            <p><strong>Síndrome Gripal (SG):</strong> indivíduo com quadro respiratório agudo, caracterizado por:</p>
+                            <ul>
+                            <li>sensação febril ou febre, mesmo que relatada</li>
+                            <li>tosse ou  dor de garganta ou coriza ou dificuldade respiratória</li>
+                            </ul>
+                             
+                            <p>A febre pode não estar presente na suspeita da COVID-19.</p>
+                             
+                            <p>Em <strong>crianças</strong>, pensar a obstrução nasal como um sinal possível. Em adultos, considerar critérios específicos de agravamento, como síncope, confusão mental, sonolência excessiva, inapetência e irritabilidade.</p>
+                             
+                            <p><strong>Síndrome Respiratória Aguda Grave (SRAG)</strong>: Síndrome Gripal que apresente:</p>
+                            <ul>
+                            <li>dispneia/desconforto respiratório ou</li>
+                            <li>pressão persistente no tórax ou</li>
+                            <li>saturação menor que 95% em ar ambiente ou</li>
+                            <li>coloração azulada dos lábios ou rosto</li>
+                            </ul>
+                             
+                            <p>Em crianças, além dos itens anteriores, observar os batimentos de asa de nariz, cianose, tiragens intercostais, desidratação e inapetência.</p>
+                        
+                          </td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
+              
+            </div><!--fim da row-->
+            <!--Fim da Tabela horizontal-->
+
+            <div class="row align-items-center">
+            <div class="col-12 col-md-6 order-2 order-md-1">
+              <p>Segundo o National Institute of Health, em um relato de 1482 pacientes internados com COVID-19 confirmada, os sintomas mais presentes foram tosse (86%), febre ou calafrios (85%), taquipneia (80%), diarreia (27%) e náuseas (24%).  Outros sintomas relatados foram, tosse produtiva, cefaléia, zumbidos, rinorreia, perda do paladar e do olfato, dor de garganta, dor abdominal, anorexia e vômitos.</p>
+
+              <p>A definição do que é um quadro severo da síndrome gripal (suspeita ou confirmada COVID-19) é relevante para a adequação do cuidado de cada paciente, mas também para o estudo epidemiológico da ocorrência da doença, permitindo avaliar se as estratégias de mitigação são adequadas e possibilitando maior planejamento dos serviços de saúde à medida em que a pandemia avança.</p>
+
+            </div>
+            <div class="col-12 col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+              <img src="../img/modulo3/aula1/fax.png" alt="Facsímile" width="100%" height="auto" class="rounded mx-auto d-block">
+              <!--p class="source text-center">Fonte: Banco de Imagens Fiocruz</p-->
+            </div>
+          </div>
+
+           <p>Segundo <a href="https://www.thelancet.com/pdfs/journals/laninf/PIIS1473-3099(20)30243-7.pdf" target="_blank">Verity et al.</a>, o quadro grave/severo de síndrome gripal pela COVID-19 foi definido na China e em outros países como aquele que apresenta:</p>
+              <ul>
+              <li>taquipneia  ≥30 irpm;</li>
+              <li>saturação de O2 ≤93% em ar ambiente; ou</li>
+              <li>taxa de PaO2/FiO2  PaO2/FiO2 < 300 mm Hg.</li>
+              </ul>
+
+
+
+
+<div class="row justify-content-center wow mt-5">
+              <div class="col-12 col-lg-8 wow fadeIn">
+                <h2 class="text-center">Detecção precoce da SRAG através dos fatores de risco para seu desenvolvimento</h2>
+                <span class="section-divider middle"></span>
+              </div>
+           </div>
+
+
+           <p>O trabalho de detecção precoce inicia-se na realização de uma anamnese adequada, que considere o histórico do paciente, cujo objetivo é determinar um nível de risco para a COVID-19 ou avaliação de outras causas possíveis. Esse histórico permite identificar a evolução clínica do paciente e suas comorbidades. O exame físico possibilita completar o quadro clínico do paciente, e, assim, a equipe de saúde pode considerar os fatores de risco presentes.</p>
+          <p><u>Quais são os fatores de risco? </u></p>
+          <p>Os fatores de risco para o agravamento de uma síndrome gripal para um quadro de SRAG compreendem tanto as condições crônicas ou agravos dos pacientes, como suas características clínicas/laboratoriais no momento em que se apresentam em um serviço de saúde.</p>
+
+          <p> <u>Importância da compreensão dos fatores de risco</u></p>
+
+          <p>A compreensão dos fatores de risco para a hospitalização de pacientes suspeitos ou com COVID-19 é bastante importante por diversas razões: </p>
+
+          <uL>
+            <li>identificar pacientes que possam se beneficiar de uma intervenção precoce, e também orientando uma regulação de leitos baseada em parâmetros de risco de cada paciente;</li>
+            <li>apoiar os gestores de saúde sobre populações de maior risco e vulnerabilidade; </li>
+            <li>ajudar os planejadores e epidemiologistas em suas estimativas de casos e hospitalizações e, portanto, na definição da necessidade de leitos e outros recursos.</li>
+          </uL>
+
+        <h5 class="box-destaque text-center mt-3 mb-5">A identificação de condições de risco relacionadas à complicação da síndrome gripal pela COVID-19 para a SRAG é uma importante ferramenta para a detecção precoce de um quadro mais grave, bem como para a tomada e consequente definição do tipo de leito de internação necessário.  </h5>
+
+        <p>Segundo o Ministério da Saúde, as condições produtoras de maior risco a serem consideradas são:</p>
+
+
+
+            <!--Início tabela horizontal-->
+            <div class="row mt-3 mb-3">
+              <div class="col-12">
+                <div class="table-responsive serie3" data-aos="fade-up">
+                  <table class="table table-bordered section-bg">
+                    <thead>
+                      <tr>
+                        <th class="text-center">CONDIÇÕES DE RISCO PARA COMPLICAÇÕES<br></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-left">
+                        <ul>
+                        <li>Grávidas em qualquer idade gestacional, puérperas até duas semanas após o parto (incluindo as que tiveram aborto ou perda fetal);
+                        <li>Adultos ≥ 60 anos;</li>
+                        <li>Crianças < 5 anos (sendo que o maior risco de hospitalização é em menores de 2 anos, especialmente as menores de 6 meses, com maior taxa de mortalidade);</li>
+                        <li>População indígena aldeada ou com dificuldade de acesso;</li>
+                        <li>Indivíduos menores de 19 anos de idade em uso prolongado de ácido acetilsalicílico (risco de síndrome de Reye);</li>
+                        <li>Indivíduos que apresentem:</li>
+                          <ul>
+                            <li>Pneumopatias (incluindo asma);</li>
+                            <li>Pacientes com tuberculose de todas as formas (há evidências de maior complicação e possibilidade de reativação);</li>
+                            <li>Cardiovasculopatias (excluindo hipertensão arterial sistêmica);</li>
+                            <li>Nefropatias;</li>
+                            <li>Hepatopatias;.</li>
+                            <li>Doenças hematológicas (incluindo anemia falciforme);</li>
+                            <li>Distúrbios metabólicos (incluindo diabetes mellitus);</li>
+                            <li>Transtornos neurológicos e do desenvolvimento que podem comprometer a função respiratória ou aumentar o risco de aspiração (disfunção cognitiva, lesão medular, epilepsia, paralisia cerebral, síndrome de Down, acidente vascular encefálico – AVE ou doenças neuromusculares);</li>
+                            <li>Imunossupressão associada a medicamentos (corticoide ≥ 20 mg/dia por mais de duas semanas, quimioterápicos, inibidores de TNF-alfa), neoplasias, HIV/aids ou outros;</li>
+                            <li>Obesidade (especialmente aqueles com índice de massa corporal – IMC ≥ 40 em adultos).</li>
+                          </ul>
+                        </li>
+
+                      </td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                  
+                </div>
+              </div>
+              
+            </div><!--fim da row-->
+            <!--Fim da Tabela horizontal-->
+            <p class="source text-center"><b>Fonte:</b> <a href="https://portalarquivos.saude.gov.br/images/pdf/2020/April/22/20200422-ProtocoloManejo-ver08.pdf" target="_blank">Ministério da Saúde</a></p>
+
+
+
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6 order-2 order-md-1">
+              <p>De acordo com o Ministério da Saúde, a estratificação dos pacientes deve considerar as condições acima elencadas (que aumentam o risco em relação à gravidade da doença pela COVID-19) e se os sintomas respiratórios se relacionam com o trato respiratório superior ou inferior.</p>
+              <p>No <strong>trato respiratório superior</strong>, identificar a presença dos seguintes sinais:</p>
+              <ul>
+                <li>tosse, coriza, dor de garganta ou febre;</li>
+              <li>ausência dos critérios atribuídos ao trato respiratório inferior.</li>
+              </ul>
+              <p>No <strong>trato respiratório inferior</strong>, utilizar o oxímetro para aferir se a SatO2 < 93%, e/ou se a Frequência Respiratória > 22 incursões respiratórias por minuto.</p>
+            </div>
+            <div class="col-12 col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+              <img src="../img/modulo3/aula1/vias.svg" alt="Trato respiratório superior e inferior" width="100%" height="auto" class="rounded mx-auto d-block">
+              <p class="source text-center">Fonte: Freepik</p>
+            </div>
+          </div>
+
+                    
+
+                     <!--Início tabela horizontal-->
+                      <div class="row mt-3 mb-3">
+                        <div class="col-12">
+                          <div class="table-responsive serie3" data-aos="fade-up">
+                            <table class="table table-bordered section-bg">
+                              <thead>
+                                <tr>
+                                  <th class="text-center">FATORES DE RISCO PARA COMPLICAÇÕES CLÍNICAS</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="text-left">
+                                 <ul>
+                                  <li>dade maior ou igual a 60 anos
+                                  <li>Presença de comorbidades (ver quadro acima)</li>
+                                  <li>Uso de corticóides ou imunossupressores</li>
+                                 </ul>
+                                 <p>A ausência desses fatores constitui uma situação de baixo risco e a presença de um desses fatores uma situação de alto risco.</p>
+
+                                  </td>
+                                </tr>  
+                              </tbody>
+                            </table>
+                           
+                          </div>
+                        </div>
+                       
+             </div><!--fim da row-->
+            <!--Fim da Tabela horizontal-->
+
+             <p class="source text-center"><b>Fonte:</b> Ministériio da Saúde</p>
+
+           <p>O quadro abaixo apresenta parâmetros em termos do qSOFA para internação em leito geral ou em leito de UTI.</p>
+
+           <!--Início tabela horizontal-->
+                      <div class="row mt-3 mb-3">
+                        <div class="col-12">
+                          <div class="table-responsive serie3" data-aos="fade-up">
+                            <table class="table table-bordered section-bg">
+                              <thead>
+                                <tr>
+                                  <th class="text-center">CRITÉRIOS PARA INTERNAÇÃO</th>
+                                  <th class="text-center">CRITÉRIOS PARA INTERNAÇÃO EM UTI</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="text-left" width="50%">
+                                
+                                      <p>qSOFA= 1</p>
+
+                                      <p>Saturação< 92% em ar ambiente</p>
+
+                                      <p>Paciente com acometimento pulmonar extenso no exame de imagem </p>
+
+                                  </td>
+                                    <td class="text-left" width="50%">
+                                      <p> qSOFA ⋝ 2</p>
+                                      <p> qSOFA= 1 e sO2 ⋜ 92%</p>
+
+                                      <p> Insuficiência respiratória aguda com necessidade de ventilação mecânica invasiva</p>
+
+                                      <p> Necessidade de oxigênio suplementar acima de 2L/min para saturação acima de 92%</p>
+
+                                      <p> Hipotensão arterial (PAM< 65 mmhg ou PAS< 90 mmhg)</p>
+                                       
+                                      <p> Frequência respiratória acima de 30 irpm persistente</p>
+
+                                      <p> Rebaixamento do nível de consciência</p>
+
+                                  </td>
+                                </tr>  
+                                <tr colspan="2">
+                                  <td>
+                                   <p> Critérios para calcular qSOFA:</p>
+                                   <ul>
+                                    <li>Frequência respiratória> 22 irpm (1 ponto)</li>
+                                    <li>Pressão arterial sistólica< 100 mmHg (1 ponto)</li>
+                                    <li>Alteração do nível de consciência (1 ponto)</li>
+                                    </ul>
+
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                           
+                          </div>
+                        </div>
+                       
+             </div><!--fim da row-->
+            <!--Fim da Tabela horizontal-->
+
+            <p class="source text-center"><b>Elaboração:</b> Hospital Alemão Oswaldo Cruz </p>
+
+            
+            </div>
+          </div>
+          <!-- Fim da row -->
+        </div>
+        <!-- Fim do container -->
+    </section>
+
+    <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Características de apresentação e evolução da SRAG</h1>
+          </div>
+         </div>
+      </div>
+    </section>
+    <!-- #call-to-action -->
+
+<!--==========================
+      Bloco 3  - Evolução SRAG
+    ============================-->
+  <section id="bloco3" class="pb-5 pt-5">
+      <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+
+               <p>A literatura científica sobre a COVID-19, com foco nas apresentações clínicas da doença, tem mostrado que lidamos com uma doença efetivamente sistêmica, atingindo não só o aparelho respiratório, mas também os rins, o aparelho cardiovascular, o sistema de coagulação, entre outros. </p>
+              <p>Na base desses acometimentos estaria uma potente síndrome inflamatória, provocando sintomas e sinais em muitos aparelhos e sistemas do corpo humano.</p>
+              <p>O artigo <a href="https://doi.org/10.1016/S2213-2600(20)30216-2" target="_blank">COVID-19 cytokine storm: the interplay between inflammation and coagulation</a>, fala da "cytokine storm” - a superprodução de citocinas em uma reação precoce pró-inflamatória -, que resulta no que tem sido descrito como uma tempestade de citocinas, levando ao risco aumentado de hipermaleabilidade vascular, falência de múltiplos órgãos e, finalmente, morte, quando as altas concentrações de citocinas não diminuem ao longo da evolução clínica do paciente. Essa compreensão da patogenicidade permite aos profissionais de saúde envolvidos no cuidado um raciocínio clínico abrangente.</p>
+
+              <h4 class="text-center mt-5">Sídrome da tempestade de Citocinas na COVID-19</h4>
+
+               <img src="../img/modulo3/aula1/citocinas.svg" alt="Síndrome dad Tempestade ded Citocinas: na COVID-19" width="100%" height="auto" class="rounded mx-auto d-block">
+              <p class="source text-center mb-5">Fonte: Albert Einstein</p>
+
+              <p>A pesquisadora em Saúde Pública do Centro de Pesquisas Gonçalo Moniz (CPqGM-FIOCRUZ/BA), Natalia Machado Tavares fala sobre a Síndrome da Tempestade de Citocinas</p>
+
+               <!--Vídeo-->
+              <div class="embed-responsive embed-responsive-16by9 mt-3 mb-5">
+                <iframe src="https://www.youtube.com/embed/RxvnZ0OqBNc?t=4642" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="640" height="360" frameborder="0"></iframe>
+              </div>
+              <!--p class="reference-title text-center mt-3"></p-->
+              <!--Fim de vídeo-->
+
+              <div class="row align-items-center">
+            <div class="col-12 col-md-6 order-2 order-md-1">
+              <p>Para a médica Patrícia Rocco, chefe do Laboratório de Investigação Pulmonar da UFRJ, membro da Academia Nacional de Medicina e da Academia Brasileira de Ciências, o paciente com confirmação ou suspeita de COVID-19 deveria contar com uma série de exames para detectar alterações vasculares e inflamatórias, sejam de imagens, como tomografia, ou de sangue, nos quais se buscam marcadores inflamatórios e de risco para trombose. Patrícia Rocco investiga biomarcadores específicos, substâncias presentes no sangue que possam sinalizar risco de agravamento da COVID-19. Em entrevista ao jornal on-line <a href="https://oglobo.globo.com/sociedade/novos-sintomas-da-covid-19-enganam-medicos-mostram-outra-face-da-doenca-24407704" class="_blank">O Globo</a>, a médica observou: “Hoje não temos um protocolo de avaliação rápida, e isso custa vidas.</p>
+
+              <p>Na mesma matéria (<a href="https://oglobo.globo.com/sociedade/novos-sintomas-da-covid-19-enganam-medicos-mostram-outra-face-da-doenca-24407704" class="_blank">Novos sintomas da COVID-19 enganam médicos e mostram outra face da doença</a>), temos:</p>
+
+            
+
+              
+            </div>
+            <div class="col-12 col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+               <img src="../img/modulo3/aula1/oglobo01.jpg" alt="Matéria Jornal O Globo" width="70%" height="auto" class="rounded mx-auto d-block">
+              <!--p class="source text-center">Fonte: Banco de Imagens Fiocruz</p-->
+            </div>
+          </div>
+
+          <p class="box-quote">A infecção pelo coronavírus passou a ser associada à formação de microtrombos pelo corpo, inclusive no cérebro. Uma hipótese para isso é que os receptores usados pelo coronavírus para invadir as células existam em muitos órgãos, principalmente nos vasos sanguíneos. As células que revestem os pulmões estão cheias deles, mas eles também estão no intestino, nos rins e no coração, por exemplo. O que era vista como uma doença respiratória se mostrou uma síndrome preponderantemente vascular —frisa o hematologista e oncologista Daniel Tabak, da Academia Nacional de Medicina, que monitora a evolução da COVID-19 no Brasil. São essas complicações vasculares que têm sido associadas a AVCs e alterações cardíacas graves mesmo em pacientes jovens."</p>
+
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6 order-2 order-md-1">
+ 
+              <p>Além disso, a velocidade de agravamento é bastante variável, com pacientes que agravam seu quadro após dias ou em torno de uma semana do início da doença, mas outros abrem o quadro gripal já em plena SRAG.</p>
+
+              <p>O reconhecimento da SRAG torna-se ainda mais complexo pelos relatos científicos recentes de uma “hipóxia silenciosa”, na qual a hipoxemia já está bastante atingida, mas os sintomas ainda são bastante leves em relação ao grau de hipoxemia.</p>
+
+              
+            </div>
+            <div class="col-12 col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+               <img src="../img/modulo3/aula1/oglobo02.jpg" alt="Matéria Jornal O Globo" width="70%" height="auto" class="rounded mx-auto d-block">
+              <!--p class="source text-center">Fonte: Banco de Imagens Fiocruz</p-->
+            </div>
+          </div>
+
+
+           
+           <div class="row justify-content-center wow mt-5">
+              <div class="col-12 col-lg-8 wow fadeIn">
+                <h2 class="text-center">Síndromes clínicas associadas à infecção por SARS-CoV-2</h2>
+                <span class="section-divider middle"></span>
+              </div>
+           </div>
+
+
+
+<!--Accordion-->
+                      <ul id="accordion-portal" class="accordion wow fadeInUp mb-3">
+                        <!--Item 1-->
+                        <li>
+                          <a data-toggle="collapse" class="collapsed" href="#sindrome1"> Doença branda<i class="icon ion-md-remove"></i></a>
+                          <div id="sindrome1" class="collapse">
+
+                            <p>Quadro compatível com infecção de vias aéreas superiores, sem sinais de desidratação, dispneia, sepse ou disfunção de órgãos. </p>
+
+                            <p>Os sinais e sintomas mais comuns são: </p>
+                            <ul>
+                              <li>febre</li>
+                              <li>tosse</li>
+                              <li>dificuldade para respirar</li>
+                              <li>dor na garganta</li>
+                              <li>congestão nasal</li>
+                              <li>cefaleia</li>
+                              <li>mal-estar</li>
+                              <li>mialgia</li>
+                            </ul>
+
+                            <p>Pacientes imunodeprimidos, idosos e crianças podem apresentar quadro atípico e não apresentar sinais de desidratação, febre ou dificuldade para respirar. </p>
+
+                            <p>Em gestantes, devido a adaptações fisiológicas ou eventos adversos na gravidez, dispneia, febre, sintomas gastrointestinais ou fadiga podem se sobrepor aos sintomas da COVID-19.</p>
+
+                            
+                          </div>
+                        </li>
+
+                        <!--Item 2-->
+                        <li>
+                          <a data-toggle="collapse" class="collapsed" href="#sindrome2">Pneumonia sem complicações <i class="icon ion-md-remove"></i></a>
+                          <div id="sindrome2" class="collapse">      
+
+                          <p>Infecção do trato respiratório inferior sem sinais de gravidade.</p>
+
+                          <p>Criança sem sinais de pneumonia grave com tosse ou dificuldade para respirar + respiração rápida. </p>
+
+                          <p><u>Observação:</u> Seguem os valores de referência de frequência respiratória de acordo com a faixa etária para avaliação: </p>
+                          <ul>
+                            <li>1 a 12 meses: 30 a 53 irpm </li>
+                            <li>1 a 2 anos: 22 a 37 irpm </li>
+                            <li>3 a 5 anos: 20 a 28 irpm </li>
+                            <li>Escolar: 18 a 25 irpm </li>
+                            <li>Adolescente: 12 a 20 irpm </li>
+                          </ul> 
+                           
+                          </div>
+                        </li>
+
+                        
+
+                         <!--Item 3-->
+                        <li>
+                          <a data-toggle="collapse" class="collapsed" href="#sindrome3"> Pneumonia severa <i class="icon ion-md-remove"></i></a>
+                          <div id="sindrome3" class="collapse">
+
+                            <p><u>Adolescente ou adulto: </u>infecção do trato respiratório inferior com algum dos seguintes sinais de gravidade descritos a seguir: </p>
+                            <ul>
+                              <li>frequência respiratória > 30 incursões por minuto; </li>
+                              <li>esforço respiratório severo; </li>
+                              <li>SpO2 < 93% em ar ambiente; </li>
+                              <li>cianose; </li>
+                              <li>disfunção orgânica.</li>
+                           </ul>
+
+                           <p> <u>Crianças</u> com tosse ou dificuldade para respirar e pelo menos mais um dos critérios seguintes: </p>
+
+                            <ul>
+                            <li>cianose central ou spO2<90%; </li>
+                            <li>esforço respiratório severo; </li>
+                            <li>sinais de PNM com aspectos de gravidade:</li>
+                              <ul>
+                                <li>uso de musculatura acessória para respiração; </li>
+                                <li>incapacidade ou recusa de amamentar ou ingerir líquidos; </li>
+                                <li>sibilância ou estridor em repouso; vômitos incoercíveis; </li>
+                                <li>alteração do sensório: irritabilidade ou sonolência, e convulsões.</li>
+                              </ul>
+                            </ul>
+
+
+                            <p>A frequência respiratória que denota gravidade em crianças dependerá da idade, a saber:  </p>
+                            <ul>
+                              <li><2meses: ≥60irpm; </li>
+                             <li> 2 a 11 meses: ≥50irpm; </li>
+                              <li>1 a 5 anos: ≥40 irpm </li>
+                              </li>
+
+                           <p> O diagnóstico é clínico. Imagens torácicas podem identificar ou excluir complicações.</p>
+      
+
+                          </div>
+                        </li>
+
+                         <!--Item 4-->
+                        <li>
+                          <a data-toggle="collapse" class="collapsed" href="#sindrome4">Síndrome da Angústia Respiratória Aguda (SARA) <i class="icon ion-md-remove"></i></a>
+                          <div id="sindrome4" class="collapse">
+                          
+                          <p>Início ou agravamento dos sintomas respiratórios até uma semana do aparecimento da doença. Pode ainda apresentar: </p>
+                          <ul>
+                            <li>alterações radiológicas (infiltrados, opacidades bilaterais, atelectasia lobar/pulmonar ou nódulos); </li>
+                            <li>edema pulmonar não explicado por insuficiência cardíaca ou hiper-hidratação; </li>
+                            <li>comprometimento da oxigenação em adultos e crianças:</li>
+                          </ul>
+                          <p><u>Adultos:</u></p>
+                          <ul>
+                            <li>Sara leve: 200 mmHg < PaO2/FiO2 ≤ 300 mmHg (com Peep ou Cpap ≥ 5 cm H2O, ou não ventilado).</li>
+                            <li>Sara moderada: 100 mmHg < PaO2/FiO2 ≤ 200 mmHg (com PEEP ≥ 5 cm H2O, ou não ventilado).</li>
+                            <li>Sara grave: PaO2/FiO2 ≤ 100 mmHg (com PEEP ≥ 5 cm H2O, ou não ventilado).  Quando a PaO2 não está disponível, a SpO2/FiO2 ≤ 315 sugere Sara (inclusive em pacientes não ventilados).</li>
+                          </ul>
+
+                          <p><u>Crianças:</u> OI = Índice de Oxigenação e OSI = Índice de Oxigenação utilizando SpO2. </p>
+                          <p>Use a métrica baseada no PaO2, quando disponível. </p>
+                          <p>Caso o PaO2 não esteja disponível, desmame a FiO2 para manter a SpO2 ≤ 97% para calcular o OSI ou a relação SpO2/FiO2: </p>
+                          <ul>
+                            <li>Ventilação não invasiva ou Cpap bi nível ≥ 5 cm H2O através de máscara facial completa: PaO2/FiO2 ≤ 300 mmHg ou SpO2/FiO2 ≤ 264.</li>
+                            <li>Sara leve (com ventilação invasiva): 4 ≤ OI < 8 ou 5 ≤ OSI < 7,5.</li>
+                            <li>Sara moderada (com ventilação invasiva): 8 ≤ OI < 16 ou 7,5 ≤ OSI < 12,3.</li>
+                            <li>Sara grave (com ventilação invasiva): OI ≥ 16 ou OSI ≥ 12,3</li>
+                          </ul>
+                          </div>
+                        </li>
+
+                        <!--Item 5-->
+                        <li>
+                          <a data-toggle="collapse" class="collapsed" href="#sindrome5">Sepse  <i class="icon ion-md-remove"></i></a>
+                          <div id="sindrome5" class="collapse">
+
+                            <p>Síndrome da resposta inflamatória sistêmica com disfunção orgânica na presença de infecção presumida ou confirmada. </p>
+
+                            <p>São sinais frequentes de disfunção orgânica: </p>
+                            <ul>
+                              <li>alteração do nível de consciência</li>
+                              <li>oligúria</li>
+                              <li>taquipneia e/ou dispneia</li>
+                              <li>baixa saturação de oxigênio</li>
+                              <li>taquicardia</li>
+                              <li>pulso débil</li>
+                              <li>extremidades frias</li>
+                              <li>coagulopatia</li>
+                              <li>trombocitopenia</li>
+                              <li>acidose</li>
+                              <li>elevação do lactato sérico ou da bilirrubina</li>
+                            </ul>
+
+                            <p>Apesar de ser uma patologia extremamente prevalente, médicos não intensivistas ainda não reconhecem a sepse em 45% das vezes. No vídeo, o Dr. André Luis Negrão Albanez explica o que é a sepse, fala sobre a importância de reconhecer seus sinais e sintomas de forma precoce e como fazer esse reconhecimento.</p>
+
+                          
+                            <!--Vídeo-->
+                            <div class="embed-responsive embed-responsive-16by9 mt-3 mb-5">
+                              <iframe src="https://www.youtube.com/embed/RxvnZ0OqBNc?t=4642" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="640" height="360" frameborder="0"></iframe>
+                            </div>
+                            <p class="reference-title text-center mt-3">O vídeo é parte do Webinar Proqualis - Detecção precoce e manejo clínico da Sepse, disponível no canal do YouTube <a href="https://youtu.be/pjOMVYC5IKE" target="_blank">Proqualis Segurança do Paciente.</a></p>
+                            <!--Fim de vídeo-->
+                          </div>
+                        </li>
+
+                        <!--Item 6-->
+                        <li>
+                          <a data-toggle="collapse" class="collapsed" href="#sindrome6">Choque séptico <i class="icon ion-md-remove"></i></a>
+                          <div id="sindrome6" class="collapse">
+                          
+                          <p>Sepse acompanhada de hipotensão (pressão arterial média (PAM) < 65 mmHg) a despeito de ressuscitação volêmica adequada e requerendo o uso de vasopressores para manter PAM>=65 mmHg.</p>
+
+                          <p><u>Crianças:</u> qualquer tipo de hipotensão (SBP <5º percentil ou >2 DP abaixo do normal para a idade) ou dois ou três dos seguintes sintomas: </p>
+                          <ul>
+                            <li>estado mental alterado; </li>
+                            <li>taquicardia ou bradicardia </li>
+                            <li>(FC <90 bpm ou >160 bpm em menores de 12 meses e FC <70 bpm ou >150 bpm em crianças); </li>
+                            <li>preenchimento capilar prolongado (>2 seg) ou pulso fraco; </li>
+                            <li>taquipneia; </li>
+                            <li>pele manchada ou fria ou erupção petequial ou purpúrica; </li>
+                            <li>aumento do lactato; </li>
+                            <li>oligúria; </li>
+                            <li>hipertermia ou hipotermia.</li>
+                          </ul>
+
+                          </div>
+                        </li>
+
+
+
+                      </ul>
+                      <!--Fim do Accordion-->
+
+                      <p class="source text-center mb-3"> <b>Fonte:</b> World Health Organization, mar.2020, adaptado.</p>
+                      <p class="source text-left"> 
+                        <b>Abreviaturas:</b> IRA, infecção respiratória aguda; PA, pressão arterial; bpm, batimentos/minuto; Cpap, pressão positiva contínua das vias aéreas; FiO2, fração inspirada de oxigênio; PAM, pressão arterial média; VNI, ventilação não invasiva; OI, índice de oxigenação; OSI, índice de oxigenação utilizando SpO2; PaO2, pressão parcial de oxigênio; Peep, pressão positiva expiratória final; SBP, pressão arterial sistólica; DP, desvio-padrão; SIRS, síndrome de resposta inflamatória sistêmica; SOFA, avaliação sequencial de falência orgânica; SpO2, saturação de oxigênio.</p>
+
+
+
+            </div><!--fim da coluna-->
+          </div><!-- fim da row-->
+
+    </div><!--fim do container-->
+  </section><!--fim do bloco3-->
+
+  <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Chegamos ao fim da aula</h1>
+          </div>
+         </div>
+      </div>
+    </section>
+    <!-- #call-to-action -->
+
+  <!--==========================
+
+      Bloco 4 - Conclusão
+
+    ============================-->
+
+    <section id="bloco4" class="pb-5 pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+    
+          <div class="col-12 col-lg-8">
+            <p><strong>Você terminou a primeira aula do Módulo 3 do curso COVID-19 - Manejo da infecção causada pelo novo coronavírus.</strong></p>
+    
+            <p>Nesta aula, você viu sobre a importância da detecção precoce da Síndrome Respiratória Aguda Grave (SRAG), assim como os critérios para classificação da severidade de pacientes com SRAG.</p>
+
+            <p>Na próxima aula, vamos falar sobre o manejo clínico dos pacientes com síndrome respiratória aguda grave.  </p>
+
+            <p>Continue seu aprendizado!</p>
+        
+
+    
+          </div>
+        </div>
+        <!--fim da row-->
+    
+      </div>
+      <!--fim do container-->
+    </section>
+    <!--fim do bloco6-->
+  
+
+ <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Avaliação</h1>
+          </div>
+         </div>
+      </div>
+    </section> 
+    <!--#call-to-action -->
+
+
+  <!--==========================
+
+      Bloco 5 - Avaliação
+
+    ============================-->
+   <section id="avaliacao" class="quizz-wrapper pb-5 pt-5">
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-12 col-lg-8">
+        
+         <iframe src="https://educare.fiocruz.br/h5p-content/embed/?contentId=2032993195" width="1090" height="1025" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+        </div>
+      </div><!--fim da row-->
+
+    </div><!--fim do container-->
+  </section><!--fim do bloco7-->
+
+
+    <!--==========================
+      Bloco de Navegação entre aulas
+    ============================-->
+    <section id="nav-class" >
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 cta-btn-previous text-center">
+              <a class="cta-btn align-middle" href="aula3.html">Aula Anterior</a>
+            </div>
+
+            <div class="col-lg-6 cta-btn-next text-center">
+              <a class="cta-btn align-middle" href="aula4.html">Próxima Aula</a>
+          </div>
+        </div>
+    </div>
+    </section>
+   <!--==========================
+      Barra de logos
+    ============================-->
+     <!-- Include dos logos -->
+      <div w3-include-html="../barra-de-logos-modulos.html"></div>
+
+  <!--==========================
+      Modais - Bibliografia, Créditos & Material Complementar
+    ============================-->
+
+    <!-- Include da Apresentação-->
+    <div w3-include-html="../apresentacao.html"></div>
+
+     <!-- Include da Bibliografia -->
+    <div w3-include-html="../bibliografia-modulo2.html"></div>
+
+    <!-- Include da Créditos -->
+    <div w3-include-html="../creditos.html"></div>
+
+    <!-- Include de Material Complementar -->
+    <div w3-include-html="../material-complementar.html"></div>
+
+  </main>
+
+  <a href="#" class="back-to-top serie3"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Biblioteca de JavaScripts-->
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/aos/aos.js"></script>
+  <script src="../lib/superfish/hoverIntent.js"></script>
+  <script src="../lib/superfish/superfish.min.js"></script>
+  <script src="../lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="../lib/wow/wow.min.js"></script>
+  <script src="../lib/quiz/modulo1/aula1/quiz.js"></script>
+
+  <!--Ionicons-->
+  <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+
+  <!-- Javascripts-->
+  <script src="../js/main.js"></script>
+  <script src="../js/main-timeline.js"></script>
+
+  <!--Acessibilidade-->
+  <script src="../js/jquery-2.2.1.min.js"></script>
+  <script src="../js/jquery.font-accessibility.min.js"></script>
+
+  <script>
+  $(function(){
+    /* Botões de Acessibilidade */
+    $('#font-setting-buttons').easyView({
+      container: '#acessibilidade',
+      increaseSelector: '.increase-me',
+      decreaseSelector: '.decrease-me',
+      normalSelector: '.reset-me',
+      contrastSelector: '.change-me'
+    });
+
+  });
+  </script>
+
+  <script>
+    includeHTML();
+  </script>
+
+</body>
+</html>

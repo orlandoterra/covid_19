@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84826737-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-84826737-6');
+  </script>
+
+  <meta charset="utf-8">
+  <title>Módulo 2 | Aula 1 - Preparando Unidades Básicas de Saúde para a Pandemia de COVID-19</title>
+  <meta content="index, follow" name="robots">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Ciência, Fiocruz, Curso, coronavírus, COVID-19" name="keywords">
+  <meta content="Módulo 2 | Manejo Clínico: Atenção Básica; Aula 1: Preparando Unidades Básicas de Saúde para a Pandemia de COVID-19" name="description">
+
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/8bfaea11f7.js" crossorigin="anonymous"></script>
+
+  <!-- Favicons -->
+  <link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/favicon.ico" rel="icon">
+  <link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/indice.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap CSS --> 
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Biblioteca CSS -->
+  <link href="../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet"><!--Ionicons-->
+   <link href="../lib/aos/aos.css" rel="stylesheet">
+  <link href="../lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="../lib/quiz/modulo1/aula1/quiz.css" rel="stylesheet">
+
+  <!-- CSS geral das aulas e recursos visuais -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style-visual-resources.css">
+
+
+  <!-- JS de Includes-->
+  <script src="../js/include.js"></script>
+
+  <!-- JS das Atividades (H5p) -->
+  <script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+
+</head>
+
+<body id="acessibilidade">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="https://campusvirtual.fiocruz.br/" class="scrollto"><img src="../img/logo-cv-white.svg" alt="Ir para o Campus Virtual" title="Campus Virtual"/> </a>
+      </div>
+
+
+    
+      <!-- Menu de Navegação -->
+      <nav id="nav-menu-container">
+        <ul class="nav-menu sf-js-enabled sf-arrows" id="menu-curso1" style="touch-action: pan-y;">
+          <li><a href="#" data-toggle="modal" data-target="#modal-apresentacao">Apresentação do curso</a></li>
+          <li class="menu-has-children"><a href="" class="sf-with-ul">Módulos</a>
+            <ul style="display: none;">
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 1</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Introdução ao novo coronavírus</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo1/aula1.html">Aula 1: Novo coronavírus: Conceitos básicos</a></li>
+                  <li><a href="../modulo1/aula2.html">Aula 2: Transmissão, sintomas e prevenção</a></li>
+                  <li><a href="../modulo1/aula3.html">Aula 3: O que fazer se você estiver doente</a></li>
+                </ul>
+              </li>
+
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 2</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Manejo Clínico</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo2/aula1.html">Aula 1: Organizando sua UBS para a Pandemia</a></li>
+                  <li><a href="../modulo2/aula2.html">Aula 2: Manejo Clínico da COVID-19</a></li>
+                  <li><a href="../modulo2/aula3.html">Aula 3: Como conduzir isolamento domiciliar</a></li>
+                  <li><a href="../modulo2/aula4.html">Aula 4: Protegendo os profissionais de saúde</a></li>
+                </ul>
+              </li>
+
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 3</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Manejo clínico: atenção especializada</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo3/aula1.html">Aula 1: Detecção precoce e classificação da severidade dos pacientes com
+                      síndrome respiratória aguda grave (SRAG)</a></li>
+                  <li><a href="../modulo3/aula2.html">Aula 2: Manejo clínico inicial dos pacientes com síndrome respiratória aguda
+                      grave</a></li>
+                  <li><a href="../modulo3/aula3.html">Aula 3: Investigação de imagem, laboratorial e diagnóstico diferencial da
+                      COVID-19</a></li>
+                  <li><a href="../modulo3/aula4.html">Aula 4: Suporte farmacológico a pacientes com COVID-19</a></li>
+                  <li><a href="../modulo3/aula5.html">Aula 5: Suporte respiratório a pacientes com COVID-19</a></li>
+                  <li><a href="../modulo3/aula6.html">Aula 6: Manejo Clínico da gestante no contexto da COVID-19</a></li>
+                  <li><a href="../modulo3/aula7.html">Aula 7: Procedimentos de proteção e controle de infecção em ambiente
+                      hospitalar</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </li>
+
+          <li><a href="#" data-toggle="modal" data-target="#modal-bibliografia">Bibliografia</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#modal-creditos">Créditos</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#modal-material-complementar">Material Complementar</a></li>
+          <li><a class="cta-btn" href="../faq.html" target="_blank">FAQ</a></li>
+          
+        </ul>
+      </nav>
+      <!-- Fim do Menu de Navegação -->
+
+    </div>
+
+
+    <!--Breadcrumb-->
+    <div id="breadcrumb" class="d-none serie3">
+      <div class="container">
+        <div class="row" data-aos="flip-right">
+          <div class="col-12">
+            <ul class="nav-menu">
+              <li><a href='aula1.html' target='_blank'><i class="fas fa-home"></i> Módulo 2</a> > <a href='aula1.html' target='_blank'>Aula 1</a></li>
+              <li class="float-right">            
+                <div id="font-setting-buttons">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary decrease-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary reset-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary increase-me"><i class="fas fa-font"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!--Fim do Breadcrumb-->  
+
+  </header><!-- #header -->
+
+
+  <main id="main">
+
+    <!--==========================
+      Intro Section
+    ============================-->
+    <section id="intro" class="triangle" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0">
+      <div class="intro-text">
+        <p class="headline-small serie3" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">Módulo 2 | Manejo Clínico: Atenção Básica</p>
+        <h1 data-aos="fade-in" data-aos-duration="850" data-aos-delay="600">COVID-19<br><span>Manejo da infecção causada  pelo novo coronavírus</span></h1>
+        
+      </div>
+    </section><!-- #intro --> 
+
+<!--==========================
+      Bloco 1  - Aula 3
+    ============================-->
+    <section id="bloco1" class="pb-5 pt-5" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="1000">
+      <div class="container">
+        <div class="section-header">
+          <p class="headline-small text-center">Aula 1</p>
+          <h2 class="section-title">Preparando Unidades Básicas de Saúde para a Pandemia de COVID-19</h2>
+          <span class="section-divider middle"></span>
+        </div>
+
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <p>Essa é a Aula 1 do Módulo 2 do curso COVID-19 Fiocruz. </p>
+            <p>Nesta aula, vamos falar da preparação das Unidades Básicas de Saúde: ambiente, equipamentos, triagem e fluxos de pacientes.</p>
+            <p>Ao final, você vai ser capaz de:</p>
+            <ul>
+              <li>Preparar os ambientes físicos para a pandemia</li>
+              <li>Ajustar os fluxos de recepção de pacientes e triagem</li>
+            </ul>
+            <p>O material de referência básico são os Protocolos de Manejo Clínico de COVID-19 preconizados pelo Ministério da Saúde. Lembramos que as orientações e procedimentos em relação ao coronavírus estão em constante mudança, à medida que aprendemos mais sobre a doença. </p>
+            <p>Para se manter atualizado, consulte sempre os links e os materiais de apoio indicados neste curso.</p>
+            
+          </div>
+        </div>
+
+      </div>
+    </section><!--fim do bloco1-->
+
+     <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">A epidemia e os serviços de saúde</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+      
+    <!--==========================
+      Bloco 2 - A epidemia e os serviços de saúde
+    ============================-->
+    <section id="bloco2" class="pb-5 pt-5">
+        <div class="container">
+          <div class="row justify-content-center wow">
+              <!--div class="col-12 col-lg-8 wow fadeIn">
+                <h2 class="text-center">A epidemia e os serviços de saúde</h2>
+                <span class="section-divider middle"></span>
+              </div-->
+          </div><!--Fim da row-->
+
+          <div class="row justify-content-center">
+           <div class="col-12 col-lg-8">
+             <p>O Brasil é um país continental. Por isso, a dinâmica da pandemia por COVID-19 irá variar de acordo com o porte dos municípios, características e densidades populacionais, organização dos serviços de saúde, volume de viajantes nacionais e internacionais e com as medidas de contenção locais.</p>
+             <p>A primeira manifestação de surto local da pandemia é o aumento do número de pessoas apresentando Síndrome Gripal. </p>
+             <p>A Síndrome Gripal causada pelo novo coronavírus é caracterizada pela presença de ao menos dois dos seguintes sintomas: tosse, dispnéia, febre, calafrios, mialgia, cefaléia, dor de garganta, alterações recentes do olfato e do paladar. Pacientes com tosse ou dispnéia de início há menos de 15 dias devem ser considerados suspeitos, mesmo na ausência dos outros sintomas.</p>
+             <p>Outros sintomas comuns são coriza, congestão nasal, náuseas, vômitos, dor abdominal, diarreia.</p>
+             <p>Os casos leves devem ser acompanhados pela Atenção Primária (APS), com isolamento domiciliar, e casos graves devem ser atendidos na Atenção Especializada e Centros de Referência.</p>
+             <p>Isso é fundamental para reduzir o contágio e utilizar os recursos do sistema de saúde da melhor forma possível.</p>
+            </div>
+           </div><!--fim da row-->
+         </div><!--fim do container-->
+    </section><!--fim do bloco2-->
+            
+	<!--==========================
+      Bloco 3  - O papel das Unidades Básicas de Saúde
+    ============================-->
+    <section id="bloco3" class="pb-5 pt-5">
+	    <div class="container">
+	        <div class="row justify-content-center">
+	          <div class="col-12 col-lg-8">
+	            <div class="wow fadeInLeft" data-wow-duration="0.5s">
+	              <h2 class="text-center">O papel das Unidades Básicas de Saúde</h2>
+	              <span class="section-divider middle"></span>
+	            </div>
+	          </div>
+	        </div>
+
+	        <div class="row justify-content-center">
+		        <div class="col-12 col-lg-8">
+		            <p> As UBS devem assumir papel resolutivo frente ao manejo diagnóstico e terapêutico de pessoas com suspeita de infecção respiratória caracterizada como Síndrome Gripal, causada por COVID-19 ou não. Serão acompanhados nas UBS os casos leves e os moderados sem fatores de risco associados. Deve-se realizar o encaminhamento rápido e adequado dos casos graves, mantendo a coordenação do cuidado./p>
+
+		            <p>As UBS devem se organizar para:</p>
+		            <ul>
+		              <li>Identificar os casos com sintomas de Síndrome Gripal já na recepção, evitando o contágio dos profissionais de saúde e demais pacientes (todo paciente considerado caso suspeito de Síndrome Gripal será abordado como caso suspeito de COVID-19);</li>
+		              <li>Classificar o caso e estratificar gravidade;</li>
+		              <li>Nos casos leves e moderados, realizar manejo clínico e isolamento domiciliar; </li>
+                  <li>Encaminhar para serviço de referência os casos com fatores de risco associados.</li>
+		              <li>Nos casos graves, estabilizar e encaminhar imediatamente ao serviço de urgência;</li>
+		              <li>Vigilância local de saúde: notificação, prevenção comunitária e vigilância ativa.</li>
+		            </ul>
+		        </div><!--fim da coluna-->
+	        </div><!-- fim da row-->
+
+	        <div class="row justify-content-center serie3 mt-5">
+	         <div class="col-12 col-lg-8 box-quote option1">
+	            <h3>Atenção:</h3>
+	              <ol>
+		              <li>Realizar triagem por Telemedicina (conforme será apresentado na aula 3); </li>
+                  <li>Estabelecer o espaço da recepção, espera e isolamento preferencialmente em áreas externas ou tendas, com definição de porta de entrada distinta e totalmente independente para os casos suspeitos de COVID-19 que necessitem de atendimento de urgência no interior das UBS;</li>
+                   <li>Limitar o acesso à área interna comum das unidades de saúde a pacientes sem sintomas respiratórios agudos, cuja demanda de cuidados de saúde não possa ser atendida na área externa;</li>
+                   <li>Evitar manipulação desnecessária dos pacientes (Não realizar aferição de sinais vitais ou qualquer rotina de manuseio dos pacientes em pré-consulta pelo técnico de enfermagem/ACS);</li>
+                   <li>Utilizar adequadamente os Equipamentos de Proteção Individuais (EPIs);</li>
+                   <li>Realizar frequentemente a limpeza e assepsia com álcool a 70% dos objetos, como as cadeiras em que os pacientes sentam, e dos locais de atendimento.</li>
+	              </ol>
+	       	</div><!--fim da coluna-->
+	       </div><!-- fim da row-->
+	    </div><!-- fim do container-->
+    </section><!--fim do bloco3-->
+ 
+<!--==========================
+      Bloco 4  - Organizando a UBS
+    ============================-->
+    <section id="bloco4" class="section-bg2">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-lg-8">
+					<div class="wow fadeInLeft" data-wow-duration="0.5s">
+						<h2 class="text-center">Organizando a UBS</h2>
+						<span class="section-divider middle"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+				<div class="col-12 col-lg-8">
+					<h4 class="mb-5"> Manejo diagnóstico e terapêutico de pessoas com suspeita de infecção respiratória caracterizada como Síndrome Gripal</h4>
+					<p>Todos os casos de Síndrome Gripal devem ser considerados casos suspeitos de COVID-19. A conduta desses casos independe da investigação etiológica, visto que o manejo do paciente é centrado no alívio e controle dos sintomas apresentados e na adoção de medidas de isolamento e prevenção de contágio do vírus a outras pessoas.  </p>
+
+          <p>Atualmente já existem vacinas contra a COVID-19 disponíveis no Brasil e no mundo. A APS possui alta capacidade para a rápida imunização da população, a depender da disponibilidade e distribuição de vacinas no país. A vacinação pelas equipes de APS requer organização da UBS para vacinação; treinamento específico já que são utilizadas diferentes vacinas, com diferentes formas de aplicação e período para a segunda dose; registro adequado na caderneta de vacinação; cadastro de vacinados em sistemas de informação; e estratégias de vigilância e monitoramento de possíveis efeitos adversos. Para saber mais sobre a vacinação contra a COVID-19, acesse e se inscreva no curso <a href="https://campusvirtual.fiocruz.br/gestordecursos/hotsite/vacinas-covid19" target="_blank">Vacinação para COVID-19: protocolos e procedimentos técnicos</a> desenvolvido pelo Campus Virtual Fiocruz – em parceria com o Núcleo de Educação em Saúde Coletiva (Nescon/UFMG) com o apoio do Programa Nacional de Imunização do Ministério da Saúde (PNI). </p>
+
+				</div>
+			</div> 
+
+			<div class="row justify-content-center mt-3 mb-5">
+				<div class="col-12 col-lg-8">
+					<p>No vídeo,  Dra. Marília Santini (INI/Fiocruz), fala do diagnóstico da COVID-19.</p>
+					<!--Vídeo-->
+					<div class="embed-responsive embed-responsive-16by9 mt-3 mb-5">
+						<iframe src="https://www.youtube.com/embed/bnX5MdWX0ig" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="640" height="360" frameborder="0"></iframe>
+					</div>
+					<!--p class="reference-title text-center mt-3"></p-->
+					<!--Fim de vídeo--> 
+				</div><!--fim da coluna-->
+			</div><!-- fim da row-->
+		</div><!--fim do container-->
+
+    	<div class="container mt-5">
+	        <div class="row justify-content-center">
+	        	<div class="col-12 col-lg-8">
+		            <div class="wow fadeInLeft" data-wow-duration="0.5s">
+		              <h2 class="text-center">Papel esperado das UBS</h2>
+		              <span class="section-divider middle"></span>
+		            </div>          
+	        	</div>
+	        </div>
+
+			<div class="row justify-content-center mt-3 mb-5">
+				<div class="col-12 col-lg-8">
+					<ol>
+						<li>Identificação de caso suspeito de Síndrome Gripal por COVID-19</li>
+						<li>Implantação de medidas para evitar contágio na UBS</li>
+						<li>Classificação do caso e estratificação da gravidade da Síndrome Gripal</li>
+						<li>Condução de casos leves e moderados sem fatores de risco associados: manejo terapêutico e isolamento domiciliar</li>
+						<li>Condução de casos moderados com fatores de risco associados e casos graves: estabilização e encaminhamento a serviços de urgência/emergência ou hospitalares</li>
+						<li>Notificação imediata</li>
+						<li>Monitoramento clínico</li>
+						<li>Adoção de medidas de prevenção comunitária e apoio à vigilância ativa</li>
+            <li>Desenvolvimento de ações de imunização e campanhas de vacinação dentro do conjunto de atividades de prevenção à COVID-19.</li>
+            <li>Armazenamento e acondicionamento adequado dos imunobiológicos, administração e registro das doses aplicadas. </li>
+            <li>Monitoramento, manejo e notificação de possíveis eventos e reações adversas à vacina para COVID-19.</li>
+
+					</ol>
+				</div>
+			</div><!-- fim da row-->
+		</div><!--fim do container-->
+
+ 		<div class="container mt-5">
+	        <div class="row justify-content-center">
+	          <div class="col-12 col-lg-8">
+	            <div class="wow fadeInLeft" data-wow-duration="0.5s">
+	              <h2 class="text-center">Organização da UBS</h2>
+	              <span class="section-divider middle"></span>
+	            </div>
+	          </div>
+	        </div>
+
+			<div class="row justify-content-center mt-3 mb-5">
+				<div class="col-12 col-lg-8">
+					<p>A Atenção Primária à Saúde é a porta de entrada preferencial do SUS. Durante surtos e epidemias, a APS tem papel fundamental na resposta global à doença em questão.  A APS é responsável por oferecer um atendimento resolutivo, com grande potencial de identificação precoce de casos graves que devem ser manejados em serviços especializados.</p>
+					<p>A UBS deve: </p>
+
+					<ul>
+					<li>Verificar a situação de suprimento dos insumos necessários ao combate da pandemia descritos neste curso e nos protocolos do Ministério da Saúde.</li>
+					<li>Informar à equipe caso haja indisponibilidade de algum recurso e implantar medidas compensatórias</li>
+					<li>Organizar o fluxo de pacientes e preparar o ambiente em conformidade com o preconizado</li>
+					<li>Disponibilizar à equipe as informações sobre a regulação assistencial e unidades de referência para casos graves e a pacientes com fatores de risco.</li>
+					</ul>
+
+          <p>Para saber sobre a organização da UBS para a vacinação contra a COVID-19, acesse e se inscreva no curso <a href="https://campusvirtual.fiocruz.br/gestordecursos/hotsite/vacinas-covid19" target="_blank">Vacinação para COVID-19: protocolos e procedimentos técnicos</a> desenvolvido pelo Campus Virtual Fiocruz – em parceria com o Núcleo de Educação em Saúde Coletiva (Nescon/UFMG) com o apoio do Programa Nacional de Imunização do Ministério da Saúde (PNI). </p>
+				</div>
+			</div><!-- fim da row-->
+		</div><!--fim do container-->
+    </section><!--fim do bloco4-->
+
+    <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Atendimento</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+
+      Bloco 5 - Tratamento
+
+    ============================-->
+	<section id="bloco5" class="pb-5 pt-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-lg-8">
+				<p>A APS é responsável pelo atendimento resolutivo, pela longitudinalidade e coordenação do cuidado dos pacientes com Síndrome Gripal. Por isso, o primeiro passo na cascata de manejo da COVID-19 é a identificação de casos sintomáticos de Síndrome Gripal. </p>
+				</div>
+			</div><!--fim da row-->
+
+			<div class="row justify-content-center mt-5">
+		      <div class="col-12 col-lg-8">
+		        <div class="wow fadeInLeft" data-wow-duration="0.5s">
+		          <h2 class="text-center">Recepção e triagem dos pacientes</h2>
+		          <span class="section-divider middle"></span>
+		        </div>
+		      </div>
+		    </div>
+
+		    <div class="row justify-content-center mt-3 mb-5">
+		        <div class="col-12 col-lg-5">
+		          <p>A UBS deve se organizar para que todos os pacientes que cheguem, independente do motivo, passem por uma triagem.</p>
+		          <p>A triagem pode ser realizada por recepcionista, porteiro, agente comunitário de saúde ou técnico de enfermagem - em uso de EPI - e consiste ao menos na seguinte pergunta:</p>
+		          <p><strong>Você está com algum desses sintomas: dificuldade para respirar, cansaço, tosse, febre, dor de garganta, falta de ar, dor no corpo, dor de cabeça, calafrios? </strong></p>
+		          <p><strong>Em caso positivo, o paciente é caso suspeito para Síndrome Gripal. </strong></p>
+		        </div>
+
+				<div class="col-12 col-lg-3 order-1 order-lg-2 mb-4 mb-md-0">
+					<img src="../img/modulo2/aula1/thumbs.svg" alt="Sim e Não" width="100%" height="auto" class="rounded mx-auto d-none d-sm-block">
+					<img src="../img/modulo2/aula1/thumbs_mobile.svg" alt="Sim e Não" width="100%" height="auto" class="rounded mx-auto d-block d-sm-none">
+				</div>
+		  	</div><!--fim da row-->
+
+			<div class="row justify-content-center">
+				<div class="col-12 col-lg-8">
+					<p>Se o paciente for caso suspeito para Síndrome Gripal, é preciso que tenha acesso à máscara cirúrgica e que seja orientado quanto à forma correta de utilização. Também devem lhe ser fornecidos meios para a higienização das mãos (álcool gel ou água e sabão) e preparada ao paciente uma área isolada ou sala específica com porta fechada, que seja ventilada.</p>
+					<p>Veja as orientações da Dra. Margareth Dalcolmo, pneumologista e pesquisadora da Fiocruz, sobre como fazer a triagem de pessoas com sintomas de Síndrome Gripal.</p>
+
+					<!--Vídeo-->
+					<div class="embed-responsive embed-responsive-16by9 mt-5 ">
+						<iframe src="https://www.youtube.com/embed/IYly4XnQOrU" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="640" height="360" frameborder="0"></iframe>
+					</div>
+					<!--Fim de vídeo--> 
+				</div>
+			</div>
+		</div><!--fim do container-->
+	</section><!--fim do bloco5-->
+
+<!--==========================
+
+      Bloco 6 - Atendimento Prioritário
+
+    ============================-->
+	<section id="bloco6" class="pb-5">
+	    <div class="container">
+			<div class="row justify-content-center mt-5">
+				<div class="col-12 col-lg-8">
+					<div class="wow fadeInLeft" data-wow-duration="0.5s">
+						<h2 class="text-center">Atendimento prioritário</h2>
+						<span class="section-divider middle"></span>
+					</div>
+				</div>
+			</div>
+
+	        <div class="row justify-content-center mt-3 mb-5" >
+	            <div class="col-12 col-lg-8">
+	              	<p>Dada a letalidade muito mais elevada da COVID-19 entre os idosos, deve-se priorizá-los para o atendimento. Pessoas com doenças crônicas, pessoas com deficiência, gestantes e puérperas também devem ser priorizadas, de acordo com a seguinte classificação:</p>
+	              
+					<!--Início tabela horizontal-->
+					<div class="row mt-3 mb-5">
+						<div class="col-12">
+							<div class="table-responsive serie3" data-aos="fade-up">
+								<table class="table table-bordered">
+									<tbody>
+										<tr class="cor1" style="background-color: #efcecd; border:0px;">
+											<td class="text-left" width="30%" style="border:0px;">
+												<p><strong>Alta vulnerabilidade</strong></p>
+												</td>
+												<td class="text-left" style="border:0px;">
+												<ul>
+													<li>Idosos com mais de 80 anos ou</li>
+													<li>Pessoas com comorbidades que indicam acompanhamento por centro de referência</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr class="cor2" style="background-color: #fef2d0; border:0px;">
+											<td class="text-left" width="30%" style="border:0px;">
+												<p><strong>Vulneráveis</strong></p>
+												</td>
+												<td class="text-left" style="border:0px;">
+												<ul>
+													<li>Idosos com mais de 60 anos ou</li>
+													<li>Pessoas com condições crônicas 
+													(hipertensão, diabetes, câncer, doença respiratória crônica - asma, inclusive)</li>
+													<li>Gestantes e puérperas</li>
+													<li>Pessoas com deficiência</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr class="cor3" style="background-color: #dce9d5; border:0px;">
+											<td class="text-left" width="30%" style="border:0px;">
+												<p><strong>Risco habitual</strong></p>
+												</td>
+												<td class="cor4" style="border:0px;">
+												<ul>
+													<li>Demais pessoas atendidas de acordo com a rotina de acolhimentos</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr class="cor4" style="background-color: #ccdaf5; border:0px;">
+											<td class="text-left" width="30%" style="border:0px;">
+												<p><strong>Consultas eletivas e agendadas</strong></p>
+												</td>
+												<td class="text-left" style="border:0px;">
+												<ul>
+													<li>Avaliar reagendamento</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div><!--fim da coluna-->
+					</div><!--fim da row-->
+					<!--Fim da Tabela horizontal-->         
+					<!--p>Confira o quadro com as comorbidades que indicam acompanhamento:</p-->
+
+					<!--Início tabela horizontal-->
+					<div class="row mt-3 mb-5">
+						<div class="col-12">
+							<div class="table-responsive serie3" data-aos="fade-up">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+										<th class="text-center" colspan="2">Comorbidades que indicam acompanhamento para COVID-19 em Centros de Referência</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="text-center">
+											<td class="text-left" width=50%>
+												<ul>          
+													<li> Doenças cardíacas crônicas</li>
+													<li>Doença cardíaca congênita</li>
+													<li>Insuficiência cardíaca mal controlada</li>
+													<li>Doença cardíaca isquêmica descompensada</li>
+													<li>Doenças respiratórias crônicas</li>
+													<li>DPOC e asma mal controlados</li>
+													<li>Doenças pulmonares intersticiais com complicações</li>
+													<li>Fibrose cística com infecções recorrentes</li>
+													<li> Displasia broncopulmonar com complicações</li>
+													<li> Doenças renais crônicas em estágio avançado (graus 3, 4 e 5)</li>
+												</ul>
+											</td>
+											<td class="text-left">
+												<ul>
+													<li>Pacientes em diálise</li>
+													<li>Imunossuprimidos</li>
+													<li>Transplantados de órgãos sólidos e de medula óssea</li>
+													<li>Imunossupressão por doenças e/ou medicamentos (em vigência de quimioterapia/radioterapia, entre outros medicamentos)</li>
+													<li>Portadores de doenças cromossômicas e com estados de fragilidade imunológica (ex.: Síndrome de Down)
+													<li>Diabetes (conforme avaliação clínica)</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div><!--fim da row-->
+					<!--Fim da Tabela horizontal-->       
+	                   
+					<p>A Dra. Margareth Dalcolmo, pneumologista e pesquisadora da Fiocruz, fala sobre como organizar o fluxo de atendimento:</p>
+
+					<!--Vídeo-->
+					<div class="embed-responsive embed-responsive-16by9 mt-5">
+						<iframe src="https://www.youtube.com/embed/XwRCjkk9zTY" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="640" height="360" frameborder="0"></iframe>
+					</div>
+					<!--Fim de vídeo--> 
+	            </div> <!--Fim da coluna-->
+	      </div><!--fim da row-->
+	    </div><!--fim do container-->
+	</section><!--fim do bloco6-->
+
+  <!--==========================
+
+      Bloco 7 - Medidas e orientações para evitar o contágio
+
+    ============================-->
+	<section id="bloco7" class="pb-5">
+	    <div class="container">
+	  		<div class="row justify-content-center mt-5">
+	          <div class="col-12 col-lg-8">
+	            <div class="wow fadeInLeft" data-wow-duration="0.5s">
+	              <h2 class="text-center">Medidas e orientações para evitar o contágio</h2>
+	              <span class="section-divider middle"></span>
+	            </div>
+	          </div>
+	        </div>
+
+	        <!--Flip Cards 2.0 CSS -->
+	        <div class="row justify-content-center mt-5 mb-5">
+
+	          <!--FlipCard 1-->
+	          <div class="col-12 col-lg-4 mb-5">
+	                <div class="flip-card">
+	                  <input type="checkbox" id="flipcard1" class="more" aria-hidden="true">
+	                  <div class="flip-card-inner">
+	                    <!-- FRENTE -->
+	                    <div class="flip-card-front">
+	                      <div class="card-title">
+	                        <h3>Medidas dos profissionais <br>das UBS</h3>
+	                      </div>
+	                      <div class="card-footer">
+	                        <div class="card-btn">
+	                           <label for="flipcard1" class="button" aria-hidden="true">
+	                                <svg class="ic-virar" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	                                    <g>
+	                                        <g>
+	                                            <path d="M29.8,32.1c-0.4,0-0.9-0.3-1-0.7c-0.2-0.6,0.1-1.1,0.7-1.3c4.5-1.3,7.3-3.5,7.3-5.7c0-1.4-1.1-2.6-2.1-3.3
+	                                                c-0.5-0.3-0.6-1-0.2-1.5c0.3-0.5,1-0.6,1.5-0.2c1.9,1.4,2.9,3.1,2.9,4.9c0,3.2-3.2,6-8.7,7.7C30,32.1,29.9,32.1,29.8,32.1z"/>
+	                                        </g>
+	                                        <path d="M21.8,31l-4.5-3.4c-0.5-0.3-1.1-0.3-1.5,0.2c-0.3,0.5-0.3,1.1,0.2,1.5l2.7,2c-4.2-0.1-8-0.9-11-2.2c-2.9-1.3-4.6-3-4.6-4.7
+	                                            c0-1.6,1.5-2.9,2.7-3.7c0.5-0.3,0.6-1,0.3-1.4c-0.3-0.5-1-0.6-1.4-0.3c-2.4,1.5-3.7,3.4-3.7,5.5c0,2.6,2.1,4.9,5.8,6.6
+	                                            c2.8,1.3,6.4,2.1,10.2,2.3l-1,0.7c-0.5,0.3-0.6,1-0.3,1.5c0.2,0.3,0.5,0.5,0.9,0.5c0.2,0,0.4-0.1,0.6-0.2l4.5-3.1
+	                                            c0.3-0.2,0.4-0.5,0.5-0.8C22.3,31.5,22.1,31.2,21.8,31z"/>
+	                                        </g>
+	                                    <g>
+	                                        <path d="M29.5,38.5h-18c-2.2,0-4-1.8-4-4v-27c0-2.2,1.8-4,4-4h18c2.2,0,4,1.8,4,4v27C33.5,36.7,31.7,38.5,29.5,38.5z M11.5,5.5
+	                                            c-1.1,0-2,0.9-2,2v27c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2v-27c0-1.1-0.9-2-2-2H11.5z"/>
+	                                    </g>
+	                                </svg>
+	                            </label>
+	                        </div>
+	                      </div>
+	                    </div>
+
+	                    <!-- VERSO -->
+	                    <div class="flip-card-back">
+	                      <div class="card-title">
+	                        <p>Medidas dos profissionais <br>das UBS</p>
+	                      </div>
+	                      <div class="card-text">
+	                       <p>Todas as pessoas que procuram a Unidade Básica de Saúde devem ser orientadas em relação ao seu papel na redução de risco de contágio. Devem ser, portanto, orientadas a ligar para Unidade Básica de Saúde ou entrar em contato com o agente comunitário de saúde da sua área antes de se dirigir à unidade. A unidade deve oferecer triagem por telemedicina.<br><br>
+                         Se for necessária a avaliação presencial na UBS, devem ser reforçadas as orientações quanto às medidas de prevenção e redução de risco de transmissão e contágio da COVID-19.<br><br>
+                          Providencie opções de higienização como lavagem das mãos com água e sabão ou álcool a 70%.<br><br>
+                          Garantir o uso adequado de máscaras e se for o caso, fornecer máscaras cirúrgicas aos pacientes na UBS. 
+                          </p>
+	                      </div>
+	                      <div class="card-footer">
+	                        <label for="flipcard1" class="button return" aria-hidden="true">
+	                                <i class="fas fa-arrow-left"></i>
+	                            </label>
+	                      </div>
+	                    </div>
+	                  </div>
+	                </div>
+	            </div>
+	            <!--Fim Flipcard 1--> 
+
+	          <!--FlipCard 2-->
+	              <div class="col-12 col-lg-4 mb-5">
+	                <div class="flip-card">
+	                  <input type="checkbox" id="flipcard2" class="more" aria-hidden="true">
+	                  <div class="flip-card-inner">
+	                    <!-- FRENTE -->
+	                    <div class="flip-card-front">
+	                      <div class="card-title">
+	                        <h3>Orientações aos pacientes</h3>
+	                      </div>
+	                      <div class="card-footer">
+	                        <div class="card-btn">
+	                           <label for="flipcard2" class="button" aria-hidden="true">
+	                                <svg class="ic-virar" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	                                    <g>
+	                                        <g>
+	                                            <path d="M29.8,32.1c-0.4,0-0.9-0.3-1-0.7c-0.2-0.6,0.1-1.1,0.7-1.3c4.5-1.3,7.3-3.5,7.3-5.7c0-1.4-1.1-2.6-2.1-3.3
+	                                                c-0.5-0.3-0.6-1-0.2-1.5c0.3-0.5,1-0.6,1.5-0.2c1.9,1.4,2.9,3.1,2.9,4.9c0,3.2-3.2,6-8.7,7.7C30,32.1,29.9,32.1,29.8,32.1z"/>
+	                                        </g>
+	                                        <path d="M21.8,31l-4.5-3.4c-0.5-0.3-1.1-0.3-1.5,0.2c-0.3,0.5-0.3,1.1,0.2,1.5l2.7,2c-4.2-0.1-8-0.9-11-2.2c-2.9-1.3-4.6-3-4.6-4.7
+	                                            c0-1.6,1.5-2.9,2.7-3.7c0.5-0.3,0.6-1,0.3-1.4c-0.3-0.5-1-0.6-1.4-0.3c-2.4,1.5-3.7,3.4-3.7,5.5c0,2.6,2.1,4.9,5.8,6.6
+	                                            c2.8,1.3,6.4,2.1,10.2,2.3l-1,0.7c-0.5,0.3-0.6,1-0.3,1.5c0.2,0.3,0.5,0.5,0.9,0.5c0.2,0,0.4-0.1,0.6-0.2l4.5-3.1
+	                                            c0.3-0.2,0.4-0.5,0.5-0.8C22.3,31.5,22.1,31.2,21.8,31z"/>
+	                                        </g>
+	                                    <g>
+	                                        <path d="M29.5,38.5h-18c-2.2,0-4-1.8-4-4v-27c0-2.2,1.8-4,4-4h18c2.2,0,4,1.8,4,4v27C33.5,36.7,31.7,38.5,29.5,38.5z M11.5,5.5
+	                                            c-1.1,0-2,0.9-2,2v27c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2v-27c0-1.1-0.9-2-2-2H11.5z"/>
+	                                    </g>
+	                                </svg>
+	                            </label>
+	                        </div>
+	                      </div>
+	                    </div>
+
+	                    <!-- VERSO -->
+	                    <div class="flip-card-back">
+	                      <div class="card-title">
+	                        <p>Orientações aos pacientes</p>
+	                      </div>
+	                      <div class="card-text">
+	                        <p>Evite ao máximo tocar nos olhos, nariz e boca. Evite tocar em superfícies e objetos enquanto aguarda. Lave as mãos caso toque em superfícies, objetos ou na face.<br><br>
+	                       Se estiver espirrando ou tossindo, cubra o rosto com o cotovelo<br><br>
+	                Mantenha-se distante (cerca de 1 a 2 metros) de outras pessoas<br><br>
+                         Procure atendimento por telemedicina antes de se dirigir a Unidade Básicas de Saúde. Informe-se entrando em contato com sua UBS ou Prefeitura municipal.<br><br>
+                      Use máscara ao sair de casa. Lave as mãos antes de sair de casa.</p>
+
+	                      </div>
+	                      <div class="card-footer">
+	                        <label for="flipcard2" class="button return" aria-hidden="true">
+	                                <i class="fas fa-arrow-left"></i>
+	                            </label>
+	                      </div>
+	                    </div>
+	                  </div>
+	                </div>
+	            </div>
+	            <!--Fim Flipcard 2-->    
+	        </div> 
+	      	<!--Fim de Flip Cards CSS -->  
+
+	        <div class="row mb-5 mt-5 serie3 justify-content-center">
+	          <div class="col-12 col-lg-8">
+	            <p>Equipes de saúde que fazem visitas domiciliares também precisam ficar atentas às medidas de proteção.</p>
+	            <p>A Dra. Margareth Dalcolmo, pneumologista e pesquisadora da Fiocruz, fala dos cuidados para visitas domiciliares e explica sobre as medidas de proteção e uso de máscaras. Confira:</p>
+
+				<!--Vídeo-->
+				<div class="embed-responsive embed-responsive-16by9 mt-5">
+					<iframe src="https://www.youtube.com/embed/t91N14nNMmU" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="640" height="360" frameborder="0"></iframe>
+				</div>
+				<!--Fim de vídeo--> 
+	          </div>
+	        </div>
+	    </div><!--fim do container-->
+	</section><!--fim do bloco7-->
+
+  <!--==========================
+
+      Bloco 8 - Fluxo de atendimento
+
+    ============================-->
+	<section id="bloco7" class="pb-5">
+		<div class="container">
+				<div class="row justify-content-center mt-5">
+		      <div class="col-12 col-lg-8">
+		        <div class="wow fadeInLeft" data-wow-duration="0.5s">
+		          <h2 class="text-center">Fluxo de atendimento</h2>
+		          <span class="section-divider middle"></span>
+		        </div>
+		      </div>
+		    </div>
+
+		    <div class="row mb-5 mt-5 serie3 justify-content-center">
+		      <div class="col-12 col-lg-8">
+		        <p>A equipe de saúde deve atuar de forma integrada, com apoio entre todos os profissionais, facilitando o fluxo de informação e decisão.</p>
+		        <p>O atendimento deve ser realizado prioritariamente por telefone. Caso a pessoa esteja na Unidade Básica de Saúde e precise de atendimento, o fluxo de atendimento <strong>Fast Track</strong> proposto pelo Ministério de Saúde é:</p>
+
+				<!--Início tabela horizontal-->
+				<div class="row mt-3 mb-5">
+					<div class="col-12">
+						<div class="table-responsive serie3" data-aos="fade-up">
+							<table class="table table-bordered section-bg">
+								<thead>
+									<tr>
+									<th class="text-center">SEQUÊNCIA DE ATENDIMENTO</th>
+									<th class="text-center">INFRAESTRUTURA IDEAL</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr class="text-center">
+										<td class="text-left" width=50%>
+											<ul>
+												<li>Recepção (Porteiro, Recepcionista, ACS ou Técnico de Enfermagem)</li>
+												<li>Avaliação pelo Técnico de Enfermagem</li>
+												<li>Avaliação pelo Enfermeiro</li>
+												<li>Avaliação Médica</li>
+												<li>Estabilização dos casos graves e encaminhamento</li>
+												<li>Manejo dos casos leve, isolamento domiciliar e programação do acompanhamento</li>
+											</ul>
+										</td>
+										<td class="text-left">
+											<p><b>Em área aberta, ventilada, espaçosa</b></p>
+											<ul>
+												<li>Sala de recepção</li>
+												<li>Sala de espera</li>
+												<li>Sala de isolamento</li>
+											</ul>
+											<p><b>A Unidade Básica de Saúde deve ter reservados diferentes ambientes para:</b></p>
+											<ul>
+												<li>Sala de triagem </li>
+												<li>Consultório de Enfermagem</li>
+												<li>Consultório Médico</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div><!--fim da row-->
+				<!--Fim da Tabela horizontal-->
+
+				<p>Todos os espaços destinados ao atendimento de pacientes com suspeita de COVID-19 devem ser preferencialmente amplos e ventilados. Priorizar áreas abertas para a recepção, espera e isolamento desses pacientes, caso necessário.</p>
+
+				<h4 class="mt-3 mb-4 text-center">Fluxo Fast Track</h4>
+
+				<p>O fluxo de pacientes deve proteger de forma adequada os profissionais envolvidos no atendimento e os usuários que buscam serviços de atendimento nas unidades de saúde. Medidas para diminuir a exposição ao Sars-CoV-2 e a circulação de pessoas nestas unidades devem ser adotadas.</p>
+
+				<img src="../img/modulo2/aula1/fluxograma.svg" class="rounded mx-auto d-none d-sm-block pb-5" width="100%" alt="Fluxo do Fast-track">
+				<img src="../img/modulo2/aula1/fluxograma_mobile.svg" class="rounded mx-auto d-block d-sm-none pb-5" width="100%"
+				alt="Fluxo do Fast-track">
+
+				<p>A identificação da gravidade da Síndrome Gripal é a ferramenta primordial para definir a conduta correta para cada caso, seja para manter o acompanhamento do paciente na APS ou para encaminhá-lo aos centros de referência, urgência/emergência ou hospitais.</p>
+
+				<p>Avalie a remarcação de consultas eletivas para o período após o término da pandemia.</p>
+		      </div>
+		    </div>
+		</div><!--fim do container-->
+	</section><!--fim do bloco8-->
+
+    <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Chegamos ao fim da aula</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+  <!--==========================
+
+      Bloco 9 - Conclusão
+
+    ============================-->
+	<section id="bloco9" class="pb-5 pt-5">
+	    <div class="container">
+	      <div class="row justify-content-center">
+	        <div class="col-12 col-lg-8">
+	          <p>Você terminou a Aula 1 do Módulo 2 do curso COVID-19</p>
+	          <p>Nessa aula, você viu como preparar os ambientes físicos para a pandemia e como ajustar os fluxos de recepção de pacientes e triagem.</p>
+	          <p>Na próxima aula, vamos mostrar como preparar os ambientes físicos para a pandemia.</p>
+	          <p>Ajustar os fluxos de recepção de pacientes e triagem. </p>
+	          <p>Siga em frente!</p>
+	        </div>
+	      </div><!--fim da row-->
+	    </div><!--fim do container-->
+	</section><!--fim do bloco9-->
+
+ <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Atividade</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+  <!--==========================
+
+      Bloco 10 - Atividade
+
+    ============================-->
+	<section id="avaliacao" class="quizz-wrapper pb-5 pt-5">
+	    <div class="container">
+	      <div class="row justify-content-center">
+	        <div class="col-12 col-lg-8">
+	           <iframe src="https://educare.fiocruz.br/h5p-content/embed/?contentId=587165814" width="1090" height="1025" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+	        </div>
+	      </div><!--fim da row-->
+	    </div><!--fim do container-->
+	</section><!--fim do bloco10-->
+
+    <!--==========================
+      Bloco de Navegação entre aulas
+    ============================-->
+	<section id="nav-class" >
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 cta-btn-previous text-center">
+				<!-- <p class="cta-btn disabled align-middle">Aula Anterior</p> -->
+					<a class="cta-btn align-middle" href="../modulo1/aula1.html">Ir para o módulo 1</a>
+				</div>
+
+				<div class="col-lg-6 cta-btn-next text-center">
+					<a class="cta-btn align-middle" href="aula2.html">Próxima Aula</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+   <!--==========================
+      Barra de logos
+    ============================-->
+     <!-- Include dos logos -->
+      <div w3-include-html="../barra-de-logos-modulos.html"></div>
+
+  <!--==========================
+      Modais - Bibliografia, Créditos & Material Complementar
+    ============================-->
+
+    <!-- Include da Apresentação -->
+    <div w3-include-html="../apresentacao.html"></div>
+
+     <!-- Include da Bibliografia -->
+    <div w3-include-html="../bibliografia-modulo2.html"></div>
+
+    <!-- Include da Créditos -->
+    <div w3-include-html="../creditos.html"></div>
+
+    <!-- Include de Material Complementar -->
+    <div w3-include-html="../material-complementar.html"></div>
+
+  </main>
+
+  <a href="#" class="back-to-top serie3"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Biblioteca de JavaScripts-->
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/aos/aos.js"></script>
+  <script src="../lib/superfish/hoverIntent.js"></script>
+  <script src="../lib/superfish/superfish.min.js"></script>
+  <script src="../lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="../lib/wow/wow.min.js"></script>
+  <script src="../lib/quiz/modulo1/aula1/quiz.js"></script>
+
+  <!--Ionicons-->
+  <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+
+  <!-- Javascripts-->
+  <script src="../js/main.js"></script>
+  <script src="../js/main-timeline.js"></script>
+
+  <!--Acessibilidade-->
+  <script src="../js/jquery-2.2.1.min.js"></script>
+  <script src="../js/jquery.font-accessibility.min.js"></script>
+
+  <script>
+  $(function(){
+    /* Botões de Acessibilidade */
+    $('#font-setting-buttons').easyView({
+      container: '#acessibilidade',
+      increaseSelector: '.increase-me',
+      decreaseSelector: '.decrease-me',
+      normalSelector: '.reset-me',
+      contrastSelector: '.change-me'
+    });
+
+  });
+  </script>
+
+  <script>
+    includeHTML();
+  </script>
+
+</body>
+</html>

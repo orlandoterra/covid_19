@@ -1,0 +1,106 @@
+/*QUIZ*/
+
+.quizz-wrapper{			
+	box-sizing:border-box;
+	padding-top:20px;
+	padding-bottom: 20px;
+	background-color: #ffffff;
+}
+.quizz-wrapper .quizz{
+	margin: 10px auto;
+	max-width: 360px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,68,87,0.5);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,68,87,0.5);
+		box-shadow: 0px 5px 5px 0px rgba(0,68,87,0.5);
+}
+
+.quizz-wrapper .quizz h4 {
+	color: var(--branco);
+	text-align: center;
+	padding: 20px 5px;
+}
+
+.quizz-wrapper .quizz .card{
+	display: none;
+	min-height: 400px;
+}
+.quizz-wrapper .quizz .card.active{
+	display: block;
+}
+/* Pergunta */
+.quizz-wrapper .quizz .card.question-wrapper .header{
+	background-color: #07d1de; 
+	min-height: 70px;
+	margin-bottom: 30px;
+}
+.quizz-wrapper .quizz .card.question-wrapper .question{
+	box-sizing: border-box;
+	padding: 10px 15px;
+	font-size: 20px;
+}
+.quizz-wrapper .quizz .card.question-wrapper .answers{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 10px 15px;
+}
+.quizz-wrapper .quizz .card.question-wrapper .answers a{
+	margin-bottom: 15px;
+	text-decoration: none;
+	display: block;
+	padding: 5px 10px;			
+	color: #007699;
+	transition: all 0.2s ease-in-out;
+}
+.quizz-wrapper .quizz .card.question-wrapper .answers a:hover{
+	text-decoration: underline;
+	background-color: #007699;
+	color: #fff;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,68,87,0.5);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,68,87,0.5);
+		box-shadow: 0px 5px 5px 0px rgba(0,68,87,0.5);
+}
+
+/* Resposta */
+.quizz-wrapper .quizz .card.answer .header{
+	min-height: 70px;
+	box-sizing: border-box;
+	padding: 10px 15px;
+	font-size: 20px;
+	color:#fff;
+}
+.quizz-wrapper .quizz .card.answer .answer{
+	box-sizing: border-box;
+	padding: 10px 15px;
+}
+.quizz-wrapper .quizz .card.answer .reset{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.quizz-wrapper .quizz .card.answer .reset a{
+	text-decoration: none;
+	font-size: 16px;
+	font-family: 'Montserrat', serif;
+	font-weight: 600;
+	color: #007699;
+}
+.quizz-wrapper .quizz .card.answer .reset a:hover{
+	text-decoration: underline;
+}
+.quizz-wrapper .quizz .card.answer .reset h1{
+	font-size: 30px;
+	font-weight: 700;
+	color: #2ecc71;
+}
+/* Resposta Certa */
+.quizz-wrapper .quizz .card.answer.true .header{
+	background-color: #2ecc71;
+}
+/* Resposta Errada */
+.quizz-wrapper .quizz .card.answer.false .header{
+	background-color: #e74c3c;
+}

@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84826737-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-84826737-6');
+  </script>
+
+  <meta charset="utf-8">
+  <title>Módulo 1 | Aula 2 - Transmissão, Sintomas, Diagnóstico e Prevenção</title>
+  <meta content="index, follow" name="robots">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Ciência, Fiocruz, Curso, Ciência Aberta" name="keywords">
+  <meta content="Módulo 1: Introdução ao novo coronavírus; Aula 2: Transmissão, Sintomas, Diagnóstico e Prevenção" name="description">
+
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/8bfaea11f7.js" crossorigin="anonymous"></script>
+
+  <!-- Favicons -->
+  <link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/favicon.ico" rel="icon">
+  <link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/indice.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap CSS --> 
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Biblioteca CSS -->
+  <link href="../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet"><!--Ionicons-->
+   <link href="../lib/aos/aos.css" rel="stylesheet">
+  <link href="../lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="../lib/quiz/modulo1/aula1/quiz.css" rel="stylesheet">
+
+  <!-- CSS geral das aulas e recursos visuais -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style-visual-resources.css">
+
+  <!-- JS de Includes-->
+  <script src="../js/include.js"></script>
+
+  <!-- JS das Atividades (H5p) -->
+  <script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+
+</head>
+
+<body id="acessibilidade">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="https://campusvirtual.fiocruz.br/" class="scrollto"><img src="../img/logo-cv-white.svg" alt="Ir para o Campus Virtual" title="Campus Virtual"/> </a>
+      </div>
+
+     <!-- Menu de Navegação -->
+      <nav id="nav-menu-container">
+        <ul class="nav-menu sf-js-enabled sf-arrows" id="menu-curso1" style="touch-action: pan-y;">
+          <li><a href="#" data-toggle="modal" data-target="#modal-apresentacao">Apresentação do curso</a></li>
+          <li class="menu-has-children"><a href="" class="sf-with-ul">Módulos</a>
+            <ul style="display: none;">
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 1</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Introdução ao novo coronavírus</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo1/aula1.html">Aula 1: Novo coronavírus: Conceitos básicos</a></li>
+                  <li><a href="../modulo1/aula2.html">Aula 2: Transmissão, sintomas e prevenção</a></li>
+                  <li><a href="../modulo1/aula3.html">Aula 3: O que fazer se você estiver doente</a></li>
+                </ul>
+              </li>
+
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 2</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Manejo Clínico</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo2/aula1.html">Aula 1: Organizando sua UBS para a Pandemia</a></li>
+                  <li><a href="../modulo2/aula2.html">Aula 2: Manejo Clínico da COVID-19</a></li>
+                  <li><a href="../modulo2/aula3.html">Aula 3: Como conduzir isolamento domiciliar</a></li>
+                  <li><a href="../modulo2/aula4.html">Aula 4: Protegendo os profissionais de saúde</a></li>
+                </ul>
+              </li>
+
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 3</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Manejo clínico: atenção especializada</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo3/aula1.html">Aula 1: Detecção precoce e classificação da severidade dos pacientes com
+                      síndrome respiratória aguda grave (SRAG)</a></li>
+                  <li><a href="../modulo3/aula2.html">Aula 2: Manejo clínico inicial dos pacientes com síndrome respiratória aguda
+                      grave</a></li>
+                  <li><a href="../modulo3/aula3.html">Aula 3: Investigação de imagem, laboratorial e diagnóstico diferencial da
+                      COVID-19</a></li>
+                  <li><a href="../modulo3/aula4.html">Aula 4: Suporte farmacológico a pacientes com COVID-19</a></li>
+                  <li><a href="../modulo3/aula5.html">Aula 5: Suporte respiratório a pacientes com COVID-19</a></li>
+                  <li><a href="../modulo3/aula6.html">Aula 6: Manejo Clínico da gestante no contexto da COVID-19</a></li>
+                  <li><a href="../modulo3/aula7.html">Aula 7: Procedimentos de proteção e controle de infecção em ambiente
+                      hospitalar</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </li>
+
+          <li><a href="#" data-toggle="modal" data-target="#modal-bibliografia">Bibliografia</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#modal-creditos">Créditos</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#modal-material-complementar">Material Complementar</a></li>
+          <li><a class="cta-btn" href="../faq.html" target="_blank">FAQ</a></li>
+          
+        </ul>
+      </nav>
+      <!-- Fim do Menu de Navegação -->
+
+    </div>
+
+
+    <!--Breadcrumb-->
+    <div id="breadcrumb" class="d-none serie3">
+      <div class="container">
+        <div class="row" data-aos="flip-right">
+          <div class="col-12">
+            <ul class="nav-menu">
+              <li><a href='aula1.html' target='_blank'><i class="fas fa-home"></i> Módulo 1</a> > <a href='aula2.html' target='_blank'>Aula 2</a></li>
+              <li class="float-right">            
+                <div id="font-setting-buttons">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary decrease-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary reset-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary increase-me"><i class="fas fa-font"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!--Fim do Breadcrumb-->  
+
+  </header><!-- #header -->
+
+
+  <main id="main">
+
+    <!--==========================
+      Intro Section
+    ============================-->
+    <section id="intro" class="triangle" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0">
+      <div class="intro-text">
+        <p class="headline-small serie3" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">Módulo 1: Introdução ao novo coronavírus</p>
+        <h1 data-aos="fade-in" data-aos-duration="850" data-aos-delay="600">COVID-19<br><span>Manejo da infecção causada  pelo novo coronavírus</span></h1>
+        
+      </div>
+
+    </section><!-- #intro --> 
+
+<!--==========================
+      Bloco 1  - Aula 2
+    ============================-->
+      <section id="bloco1" class="pb-5 pt-5" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="1000">
+      <div class="container">
+        <div class="section-header">
+          <p class="headline-small text-center">Aula 2</p>
+          <h2 class="section-title">Transmissão, Sintomas, Diagnóstico e Prevenção</h2>
+          <span class="section-divider middle"></span>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <p>Essa é a Aula 2 do Módulo 1 do curso COVID-19 Fiocruz.</p>
+            <p>Nesta aula, vamos falar sobre as medidas de proteção e combate à COVID-19. As informações e orientações dessa aula sintetizam diretrizes já definidas pela Organização Mundial da Saúde (OMS) e pelo Ministério da Saúde no Brasil. </p>
+            <p>Ao final, você vai ser capaz de:</p>
+            <ul>
+              <li>Descrever o modo de transmissão da doença;</li>
+              <li>Enumerar as medidas básicas de prevenção;</li>
+              <li>Enumerar os sinais e sintomas mais conhecidos;</li>
+              <li>Diferenciar diagnóstico clínico e laboratorial.</li>
+            </ul>
+            <p>Lembramos que as orientações e procedimentos em relação ao coronavírus estão  em constante mudança, à medida que aprendemos mais sobre a doença. </p>
+            <p>Para se manter atualizado, consulte sempre os links e os materiais de apoio indicados neste curso. </p>
+          </div>
+        </div>
+      </div>
+    </section><!--fim do bloco1-->
+
+     <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Transmissão</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+      
+    <!--==========================
+      Bloco 2 - Transmissão
+    ============================-->
+    <section id="bloco2" class="pb-5 pt-5">
+        <div class="container">
+          <!--div class="row justify-content-center wow">
+              <div class="col-12 col-lg-8 wow fadeIn">
+                <h2 class="text-center">Transmissão</h2>
+                <span class="section-divider middle"></span>
+              </div>
+          </div--><!--Fim da row-->
+
+          <div class="row justify-content-center">
+           <div class="col-12 col-lg-8">
+             <p>A maioria das pessoas se infecta com os coronavírus comuns ao longo da vida. Dentre elas, as crianças pequenas são as mais propensas a se infectar com o tipo mais comum do vírus. </p>
+              <p>O SARS-CoV-2 faz parte de uma família de vírus que causam infecções respiratórias e o novo agente do coronavírus provoca a doença chamada de COVID-19.</p>
+             <p>O coronavírus se dissemina rápido, o que pode significar muitos casos com hospitalização num curto espaço de tempo. Isso sobrecarrega o sistema de saúde e pode gerar grandes impactos sociais e econômicos. Por isso,  é fundamental entender como o vírus é  transmitido e prevenir que o mesmo se espalhe.</p>
+
+             <h3 class="text-center pt-5">Tipos de transmissão</h3>
+             <span class="section-divider middle"></span>
+             <p class="text-center">A transmissão do coronavírus ocorreu sob duas circunstâncias</p>
+              <!--Início tabela horizontal-->
+              <div class="row mt-3 my-5">
+                <div class="col-12">
+                  <div class="table-responsive serie3">
+                    <table class="table table-bordered section-bg">
+                      <thead>
+                        <tr>
+                          <th class="text-center">Transmissão local</th>
+                          <th class="text-center">Transmissão comunitária ou sustentada</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="text-center">
+                          <td class="text-left" width=50%>São casos de pessoas que se infectaram e não estiveram em nenhum país com registro da doença, no entanto tiveram contato com outro paciente infectado que trouxe o vírus de fora do país (caso importado).</td>
+                          <td class="text-left">São casos em que não é possível identificar as fontes de transmissão da doença. Esse tipo de transmissão sugere circulação ativa do vírus na comunidade.</td>
+                        </tr>
+                      
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div><!--fim da row-->
+              <!--Fim da Tabela horizontal-->
+
+              <p>Após mais de um ano do início da pandemia, novas formas do coronavírus têm chamado a atenção de cientistas do mundo todo. Isso porque estudos iniciais indicam que as cepas identificadas no Brasil e em países como Reino Unido, África do Sul e Índia podem ser mais transmissíveis e têm capacidade de driblarem o sistema imune e causar reinfecção. A lógica dos tipos de transmissão aplica-se também às novas variantes do coronavírus. </p>
+
+              <p>Para saber mais sobre as novas variantes do coronavírus, veja o vídeo produzido pela Fiocruz:</p>
+
+             
+                <!--Vídeo-->
+                <div class="embed-responsive embed-responsive-16by9 mt-3 mb-5">
+                  <iframe src="https://www.youtube.com/embed/IdCFGiInIxk" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="640" height="360" frameborder="0"></iframe>https://www.youtube.com/watch?v=IdCFGiInIxk&list=PLQ_83_lsoGE6c2nkBKSCJhGpha6FDaYTs&index=15
+                </div>
+                <!--p class="reference-title text-center mt-3">Global COVID-19 Prevention</p>
+                <p class="source text-center">Fonte: <a href="https://www.youtube.com/watch?v=rAj38E7vrS8" target="_blank">Stanford Medicine</a>.</p-->
+                <!--Fim de vídeo--> 
+             
+
+
+              </div> <!--Fim da Coluna -->
+          </div><!--fim da row-->
+
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <p>O coronavírus se dissemina rápido e apresenta alta taxa de hospitalização, com grandes impactos sociais e econômicos.  Por isso, entender como ele é transmitido e prevenir que ele se espalhe é fundamental.</p>
+              <p>A transmissibilidade dos pacientes infectados por coronavírus é de, em média, sete dias após o início dos sintomas. No entanto, dados preliminares sugerem que a transmissão da COVID-19 pode ocorrer no período de incubação, ou seja, até mesmo antes do aparecimento de sinais e sintomas.</p>
+              <!--p>No vídeo, a  Dra. Marília (INI-Fiocruz) explica um pouco mais sobre a transmissão da COVID-19.</p-->
+            </div><!--fim da coluna-->
+
+            <!--div class="col-12 col-lg-4 mb-4 mb-md-0">
+              Vídeo
+              <div class="embed-responsive embed-responsive-16by9 mt-3">
+              <iframe src="https://www.youtube.com/embed/o7OzDLQi81c" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="640" height="360" frameborder="0"></iframe>
+              </div>
+              Fim de vídeo
+            </div> fim da coluna-->
+          </div><!-- fim da row-->
+
+          <div class="row justify-content-center mb-3 my-5">
+            <div class="col-12 col-lg-8 box-quote option1">
+              <p class="mt-3">O período de incubação é o tempo entre a infecção da pessoa pelo vírus e o início dos sintomas da doença.  De acordo com a Organização Mundial da Saúde (OMS), no caso do COVID-19 esse intervalo varia de 1 a 14 dias. </p>
+
+              <p> <strong><span style="background-color: #07d1de; color: #FFF; font-size: 14px; padding: 2px;">5 DIAS</span> é o período médio de incubação da COVID-19</strong><p>
+
+              <p> Essas estimativas estão sendo atualizados à medida que se tem mais dados sobre a doença.</p>
+            </div><!--fim da coluna-->
+          </div><!-- fim da row-->
+
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <p>A sobrecarga dos serviços de saúde, ocasionados pela COVID-19, é um problema e um risco de saúde pública. No vídeo, o Dr. Estevão Portela Nunes (INI-Fiocruz) explica esse fenômeno.</p>
+            </div><!--fim da coluna-->
+
+            <div class="col-12 col-lg-8 mb-4 mb-md-0">
+              <!--Vídeo-->
+              <div class="embed-responsive embed-responsive-16by9 mt-3">
+                <iframe src="https://www.youtube.com/embed/mdxScgzHQ34" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="640" height="360" frameborder="0"></iframe>
+              </div>
+              <!--p class="reference-title text-center mt-3"></p-->
+              <!--Fim de vídeo--> 
+            </div><!--fim da coluna-->
+          </div><!-- fim da row-->
+
+          <div class="row justify-content-center mt-5">
+              <div class="col-12">
+                <h3 class="text-center pt-5">Como se dá a transmissão</h3>
+                <span class="section-divider middle"></span>
+              </div>
+              <div class="col-12 col-lg-4">
+
+                <p>A transmissão dos coronavírus se dá de pessoa para pessoa: pelo ar ou por contato pessoal com secreções contaminadas (gotículas de saliva, espirro, tosse, catarro).</p>
+                <p>O ciclo pode se iniciar com contato pessoal próximo (toque ou aperto de mão) ou contato com objetos ou superfícies contaminadas, seguido de contato com a boca, nariz ou olhos.  </p>
+                <p>Confira no vídeo, como até mesmo ações simples podem transmitir o vírus. </p>
+              </div><!--fim da coluna-->
+
+              <div class="col-12 col-lg-4 mb-4 mb-md-0 section-bg">
+                <!--Vídeo-->
+                <div class="embed-responsive embed-responsive-16by9 mt-3">
+                  <iframe src="https://www.youtube.com/embed/rAj38E7vrS8" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="640" height="360" frameborder="0"></iframe>
+                </div>
+                <p class="reference-title text-center mt-3">Global COVID-19 Prevention</p>
+                <p class="source text-center">Fonte: <a href="https://www.youtube.com/watch?v=rAj38E7vrS8" target="_blank">Stanford Medicine</a>.</p>
+                <!--Fim de vídeo--> 
+              </div><!--fim da coluna-->
+
+              <div class="col-12 col-lg-8 mt-5">
+                <p>Como você viu no vídeo, a transmissão rápida provocou, também, um certo pânico. E este é o momento que vivemos hoje. </p>
+                
+                <p> Apesar disso, é possível reduzir a transmissão do coronavírus com as medidas de prevenção.</p>
+
+                <p>§ O CDC - Center for Disease Control and Prevention, agência norte-americana de controle e prevenção de doenças, classificou como baixa a probabilidade de pessoas se contaminarem com o novo coronavírus a partir da superfície de objetos, em publicação de abril de 2021. Neste mesmo documento, a agência reforçou que a exposição a gotículas respiratórias presentes no ar é a principal maneira pela qual as pessoas pegam a COVID-19. Entretanto, a desinfecção de superfícies com álcool gel é altamente recomendada para locais internos comunitários onde houve um caso confirmado ou suspeito de COVID-19 nas últimas 24 horas.</p>
+                <br>
+              </div>
+          </div><!-- fim da row-->
+        </div><!--Fim do container-->
+    </section><!-- #bloco2 -->
+
+     <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Medidas de prevenção</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+<!--==========================
+      Bloco 3  - Medidas de prevenção
+    ============================-->
+    <section id="bloco3" class="section-bg2 pb-0 pt-5">
+      <div class="container">
+        <!--div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="wow fadeInLeft" data-wow-duration="0.5s">
+              <h2 class="text-center">Origem dos vírus respiratórios emergentes</h2>
+              <span class="section-divider middle"></span>
+            </div>
+          </div>
+        </div-->
+        <div class="row justify-content-center serie3">
+            <!--Box simples-->
+            <div class="box-quote col-12 col-lg-8 mb-3 section-bg">
+          
+              <div class="row">
+                <div class="col-12 col-md-4 text-center">
+                <img class="mx-auto d-block img-fluid aos-init aos-animate" data-aos="flip-left" src="../img/modulo1/aula2/ic1.png" alt="" width="140">
+                <p>Lave as mão com frequência - use água e sabão ou álcool gel. Siga a sequência de lavagem, que deve durar pelo menos 20 segundos.</p>
+              </div>
+
+              <div class="col-12 col-md-4 text-center">
+                <img class="mx-auto d-block img-fluid aos-init aos-animate" data-aos="flip-left" src="../img/modulo1/aula2/ic2.png" alt="" width="140">
+                <p>Evite tocar mucosas de olhos, nariz e boca. Cubra o nariz e a boca quando espirrar ou tossir - mas use o cotovelo.</p>
+              </div>
+
+              <div class="col-12 col-md-4 text-center">
+                  <img class="mx-auto d-block img-fluid aos-init aos-animate" data-aos="flip-left" src="../img/modulo1/aula2/ic4.png" alt="" width="140">
+                <p>Utilize lenço descartável para limpar o nariz - use uma vez e coloque no lixo.</p>
+              </div>
+
+              <div class="col-12 col-md-4 text-center">
+                  <img class="mx-auto d-block img-fluid aos-init aos-animate" data-aos="flip-left" src="../img/modulo1/aula2/ic5.png" alt="" width="140">
+                <p>Não compartilhe objetos de uso pessoal, como talheres, pratos, copos ou garrafas.</p>
+              </div>
+
+              <div class="col-12 col-md-4 text-center">
+                 <img class="mx-auto d-block img-fluid aos-init aos-animate" data-aos="flip-left" src="../img/modulo1/aula2/ic7.png" alt="" width="140">
+                <p>Mantenha os ambientes bem ventilados.</p>
+              </div>
+
+               <div class="col-12 col-md-4 text-center">
+                  <img class="mx-auto d-block img-fluid aos-init aos-animate" data-aos="flip-left" src="../img/modulo1/aula2/ic6.png" alt="" width="140">
+                <p>Evite aglomerações.</p>
+              </div>
+
+              </div>
+
+              <!--div class="row justify-content-center serie3 mb-3">
+                  <p class="text-center pt-5" style="width: 60%;"><strong>Importante: </strong>Lave as mãos sempre após contato direto com pessoas doentes e após tossir ou espirrar.</p>
+                </div-->
+            </div>
+            <!--Fim de Box simples-->
+              
+            <div class="justify-content-center text-center">
+                 <p class="source">Fonte: Ministério da Saúde</p><br>
+                 <p>Assista os vídeos sobre <a href="https://www.youtube.com/watch?v=vaddcQLSWwU"  target="_blank">lavagem correta das mãos</a> e <a href="https://www.youtube.com/watch?v=bUEQrefXzjI" target="_blank">etiquetas de higiene</a>.</p>
+
+
+            </div>
+
+            <div>
+
+            </div>
+        </div> 
+      </div><!--fim do container-->
+    </section><!--fim do bloco3-->
+
+
+     <!--==========================
+      Bloco 4  - 
+    ============================-->
+    <section id="bloco4" class="pb-5 pt-0">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <div class="col-12">
+                <h3 class="text-center pt-5">Uso de máscaras</h3>
+                <span class="section-divider middle"></span>
+              </div>
+              <p>O uso adequado das máscaras juntamente ao distanciamento físico é uma medida essencial no combate à pandemia já que a máscara atua como barreira física, impedindo que partículas aspiradas entrem diretamente em contato com o nariz e com a boca e que os aerossóis emitidos ao respirarmos, contaminem o ambiente. </p>
+
+              <p>A função, portanto, é dupla: as pessoas ficam menos expostas à contaminação do ambiente e oferecem menor risco de transmissão caso estejam infectadas. </p>
+
+              <p>Atualmente existem diversos tipos de máscaras disponíveis no mercado. O ponto principal é escolher uma máscara que se encaixe perfeitamente ao rosto. No entanto, existem diferenças quanto ao tipo de máscara e melhor recomendação de uso. </p>
+
+              <div class="row justify-content-center my-5">
+                  <div class="col-12 ">
+                     <img src="../img/modulo1/aula2/img1.jpg" alt="Como usar máscaras" width="100%" height="auto" alt="Princípios básicos de como usar uma máscara">
+                    <p class="source text-center mt-3">Princípios básicos de como usar uma máscara - Fonte: <a href="https://www.ufpr.br/portalufpr/noticias/mascaras-de-tecido-cirurgicas-ou-pff2-cientistas-esclarecem-duvidas-e-garantem-que-sao-a-melhor-medida-de-protecao/" target="_blank">Universidade Federal do Paraná</a></p>
+                  </div>
+                </div>
+
+              <p>No início da pandemia, ainda em 2020, a recomendação era que a população em geral fizesse uso apenas de máscaras de tecido e deixasse as industriais para os profissionais de saúde, pois havia o risco de que houvesse escassez do produto para o uso em hospitais, unidades de pronto atendimento e de atenção primária e especializada em saúde.  Atualmente, entende-se que não há mais esse risco e a indústria tem produzido muito mais. Dessa forma, pessoas que não são profissionais de saúde também podem optar por um desses modelos para uma proteção mais eficaz.</p>
+
+              <p>As máscaras cirúrgicas são facilmente encontradas em farmácias e seguem as normas da Agência Nacional de Vigilância Sanitária (Anvisa) e da Associação Brasileira de Normas Técnicas (ABNT), com garantia de proteção. Em geral, elas possuem duas ou três camadas de diferentes tecidos de polipropileno (TNT), além de um clipe nasal que auxilia o ajuste no rosto. Para que o equipamento fique ainda mais aderido à face, há uma recomendação de se fazer um nó nas alças de orelha no local em que elas se juntam à borda da máscara.</p>
+
+              <p>Para os que apresentam maior exposição devem ser utilizadas máscaras com maior capacidade de proteção, como as do tipo PFF2 (equivalente a N95), vindo em seguida as máscaras cirúrgicas, TNT SMS, TNT simples e algodão multicamadas. A combinação de máscaras cirúrgicas com máscaras de pano multicamadas apresenta também uma maior capacidade de proteção. Saiba mais sobre as máscaras, na matéria do <a href="https://portal.fiocruz.br/sites/portal.fiocruz.br/files/documentos/boletim_covid_2021-semana22e23.pdf" target="_blank">Boletim Observatório COVID-19.</a> </p>
+
+                <div class="row justify-content-center my-5">
+                  <div class="col-12">
+                     <img src="../img/modulo1/aula2/img2.jpg" alt="Teste máscaras" width="100%" height="auto" alt="Como testar se a máscara está protegendo bem?">
+                    <p class="source text-center mt-3">Como testar se a máscara está protegendo bem? - Fonte: <a href="https://www.ufpr.br/portalufpr/noticias/mascaras-de-tecido-cirurgicas-ou-pff2-cientistas-esclarecem-duvidas-e-garantem-que-sao-a-melhor-medida-de-protecao/" target="_blank">Universidade Federal do Paraná</a></p>
+                  </div>
+                </div>
+
+
+               <p> É importante lembrar que as situações que exigem atenção redobrada e máxima proteção são: andar de avião, ônibus, trem ou qualquer outra forma de transporte público, se não houver como manter a distância mínima de um metro e meio das outras pessoas; cuidar de doentes com COVID-19; trabalhar em empregos que exigem interação com um grande número de pessoas; e integrantes do grupo de risco em qualquer circunstância.</p>
+
+                <div class="row justify-content-center my-5">
+                  <div class="col-12">
+                     <img src="../img/modulo1/aula2/img3.jpg" alt="Situações que exigem maior proteção" width="100%" height="auto" alt="Situações que exigem maior proteção">
+                    <p class="source text-center mt-3">Situações que exigem maior proteção - Fonte: <a href="https://www.ufpr.br/portalufpr/noticias/mascaras-de-tecido-cirurgicas-ou-pff2-cientistas-esclarecem-duvidas-e-garantem-que-sao-a-melhor-medida-de-protecao/" target="_blank">Universidade Federal do Paraná</a></p>
+                  </div>
+                </div>
+
+                 <p>Abaixo estão as principais diferenças entre os diferentes tipos de máscaras e as recomendações de uso de cada tipo. </p>
+
+                <!--Slider-->
+                <section id="carousel1" class="carousel slide wow fadeInUp serie3 mb-0 pb-0" data-ride="false"
+                  aria-labelledby="carouselheading">
+                  <div class="row">
+                    <div class="box-quote col-12 p-0">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel1" data-slide-to="1"></li>
+                        <li data-target="#carousel1" data-slide-to="2"></li>
+                        <li data-target="#carousel1" data-slide-to="3"></li>
+                        <li data-target="#carousel1" data-slide-to="4"></li>
+                        <li data-target="#carousel1" data-slide-to="5"></li>
+                      </ol>
+
+                      <div class="carousel-inner">
+                        <article class="carousel-item active p-0">
+                          <div class="row justify-content-center">
+                            <div class="col-12">
+                              <img src="../img/modulo1/aula2/img4.jpg" alt="Máscara de Tecido" width="100%" height="auto">
+                            </div>
+                          </div>
+                        </article>
+
+                        <article class="carousel-item p-0">
+                          <div class="row justify-content-center">
+                            <div class="col-12">
+                              <img src="../img/modulo1/aula2/img5.jpg" alt="Máscaras de Tecido Antiviral" width="100%" height="auto">
+
+                            </div>
+                          </div>
+                        </article>
+
+                        <article class="carousel-item p-0">
+                          <div class="row justify-content-center">
+                            <div class="col-12">
+                              <img src="../img/modulo1/aula2/img6.jpg" alt="Máscaras de Plástico ou Material Firme" width="100%" height="auto">
+
+                            </div>
+                          </div>
+                        </article>
+
+                        <article class="carousel-item p-0">
+                          <div class="row justify-content-center">
+                            <div class="col-12">
+                              <img src="../img/modulo1/aula2/img7.jpg" alt="Máscaras cirúrgicas" width="100%" height="auto">
+
+                            </div>
+                          </div>
+                        </article>
+
+
+                        <article class="carousel-item p-0">
+                          <div class="row justify-content-center">
+                            <div class="col-12">
+                              <img src="../img/modulo1/aula2/img8.jpg" alt="Máscaras PFF2 ou N95" width="100%" height="auto">
+
+                            </div>
+                          </div>
+                        </article>
+
+                        <article class="carousel-item p-0">
+                          <div class="row justify-content-center">
+                            <div class="col-12">
+                              <img src="../img/modulo1/aula2/img9.jpg" alt="Duas máscaras" width="100%" height="auto" alt="">
+
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+
+                      <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                        <span class="sr-only">Próximo</span>
+                      </a>
+                    </div>
+                    <!--Fim do caroussel inner-->
+                  
+                  </div>
+                </section>
+                <!--Fim do Slider-->
+
+                <p class="source text-center mt-0 mb-5"> Fonte: <a href="https://www.ufpr.br/portalufpr/noticias/mascaras-de-tecido-cirurgicas-ou-pff2-cientistas-esclarecem-duvidas-e-garantem-que-sao-a-melhor-medida-de-protecao/" target="_blank">Universidade Federal do Paraná</a></p>
+
+                  <p>Muito se divulgou acerca de um possível tratamento farmacológico, composto por medicamentos indicados no manejo de doenças como malária e artrite reumática, que utilizado antes mesmo da infecção por COVID-19 ou ainda em seu início, impediria o contágio ou as formas graves da doença. No entanto, até o presente momento, em agosto de 2021, não houve comprovação de eficácia para quaisquer medicamentos nesse sentido. Não existe, portanto, tratamento precoce, nem tratamento preventivo. O que existe são medidas de prevenção como o uso da máscara e a vacinação, e o acompanhamento e atendimento imediato, que se dão o quanto antes ocorrer a suspeita para COVID-19. Além disso, o uso de medicamentos sem eficácia comprovada pela ciência pode causar eventos adversos e prejuízos para a saúde. </p>
+
+                  <p>Atualmente já existem vacinas contra a COVID-19 disponíveis no Brasil e no mundo. As vacinas atuam na prevenção, induzindo a criação de anticorpos por parte do sistema imunológico. A vacinação é considerada a abordagem mais promissora para controlar a pandemia da doença causada pelo SARS-CoV-2. Para saber mais, acesse e se inscreva no curso <a href="https://campusvirtual.fiocruz.br/gestordecursos/hotsite/vacinas-covid19" targe="_blank">Vacinação para COVID-19: protocolos e procedimentos técnicos</a> desenvolvido pelo Campus Virtual Fiocruz – em parceria com o Núcleo de Educação em Saúde Coletiva (Nescon/UFMG) com o apoio do Programa Nacional de Imunização do Ministério da Saúde (PNI). </p>
+
+            </div><!--fim da coluna-->
+
+          
+
+          </div><!-- fim da row-->
+        </div><!-- fim do container-->
+    </section><!--fim do bloco4-->
+
+    <!--==========================
+      Bloco 4  - 
+    ============================-->
+    <section id="bloco4" class="section-bg pb-5 pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-4">
+              <p>Além das medidas básicas, o Dr. Estevão Portela Nunes (INI-Fiocruz) ressalta outras ações que também são bastante importantes para a prevenção da doença.</p>
+              <p>Seguir todos os procedimentos para a prevenção nem sempre garante que a pessoa não desenvolva a COVID-19.  Caso isso aconteça, é importante ficar atento aos <strong>sinais e sintomas</strong> que podem surgir.</p>
+            </div><!--fim da coluna-->
+
+            <div class="col-12 col-lg-4 mb-4 mb-md-0">
+              <!--Vídeo-->
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.youtube.com/embed/fZcktcfVZCA" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="640" height="360" frameborder="0"></iframe>
+              </div>
+              <!--p class="reference-title text-center"></p-->
+              <p class="source text-center"></p>
+              <!--Fim de vídeo--> 
+            </div><!--fim da coluna-->
+
+          </div><!-- fim da row-->
+        </div><!-- fim do container-->
+    </section><!--fim do bloco4-->
+
+     <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Sinais e sintomas da COVID-19</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Bloco 5 - Origem do novo coronavírus
+    ============================-->
+    <section id="bloco5" class="pb-5 pt-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+	            <div class="ml-2 mb-2">
+                <p>Os sinais e sintomas da COVID-19 são principalmente respiratórios, semelhantes a um resfriado.  Pode haver também infecção do trato respiratório inferior, como as pneumonias. </p>
+	            	<div class="row justify-content-center">
+			            <div class="col-12 col-lg-9">
+			               <img src="../img/modulo1/aula2/info_sintomas.svg" alt="Sintomas" width="100%" height="auto" alt="Principais sinais e sintomas da COVID-19">
+			              <p class="source text-center">Principais sinais e sintomas da COVID-19 - Fonte: Freepik</p>
+			          	</div>
+		          	</div>
+	            </div>
+
+	            <p>Esses são os sinais e sintomas mais comuns. A infecção pelo SARS-CoV-2 pode variar de casos assintomáticos e manifestações clínicas leves, até quadros moderados, graves e críticos. Há ainda outros como conjuntivite, perda de paladar ou olfato, dor de cabeça etc. O novo coronavírus (SARS-CoV-2) encontra-se continuamente como objeto de estudos e investigações a fim de melhor caracterizar a infecção por ele causada. </p>
+
+            </div> <!--fim da coluna-->
+          </div><!--fim da row-->
+        </div><!--Fim do container-->
+    </section><!-- #bloco5 -->
+
+<!--==========================
+      Bloco 6  - 
+    ============================-->
+    <section id="bloco6" class="section-bg pb-5 pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 row justify-content-center">
+              <p>A Dra. Marilia Santini (INI/Fiocruz) fala sobre a COVID-19</p>
+            </div><!--fim da coluna-->
+
+            <div class="col-12 col-lg-6 mb-4 mb-md-0">
+              <!--Vídeo-->
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.youtube.com/embed/o7OzDLQi81c" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="640" height="360" frameborder="0"></iframe>
+              </div>
+              <!--p class="reference-title text-center">Programa do Canal Saúde exibido em 10 de fevereiro de 2020.</p-->              <!--Fim de vídeo--> 
+            </div><!--fim da coluna-->
+
+          </div><!-- fim da row-->
+        </div><!-- fim do container-->
+    </section><!--fim do bloco6-->
+
+ <!--==========================
+      Bloco 7 - 
+    ============================-->
+    <section id="bloco7" class="pb-5 pt-5">
+      <div class="container">
+          <div class="row justify-content-center">
+	          <div class="col-12 col-lg-8">
+	          	<p>Ao apresentar esses sintomas, não significa que a pessoa tenha a COVID-19.</p>
+
+              <p>Os casos podem ser confirmados a partir de critérios clínicos, epidemiológicos, por meio de exames de imagem e/ou laboratoriais. Apesar da ampliação do acesso, a maior parte dos dados de testagem no Brasil, ainda hoje, refletem os casos mais graves de COVID-19, já que a política prioritária para confirmação da doença é a necessidade de internação ou gravidade do caso.</p>
+
+              <p>Um caso de Síndrome Gripal (SG) é definido como uma pessoa que apresente um quadro respiratório agudo com pelo menos dois dos seguintes sintomas: febre (mesmo que referida), tosse, dor de garganta, coriza, calafrios, distúrbios olfativos ou distúrbios gustativos (e especificidades para crianças, com obstrução nasal e idosos, como confusão mental). Na suspeita da covid-19, a febre pode estar ausente e sintomas gastrointestinais (diarreia) podem estar presentes.</p>
+
+
+             <p> Já para a Síndrome Respiratória Aguda Grave (SRAG), o Ministério da Saúde atualmente utiliza como critério para definição de SRAG que o indivíduo com sintomas de síndrome gripal apresente uma das seguintes manifestações: desconforto respiratório, pressão persistente no tórax, saturação de O2 menor que 95% ou coloração azulada dos lábios ou rosto.</p>
+
+
+            <p>Dessa forma, a avaliação diagnóstica pode seguir as diferentes vias:</p>
+
+            <p><strong>Critério clínico:</strong> caso de Síndrome Gripal (SG) ou Síndrome Respiratória Aguda Grave (SRAG) associado a anosmia ou disgeusia aguda sem outra causa pregressa.</p>
+
+            <p><strong>Critério clínico-epidemiológico:</strong> caso suspeito de SG ou SRAG com histórico de contato próximo ou domiciliar, nos últimos 14 dias anteriores ao aparecimento dos sinais e sintomas, com caso confirmado de COVID -19.</p>
+                          
+            <p><strong>Critério clínico-imagem:</strong> caso de Síndrome Gripal ou Síndrome Respiratória Aguda Grave ou óbito por SRAG que não foi possível ser confirmado por critério laboratorial e que apresente alterações tomográficas indicativas de infecção por SARS-CoV-2. 
+            Critério laboratorial: (i)Resultado detectável para SARS-CoV-2 realizado pelo método RT-PCR, que detecta em amostra de secreções das vias aéreas (nariz e garganta) o vírus SARS-CoV-2, causador da COVID-19; (ii)Resultado reagente em teste de antígeno imunocromatográfico ou de imunofluorescência que detecta o vírus SARS-CoV-2; (iii)Resultado reagente em testes sorológicos (testes rápidos de anticorpos, eletroquimioluminescência, ensaio imunoenzimático, entre outros), que identificam anticorpos produzidos pelo organismo em resposta à infecção pelo SARS-CoV-2.</p>
+
+
+              
+	       	  </div>
+          </div>
+
+  		  <!--Hover Boxes--
+          <div class="row mb-5 mt-5 serie3 justify-content-center">
+	            <--Ítem 1--
+	            <div class="col-12 col-lg-4">
+	              <div class="item-box-2">
+	                <div class="layer">
+	                  <div class="inner">
+	                    <h3><br/>Diagnóstico clínico</h3>
+	                    <i class="fas fa-plus-circle"></i>
+	                    <div class="share-buttons">
+	                      <p class="box-txt">
+	                       O quadro clínico inicial da doença é caracterizado como Síndrome Gripal e depende da investigação clínico-epidemiológica e do exame físico. O diagnóstico clínico não pode atestar com 100% de segurança se a Síndrome Gripal é causada pelo SARS-CoV-2 ou por outro vírus.</p>
+	                    </div>
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
+
+	            <--Ítem 2--
+	            <div class="col-12 col-lg-4">
+	              <div class="item-box-2">
+	                <div class="layer">
+	                  <div class="inner">
+	                    <h3><br/>Diagnóstico laboratorial</h3>
+	                    <i class="fas fa-plus-circle"></i>
+	                    <div class="share-buttons">
+	                      <p class="box-txt">É realizado por laboratório, por meio das técnicas baseadas em biologia molecular. O material é coletado com um “cotonete” - o swab - na garganta ou nas narinas do paciente (swab orofaríngeo).</p>
+	                    </div>
+	                  </div>
+	                </div>
+	              </div>
+
+	            </div>
+
+	           
+
+         
+          </div>--fim da row--
+
+          <--Fim do Hover Boxes-->
+
+          <div class="row justify-content-center">
+          	<div class="col-12 col-lg-8">
+				 <p>O diagnóstico laboratorial é indicado por um profissional de saúde, de acordo com os protocolos de tratamento das Síndromes Gripais. </p>
+          	</div><!--fim da coluna-->
+          </div><!--fim da row-->
+      </div><!--fim do container-->
+    </section><!--fim do bloco7-->
+
+    <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Chegamos ao fim da aula</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+	<!--==========================
+
+      Bloco 8 - Conclusão
+
+    ============================-->
+	<section id="bloco8" class="pb-5 pt-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-lg-8">
+          <p>Você terminou a Aula 2 do Módulo 1 do curso COVID-19</p>
+					<p>Nessa aula, você viu como o coronavírus é transmitido, quais são as medidas de prevenção para conter a transmissão, quais são os sinais e sintomas da doença e como é feito o diagnóstico.</p>
+          <p>Ao ser diagnosticado como caso suspeito ou confirmado da COVID-19, é imprescindível seguir as orientações dos profissionais de saúde. Você vai conhecer essas orientações na próxima aula. </p>
+				</div>
+			</div><!--fim da row-->
+
+		</div><!--fim do container-->
+	</section><!--fim do bloco7-->
+
+ <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Atividade</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+
+	<!--==========================
+
+      Bloco 9 - Atividade
+
+    ============================-->
+	<section id="avaliacao" class="quizz-wrapper pb-5 pt-5">
+		<div class="container">
+			<div class="row justify-content-center">
+
+				<div class="col-12 col-lg-8">
+				
+          <iframe src="https://educare.fiocruz.br/h5p-content/embed/?contentId=1936365802" width="1090" height="1025" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+				</div>
+			</div><!--fim da row-->
+
+		</div><!--fim do container-->
+	</section><!--fim do bloco9-->
+
+  <!--==========================
+      Bloco de Navegação entre aulas
+    ============================-->
+    <section id="nav-class" >
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 cta-btn-previous text-center">
+              <a class="cta-btn align-middle" href="aula1.html">Aula Anterior</a>
+            </div>
+
+            <div class="col-lg-6 cta-btn-next text-center">
+              <a class="cta-btn align-middle" href="aula3.html">Próxima Aula</a>
+          </div>
+        </div>
+    </div>
+    </section>
+
+    <!--==========================
+      Barra de logos
+    ============================-->
+     <!-- Include dos logos -->
+      <div w3-include-html="../barra-de-logos-modulos.html"></div>
+
+  <!--==========================
+      Modais - Bibliografia, Créditos & Material Complementar
+    ============================-->
+
+    <!-- Include da Apresentação -->
+    <div w3-include-html="../apresentacao.html"></div>
+
+     <!-- Include da Bibliografia -->
+    <div w3-include-html="../bibliografia-modulo1.html"></div>
+
+    <!-- Include da Créditos -->
+    <div w3-include-html="../creditos.html"></div>
+
+    <!-- Include da Créditos -->
+    <div w3-include-html="../material-complementar.html"></div>
+
+  </main>
+
+  <a href="#" class="back-to-top serie3"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Biblioteca de JavaScripts-->
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/aos/aos.js"></script>
+  <script src="../lib/superfish/hoverIntent.js"></script>
+  <script src="../lib/superfish/superfish.min.js"></script>
+  <script src="../lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="../lib/wow/wow.min.js"></script>
+  <script src="../lib/quiz/modulo1/aula1/quiz.js"></script>
+
+  <!--Ionicons-->
+  <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+
+  <!-- Javascripts-->
+  <script src="../js/main.js"></script>
+  <script src="../js/main-timeline.js"></script>
+
+  <!--Acessibilidade-->
+  <script src="../js/jquery-2.2.1.min.js"></script>
+  <script src="../js/jquery.font-accessibility.min.js"></script>
+
+  <script>
+  $(function(){
+    /* Botões de Acessibilidade */
+    $('#font-setting-buttons').easyView({
+      container: '#acessibilidade',
+      increaseSelector: '.increase-me',
+      decreaseSelector: '.decrease-me',
+      normalSelector: '.reset-me',
+      contrastSelector: '.change-me'
+    });
+
+  });
+  </script>
+
+  <script>
+      includeHTML();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84826737-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-84826737-6');
+  </script>
+
+  <meta charset="utf-8">
+  <title>Módulo 3 | Aula 4 - Suporte farmacológico</title>
+  <meta content="index, follow" name="robots">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Ciência, Fiocruz, Curso, coronavírus, COVID-19" name="keywords">
+  <meta content="Módulo 3 | Manejo clínico: Casos graves; Aula 4: Suporte farmacológico" name="description">
+
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/8bfaea11f7.js" crossorigin="anonymous"></script>
+
+  <!-- Favicons -->
+  <link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/favicon.ico" rel="icon">
+  <link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/indice.jpg"
+    rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Biblioteca CSS -->
+  <link href="../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet">
+  <!--Ionicons-->
+  <link href="../lib/aos/aos.css" rel="stylesheet">
+  <link href="../lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="../lib/quiz/modulo1/aula1/quiz.css" rel="stylesheet">
+
+  <!-- CSS geral das aulas e recursos visuais -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style-visual-resources.css">
+
+
+  <!-- JS de Includes-->
+  <script src="../js/include.js"></script>
+
+  <!-- JS das Atividades (H5p) -->
+  <script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+
+</head>
+
+<body id="acessibilidade">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="https://campusvirtual.fiocruz.br/portal/formacao-modular/ciencia-aberta" class="scrollto"><img
+            src="../img/logo-cv-white.svg" alt="Ir para o Campus Virtual" title="Campus Virtual" /> </a>
+      </div>
+
+
+
+      <!-- Menu de Navegação -->
+      <nav id="nav-menu-container">
+        <ul class="nav-menu sf-js-enabled sf-arrows" id="menu-curso1" style="touch-action: pan-y;">
+          <li><a href="#" data-toggle="modal" data-target="#modal-apresentacao">Apresentação do curso</a></li>
+          <li class="menu-has-children"><a href="" class="sf-with-ul">Módulos</a>
+            <ul style="display: none;">
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 1</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Introdução ao novo coronavírus</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo1/aula1.html">Aula 1: Novo coronavírus: Conceitos básicos</a></li>
+                  <li><a href="../modulo1/aula2.html">Aula 2: Transmissão, sintomas e prevenção</a></li>
+                  <li><a href="../modulo1/aula3.html">Aula 3: O que fazer se você estiver doente</a></li>
+                </ul>
+              </li>
+
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 2</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Manejo Clínico</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo2/aula1.html">Aula 1: Organizando sua UBS para a Pandemia</a></li>
+                  <li><a href="../modulo2/aula2.html">Aula 2: Manejo Clínico da COVID-19</a></li>
+                  <li><a href="../modulo2/aula3.html">Aula 3: Como conduzir isolamento domiciliar</a></li>
+                  <li><a href="../modulo2/aula4.html">Aula 4: Protegendo os profissionais de saúde</a></li>
+                </ul>
+              </li>
+
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 3</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Manejo clínico: Casos graves</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo3/aula1.html">Aula 1: Detecção precoce e classificação da severidade dos pacientes com
+                      síndrome respiratória aguda grave (SRAG)</a></li>
+                  <li><a href="../modulo3/aula2.html">Aula 2: Manejo clínico inicial dos pacientes com síndrome respiratória aguda
+                      grave</a></li>
+                  <li><a href="../modulo3/aula3.html">Aula 3: Investigação de imagem, laboratorial e diagnóstico diferencial da
+                      COVID-19</a></li>
+                  <li><a href="../modulo3/aula4.html">Aula 4: Suporte farmacológico a pacientes com COVID-19</a></li>
+                  <li><a href="../modulo3/aula5.html">Aula 5: Suporte respiratório a pacientes com COVID-19</a></li>
+                  <li><a href="../modulo3/aula6.html">Aula 6: Manejo Clínico da gestante no contexto da COVID-19</a></li>
+                  <li><a href="../modulo3/aula7.html">Aula 7: Procedimentos de proteção e controle de infecção em ambiente
+                      hospitalar</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="#" data-toggle="modal" data-target="#modal-bibliografia">Bibliografia</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#modal-creditos">Créditos</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#modal-material-complementar">Material Complementar</a></li>
+          <li><a class="cta-btn" href="../faq.html" target="_blank">FAQ</a></li>
+
+        </ul>
+      </nav>
+      <!-- Fim do Menu de Navegação -->
+
+    </div>
+
+
+    <!--Breadcrumb-->
+    <div id="breadcrumb" class="d-none serie3">
+      <div class="container">
+        <div class="row" data-aos="flip-right">
+          <div class="col-12">
+            <ul class="nav-menu">
+              <li><a href='aula1.html' target='_blank'><i class="fas fa-home"></i> Módulo 3</a> > <a href='aula4.html'
+                  target='_blank'>Aula 4</a></li>
+              <li class="float-right">
+                <div id="font-setting-buttons">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary decrease-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary reset-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary increase-me"><i class="fas fa-font"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fim do Breadcrumb-->
+
+  </header><!-- #header -->
+
+  <main id="main">
+
+    <!--==========================
+      Intro Section
+    ============================-->
+    <section id="intro" class="triangle" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000"
+      data-aos-delay="0">
+      <div class="intro-text">
+        <p class="headline-small serie3" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">Módulo 3 |
+          Manejo clínico: Casos graves</p>
+        <h1 data-aos="fade-in" data-aos-duration="850" data-aos-delay="600">COVID-19<br><span>Manejo da infecção causada
+            pelo novo coronavírus</span></h1>
+
+      </div>
+
+    </section><!-- #intro -->
+
+    <!--==========================
+      Bloco 1  - Aula 4
+    ============================-->
+    <section id="bloco1" class="pb-5 pt-5" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000"
+      data-aos-delay="1000">
+      <div class="container">
+        <div class="section-header">
+          <p class="headline-small text-center">Aula 4</p>
+          <h2 class="section-title">Suporte farmacológico</h2>
+          <span class="section-divider middle"></span>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <p>Esta é a Aula 4 do Módulo 3 do curso COVID-19 Fiocruz.</p>
+            <p>Nesta aula, vamos compartilhar o conhecimento científico atual sobre suporte farmacológico para pacientes
+              com COVID-19.</p>
+            <p>Ao final, você será capaz de:</p>
+            <ul>
+              <li>Reconhecer a importância de estudos clínicos controlados para a identificação de medicamentos que
+                sejam eficazes e seguros no tratamento de doenças, bem como alguns exemplos de estudos em andamento.
+              </li>
+              <li>Conhecer as recomendações atuais de terapias farmacológicas de suporte elaboradas por sociedades de
+                especialistas, com base na evidência científica atual.</li>
+            </ul>
+
+            <p>Os materiais básicos de referência são:</p>
+            <ul>
+              <li><a
+                  href="https://portalarquivos.saude.gov.br/images/pdf/2020/April/14/Protocolo-de-Manejo-Cl--nico-para-o-Covid-19.pdf"
+                  target="_blank">Protocolo de Manejo Clínico da COVID-19 na Atenção Especializada</a> e <a
+                  href="https://portalarquivos.saude.gov.br/images/pdf/2020/April/14/Protocolo-de-Manejo-Cl--nico-para-o-Covid-19.pdf">Protocolo
+                  de Manejo Clínico do coronavírus na Atenção Primária à Saúde (versão 7), preconizados pelo Ministério
+                  da Saúde;</a></li>
+              <li><a href="https://portalarquivos.saude.gov.br/images/pdf/2020/April/13/Diretrizes-COVID-13-4.pdf"
+                  target="_blank">Diretrizes para Diagnóstico e Tratamento da COVID-19 da Secretaria de Ciência,
+                  Tecnologia, Inovação e Insumos Estratégicos em Saúde (SCTIE)</a>; e</li>
+              <li>Plano de Ação para Manejo de Casos de Infecção pelo novo coronavírus (SARS-cov2), do Instituto
+                Nacional de Infectologia Evandro Chagas, da Fundação Oswaldo Cruz (INI/FIOCRUZ).</li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--fim do bloco1-->
+
+    <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Tratamento farmacológico
+              específico: estudos clínicos em andamento</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #call-to-action -->
+
+    <!--==========================
+      Bloco 2 - Tratamento farmacológico
+    ============================-->
+    <section id="bloco2" class="pb-5 pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-lg-8">
+
+            <p> Até o momento (*), não há tratamento específico com efetividade comprovada. O uso de medicamentos
+              específicos contra o SARS-CoV2 deve ser feito dentro de protocolos clínicos e de pesquisa, que resultem de
+              estudos clínicos controlados. </p>
+            <p>O estudo clínico Solidariedade (“Solidarity”), da Organização Mundial da Saúde (OMS), é um exemplo de
+              esforço mundial para acelerar as pesquisas sobre os tratamentos para COVID-19. </p>
+            <p>A coalizão de 90 países tem por objetivo atender a demanda de oferecer tratamento para os quadros mais
+              graves. </p>
+            <p> No Brasil, a Fiocruz integra a coalizão internacional e vai coordenar as pesquisas em 18 hospitais de 12
+              estados. </p>
+            <p> O estudo inclui apenas pacientes internados, maiores de 18 anos e com confirmação para infecção pelo
+              SARS-CoV2 (PCR).</p>
+
+            <div class="box-quote mb-5 p-4">
+              <h4 style="color: var(--azul);">Em busca do tratamento para COVID-19: a importância dos ensaios clínicos
+              </h4>
+              <p class="source" style="font-size:13px;">por Cristiani Vieira Machado, vice-presidente de Educação,
+                Informação e Comunicação da Fiocruz</p>
+
+              <p>Até maio de 2020, não existia medicamento comprovadamente eficaz para o controle da infecção pelo novo
+                coronavírus, embora muitos estudos venham sendo realizados. </p>
+
+              <p>A recomendação do uso de um medicamento depende da realização de pesquisas em diversas fases. Em geral,
+                são realizados testes em laboratório ou “in vitro”, seguidos de estudos em animais e, apenas se ambos
+                tiverem resultados positivos, são realizadas pesquisas com seres humanos.</p>
+
+              <blockquote class="text-left p-4" style="font-size: 18px; color:var(--azul2);"><em>Ensaios clínicos são
+                  estudos realizados com grupos de pessoas com uma determinada condição, visando analisar a eficácia e
+                  segurança de um ou mais medicamentos.</em></blockquote>
+
+              <p>Tais estudos seguem protocolos aprovados por comitês de ética em pesquisa e são desenvolvidos sob
+                condições controladas, em termos de perfil dos pacientes, forma de administração e monitoramento da
+                resposta aos medicamentos. Os ensaios clínicos podem comparar medicamentos entre si com placebo ou com a
+                não administração de medicamento, bem como diferentes doses ou durações de tratamento com um mesmo
+                medicamento.</p>
+
+              <p>Um exemplo de ensaio clínico controlado em busca de tratamento para a COVID-19 é o estudo
+                Solidariedade, coordenado pela OMS, que envolve diversos países e inclui 18 instituições de pesquisa de
+                12 diferentes estados do Brasil. Inicialmente, tal estudo visa comparar quatro esquemas terapêuticos
+                para COVID-19: (i) Remdesivir; (ii) Lopinavir/Ritonavir; (iii) Lopinavir/Ritonavir com Interferon
+                beta-1a; e (iv) Cloroquina ou Hidroxicloroquina. </p>
+
+              <p>Seu desenvolvimento é dinâmico: caso haja evidências de que um esquema não é eficaz ou seguro, ele será
+                retirado do estudo. Caso haja evidências de que um esquema é superior aos demais, ele passará a ser
+                adotado. Existe ainda a possibilidade de incorporação de novos esquemas ao estudo, a depender de
+                evidências científicas. </p>
+
+              <!--Saiba Mais-->
+              <div class="row justify-content-center mt-5">
+                <div class="saiba-mais col-11 col-lg-12" data-aos="fade-up" data-aos-duration="400"
+                  data-aos-delay="400">
+                  <div class="box-quote multi-border">
+                    <h5><i class="fas fa-question-circle" data-fa-transform="grow-25"></i>Saiba mais:</h5>
+                    <div class="saiba-mais-content">
+                      <p>Para mais informações e atualizações, acompanhe:</p>
+                      <ul>
+                        <li><a
+                            href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/global-research-on-novel-coronavirus-2019-ncov/solidarity-clinical-trial-for-covid-19-treatments"
+                            target="_blank">“Solidarity” clinical trial for COVID-19 treatments - Organização Mundial da
+                            Saúde</a></li>
+                        <li><a href="https://portal.fiocruz.br/coronavirus-noticias" target="_blank">coronavírus:
+                            Notícias - Fundação Oswaldo Cruz</a></li>
+                        <li><a
+                            href="https://portal.fiocruz.br/noticia/fiocruz-integra-coalizao-para-acelerar-pesquisa-sobre-covid-19"
+                            target="_blank">Fiocruz integra coalizão para acelerar pesquisa sobre COVID-19 - Agência
+                            Fiocruz de Notícias</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Fim do Saiba Mais-->
+
+            </div>
+
+            <p>Além dos estudos em andamento, a Associação de Medicina Intensiva Brasileira, a Sociedade Brasileira de
+              Infectologia e a Sociedade Brasileira de Pneumologia e Tisiologia publicaram, em consenso, as Diretrizes
+              para o Tratamento Farmacológico da COVID-19. O documento apresenta 11 recomendações embasadas em evidência
+              de nível baixo ou muito baixo.</p>
+
+            <img src="../img/modulo3/aula4_n/tabela.svg" alt="" width="100%" height="auto" class="rounded mx-auto">
+
+            <p class="source text-center mt-3"><strong>Fonte:</strong> <a
+                href="https://sbpt.org.br/portal/wp-content/uploads/2020/05/Diretrizes-para-o-Tratamento-Farmacologico-da-COVID-v18mai2020.pdf"
+                target="_blank">Diretrizes para o Tratamento Farmacológico da COVID-19: AMIB, SBI e SBPT.</a>
+              Elaboração: 18 de maio de 2020</a></p>
+
+            <p class="source"><strong>Legenda:</strong>
+            <ol class="source">
+              <li>Benefício clínico – o: pequeno ou negligenciável; +: moderado; ++: importante</li>
+              <li>Risco – o: pequeno ou negligenciável; +: moderado; ++: importante</li>
+              <li>Custos diretos – $: custos baixos; $$: custos moderados; $$$: custos elevados. Avaliação qualitativa,
+                considerando sistema público e saúde suplementar, com base em preços aferidos pelo Painel de Preços do
+                Ministério da Economia, Banco de Preços em Saúde, tabela CMED e preços habituais praticados em mercado.
+              </li>
+              <li>Acesso - : indisponível; ✓: disponibilidade limitada no contexto brasileiro, seja do insumo, seja de
+                profissionais com experiência no seu uso; ✓✓: boa disponibilidade no contexto brasileiro</li>
+              <li>Evidência avaliada de acordo com o GRADE. Níveis de confiança na evidência: ++++ alto; +++o moderado;
+                ++oo baixo; +ooo muito baixo</li>
+              <li>Para custos, considerada anticoagulação terapêutica com heparina de baixo peso molecular, implicando
+                em maiores custos.</li>
+            </ol>
+            </p>
+
+            <!--Accordion-->
+            <ul id="accordion-portal" class="accordion wow fadeInUp">
+              <!--Item 1-->
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#med01">Sugerimos não utilizar hidroxicloroquina ou
+                  cloroquina de rotina no tratamento da COVID-19<i class="icon ion-md-remove"></i></a>
+                <div id="med01" class="collapse">
+
+                  <p><strong>Recomendação fraca - Nível de evidência baixo</strong></p>
+                  <p><strong>Considerações:</strong> O painel de recomendações entendeu que as evidências disponíveis
+                    não sugerem benefício clinicamente significativo no tratamento com hidroxicloroquina ou com
+                    cloroquina. Houve entendimento de que o risco de eventos adversos cardiovasculares é moderado, em
+                    especial de arritmias. Até o momento, os estudos comparados existentes avaliaram pacientes
+                    hospitalizados somente, não havendo base para uso ou não em pacientes ambulatoriais. O uso pode ser
+                    considerado mediante decisão compartilhada entre médico e paciente, somente em pacientes graves ou
+                    críticos, hospitalizados, com monitorização frequente de intervalo QTc e evitando medicamentos
+                    concomitantes que também prolonguem o QTc. Seu uso preferencial deve ser realizado mediante
+                    protocolos de pesquisa clínica.</p>
+
+                  <p>O resumo da evidência está descrito no <a
+                      href="https://sbpt.org.br/portal/wp-content/uploads/2020/05/Diretrizes-para-o-Tratamento-Farmacologico-da-COVID-v18mai2020.pdf"
+                      target="_blank">documento das Diretrizes.</a></p>
+
+                </div>
+              </li>
+
+              <!--Item 2-->
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#med02">Sugerimos não utilizar a combinação de
+                  hidroxicloroquina ou cloroquina e azitromicina de rotina no tratamento da COVID-19 <i
+                    class="icon ion-md-remove"></i></a>
+                <div id="med012s" class="collapse">
+
+                  <p><strong>Recomendação fraca - Nível de evidência muito baixo </strong></p>
+                  <p><strong>Considerações:</strong> O painel de recomendações entendeu que as evidências disponíveis
+                    não sugerem benefício clinicamente significativo no tratamento com hidroxicloroquina ou com
+                    cloroquina em associação com a azitromicina. Houve entendimento de que o risco de eventos adversos
+                    cardiovasculares é moderado, em especial de arritmias, sendo potencializado com a associação de
+                    hidroxicloroquina/cloroquina com azitromicina, necessitando maiores cuidados em relação a esses
+                    eventos adversos. Até o momento, os estudos comparados existentes avaliaram somente pacientes
+                    hospitalizados, não havendo base para uso ou não em pacientes ambulatoriais. O uso pode ser
+                    considerado mediante decisão compartilhada entre médico e paciente, somente em pacientes graves ou
+                    críticos, hospitalizados, com monitorização frequente de intervalo QTc e evitando medicamentos
+                    concomitantes que também prolonguem o QTc. Seu uso preferencial deve ser realizado mediante
+                    protocolos de pesquisa clínica.</p>
+
+                  <p>O resumo da evidência está descrito no <a
+                      href="https://sbpt.org.br/portal/wp-content/uploads/2020/05/Diretrizes-para-o-Tratamento-Farmacologico-da-COVID-v18mai2020.pdf"
+                      target="_blank">documento das Diretrizes.</a></p>
+
+
+                </div>
+              </li>
+
+              <!--Item 3-->
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#med03">Recomendamos não utilizar oseltamivir no
+                  tratamento da COVID-19 em pacientes sem suspeita de infecção por influenza<i
+                    class="icon ion-md-remove"></i></a>
+                <div id="med03" class="collapse">
+                  <p><strong>Recomendação forte - Nível de evidência muito baixo</strong></p>
+                  <p><strong>Sem considerações</strong> </p>
+
+                  <p>O resumo da evidência está descrito no <a
+                      href="https://sbpt.org.br/portal/wp-content/uploads/2020/05/Diretrizes-para-o-Tratamento-Farmacologico-da-COVID-v18mai2020.pdf"
+                      target="_blank">documento das Diretrizes.</a></p>
+
+                </div>
+              </li>
+
+              <!--Item 4-->
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#med04">Sugerimos utilizar tratamento empírico com
+                  oseltamivir em pacientes com síndrome respiratória aguda grave, ou em síndrome gripal com fatores de
+                  risco para complicações, onde não se possa descartar o diagnóstico de influenza<i
+                    class="icon ion-md-remove"></i></a>
+                <div id="med04" class="collapse">
+
+                  <p><strong>Recomendação fraca - Nível de evidência muito baixo</strong></p>
+                  <p><strong>Considerações:</strong> O painel de recomendações entendeu que não há evidência para uso do
+                    oseltamivir no tratamento do SARS-CoV-2, não havendo também racional teórico que possibilite essa
+                    utilização. Contudo, o oseltamivir pode ser considerado na suspeita de infecção por influenza, por
+                    pacientes com síndrome respiratória aguda grave ou com síndrome gripal na presença de fatores de
+                    risco para complicações da influenza (doenças crônicas, imunossupressão, idade ≥ 65 anos,
+                    gestantes). A dose usual em adultos com função renal adequada é de 75mg duas vezes ao dia por cinco
+                    dias. A suspeita de influenza deve levar em conta sinais e sintomas do paciente, achados
+                    radiológicos, assim como a epidemiologia local. A suspeita permanece mesmo em indivíduos com
+                    histórico de imunização, uma vez que a efetividade da vacina raramente é superior a 80%. Na
+                    possibilidade de testagem para influenza, o oseltamivir pode ser interrompido caso o teste seja
+                    negativo, desde que o teste possua sensibilidade adequada para influenza A sazonal, B e H1N1. A
+                    decisão sobre o uso do oseltamivir foi realizada com base nas indicações do seu uso fora do contexto
+                    da pandemia da COVID-19, não havendo informações adequadas de como a mesma se comporta no cenário
+                    epidêmico do SARS-CoV-2. Na existência de protocolos locais bem desenvolvidos, adequados à
+                    epidemiologia local, sugerimos utilizá-los.</p>
+
+                  <p>O resumo da evidência está descrito no <a
+                      href="https://sbpt.org.br/portal/wp-content/uploads/2020/05/Diretrizes-para-o-Tratamento-Farmacologico-da-COVID-v18mai2020.pdf"
+                      target="_blank">documento das Diretrizes.</a></p>
+
+                </div>
+              </li>
+
+              <!--Item 5-->
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#med05">Sugerimos não utilizar lopinavir/ritonavir de
+                  rotina no tratamento da COVID-19<i class="icon ion-md-remove"></i></a>
+                <div id="med05" class="collapse">
+
+                  <p><strong>Recomendação fraca - Nível de evidência baixo</strong></p>
+                  <p><strong>Considerações:</strong> O painel de recomendações entendeu que as evidências disponíveis
+                    não sugerem benefício clinicamente significativo do tratamento com lopinavir/ritonavir. O
+                    medicamento pode ser considerado promissor e a ausência de benefício observada pode ser decorrente
+                    do pequeno número de pacientes avaliados. Apesar da alta taxa de descontinuação por eventos adversos
+                    e potencial de interações medicamentosas, o medicamento é relativamente seguro em seu uso no curto
+                    prazo. O medicamento pode ser considerado mediante decisão compartilhada entre médico e paciente, em
+                    pacientes hospitalizados graves e críticos, em centros com profissionais que já possuam experiência
+                    com o seu uso. Seu uso preferencial deve ser realizado mediante protocolos de pesquisa clínica.</p>
+
+                  <p>O resumo da evidência está descrito no <a
+                      href="https://sbpt.org.br/portal/wp-content/uploads/2020/05/Diretrizes-para-o-Tratamento-Farmacologico-da-COVID-v18mai2020.pdf"
+                      target="_blank">documento das Diretrizes.</a></p>
+
+                </div>
+              </li>
+
+              <!--Item 6-->
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#med06">Sugerimos não utilizar glicocorticosteroides
+                  de rotina em pacientes com COVID-19<i class="icon ion-md-remove"></i></a>
+                <div id="med06" class="collapse">
+
+                  <p><strong>Recomendação fraca - Nível de evidência muito baixo</strong></p>
+                  <p><strong>Considerações:</strong> O painel de recomendações entendeu que não há evidências que
+                    suportem o uso de corticosteroides de rotina na COVID-19. Glicocorticosteroides devem ser evitados
+                    nos primeiros 7 a 10 dias do início dos sintomas, momento no qual a resposta viral é mais relevante,
+                    havendo evidências de que corticosteroides podem retardar a negativação viral. Algumas evidências
+                    apontam para potencial benefício no paciente com SARA moderada a grave fora do contexto da infecção
+                    viral. O seu uso pode ser considerado em casos selecionados, com SARA moderada a grave, sem suspeita
+                    de infecção bacteriana não controlada, após 10 a 14 dias do início dos sintomas da COVID-19. As
+                    doses utilizadas nos estudos variaram de 10 a 20mg de dexametasona e de 40 a 120 mg de
+                    metilpredinisolona por dia, por 5 a 10 dias. Seu uso preferencial deve ser realizado mediante
+                    protocolos de pesquisa clínica. Pacientes com outras indicações para o uso de corticosteroides (ex.
+                    asma e DPOC exacerbadas) devem utilizar de acordo com indicação clínica, avaliando os demais riscos
+                    e benefícios frente à infecção pela COVID-19.</p>
+
+                  <p><a
+                      href="https://sbpt.org.br/portal/wp-content/uploads/2020/05/Diretrizes-para-o-Tratamento-Farmacologico-da-COVID-v18mai2020.pdf"
+                      target="_blank">O resumo da evidência está descrito no documento das Diretrizes.</a></p>
+
+                  <p>Dra. Elnara Marcia Negri, médica e pesquisadora da USP fala sobre o uso dos corticosteroides.</p>
+
+                  <!--Vídeo-->
+                  <div class="embed-responsive embed-responsive-16by9 mt-3 mb-5">
+                    <iframe src="https://www.youtube.com/embed/GY5wuOtUEvU?t=1006" webkitallowfullscreen=""
+                      mozallowfullscreen="" allowfullscreen="" width="640" height="360" frameborder="0"></iframe>
+                  </div>
+                  <!--p class="reference-title text-center mt-3"></p-->
+                  <!--Fim de vídeo-->
+
+
+                  <p class="source">Este vídeo é parte de um dos debates promovidos pela Sociedade Brasileira de
+                    Pneumologia e Tisiologia sobre atendimentos e procedimentos médicos no contexto da COVID-19. Você
+                    pode assistir ao debate completo <a href="https://youtu.be/GY5wuOtUEvU" target="_blank">aqui</a></p>
+
+                </div>
+              </li>
+
+              <!--Item 7-->
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#med07">Sugerimos não utilizar tocilizumabe de rotina
+                  no tratamento da COVID-19<i class="icon ion-md-remove"></i></a>
+                <div id="med07" class="collapse">
+
+                  <p><strong>Recomendação fraca - Nível de evidência muito baixo</strong></p>
+                  <p><strong>Considerações:</strong>O painel de recomendações entendeu que não há evidências de
+                    benefício e de segurança que possa sugerir o uso do tocilizumabe de forma rotineira. Além disso, o
+                    custo da medicação é elevado e, especialmente durante uma epidemia, há a necessidade de se
+                    racionalizar recursos, evitando o uso de intervenções sem evidência de benefício. O medicamento pode
+                    ser considerado mediante decisão compartilhada entre médico e paciente, em pacientes hospitalizados
+                    graves e críticos, com diagnóstico confirmado de infecção pelo SARS-CoV-2, com elevação
+                    significativa de marcadores de inflamação (ex. IL-6, d-dímeros, proteína C reativa, LDH e
+                    ferritina). A utilização do tocilizumabe deve ser restrita a centros com profissionais que já
+                    possuam experiência em seu uso. Seu uso preferencial deve ser realizado mediante protocolos de
+                    pesquisa clínica. </p>
+
+                  <p>O resumo da evidência está descrito no <a
+                      href="https://sbpt.org.br/portal/wp-content/uploads/2020/05/Diretrizes-para-o-Tratamento-Farmacologico-da-COVID-v18mai2020.pdf"
+                      target="_blank">documento das Diretrizes.</a></p>
+
+                </div>
+              </li>
+
+              <!--Item 8-->
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#med08">Recomendamos utilizar profilaxia para
+                  tromboembolismo venoso de rotina em pacientes hospitalizados com COVID-19<i
+                    class="icon ion-md-remove"></i></a>
+                <div id="med08" class="collapse">
+
+                  <p><strong>Recomendação forte - Nível de evidência muito baixo</strong></p>
+                  <p><strong>Sem considerações</strong> </p>
+
+                  <p>O resumo da evidência está descrito no <a
+                      href="https://sbpt.org.br/portal/wp-content/uploads/2020/05/Diretrizes-para-o-Tratamento-Farmacologico-da-COVID-v18mai2020.pdf"
+                      target="_blank">documento das Diretrizes.</a></p>
+
+                </div>
+              </li>
+
+              <!--Item 9-->
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#med09">Sugerimos não utilizar heparinas em dose
+                  terapêutica de rotina no tratamento da COVID-19<i class="icon ion-md-remove"></i></a>
+                <div id="med09" class="collapse">
+
+                  <p><strong>Recomendação fraca - Nível de evidência muito baixo</strong></p>
+                  <p><strong>Considerações:</strong> O painel de recomendações entendeu que não há indicação de
+                    heparinas em doses terapêuticas (ex. enoxaparina 1 mg/kg subcutânea [SC] a cada 12 horas) para o
+                    tratamento da COVID-19. O raciocínio é análogo para outros anticoagulantes. Anticoagulação está
+                    associada ao risco aumentado de eventos hemorrágicos e deve ser reservada para pacientes com
+                    indicações para tal (ex. fibrilação atrial, tromboembolismo pulmonar, trombose venosa profunda,
+                    entre outras), seguindo protocolos relacionados. Pacientes com COVID-19 parecem possuir risco
+                    aumentado de eventos tromboembólicos e a equipe assistencial deve atentar para o desenvolvimento de
+                    sinais e sintomas. Pacientes hospitalizados por COVID-19 devem receber profilaxia de tromboembolismo
+                    conforme estratificação de risco de acordo com protocolos hospitalares locais. Contudo, pode-se
+                    estender o uso de doses profiláticas para todos os pacientes com COVID-19 uma vez que alguns
+                    pacientes com infecção pelo SARS-CoV-2 parecem apresentar estado de hipercoagulabilidade, sendo
+                    observado alta taxa de eventos tromboembólicos em estudos clínicos observacionais e post mortem.
+                    Podem ser utilizadas, por exemplo, a enoxaparina 40 a 60mg SC 1x/dia ou a heparina não fracionada
+                    5.000UI SC 2 a 3x/dia. Apesar da evidência para a profilaxia farmacológica no contexto da COVID-19
+                    ser limitada, a intervenção é de baixo custo e bem tolerada, com potencial de evitar eventos de
+                    elevada importância clínica. Heparina não deve ser utilizada no caso de contraindicações (ex. alto
+                    risco de sangramento, sangramento ativo, plaquetopenia grave); HBPM deve ser utilizada com cautela
+                    em pacientes com disfunção renal. </p>
+
+                  <p>Dra. Elnara Marcia Negri, médica e pesquisadora da USP e Dra. Samia Rached, pneumologista do Incor
+                    falam sobre procedimentos profiláticos para anticoagulação e comentam casos específicos.</p>
+
+                  <!--Vídeo-->
+                  <div class="embed-responsive embed-responsive-16by9 mt-3 mb-5">
+                    <iframe src="https://www.youtube.com/embed/GY5wuOtUEvU?t=2927" webkitallowfullscreen=""
+                      mozallowfullscreen="" allowfullscreen="" width="640" height="360" frameborder="0"></iframe>
+                  </div>
+                  <!--p class="reference-title text-center mt-3"></p-->
+                  <!--Fim de vídeo-->
+
+
+                  <p class="source text-center">Este vídeo é parte de um dos debates promovidos pela Sociedade
+                    Brasileira de Pneumologia e Tisiologia sobre atendimentos e procedimentos médicos no contexto da
+                    COVID. Você pode assistir ao debate completo <a href="https://youtu.be/GY5wuOtUEvU"
+                      target="_blank">aqui</p>
+
+
+
+                  <p>O resumo da evidência está descrito no <a
+                      href="https://sbpt.org.br/portal/wp-content/uploads/2020/05/Diretrizes-para-o-Tratamento-Farmacologico-da-COVID-v18mai2020.pdf"
+                      target="_blank">documento das Diretrizes.</a></p>
+
+                </div>
+              </li>
+
+              <!--Item 10-->
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#med10">Sugerimos não utilizar antibacterianos
+                  profilático em pacientes com suspeita ou diagnóstico da COVID-19<i class="icon ion-md-remove"></i></a>
+                <div id="med10" class="collapse">
+
+                  <p><strong>Recomendação fraca - Nível de evidência muito baixo</strong></p>
+                  <p><strong>Sem considerações</strong> </p>
+
+                  <p>O resumo da evidência está descrito no <a
+                      href="https://sbpt.org.br/portal/wp-content/uploads/2020/05/Diretrizes-para-o-Tratamento-Farmacologico-da-COVID-v18mai2020.pdf"
+                      target="_blank">documento das Diretrizes.</a></p>
+
+                </div>
+              </li>
+
+              <!--Item 11-->
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#med11">Recomendamos utilizar antibacterianos em
+                  pacientes com COVID-19, com suspeita de coinfecção bacteriana<i class="icon ion-md-remove"></i></a>
+                <div id="med11" class="collapse">
+
+                  <p><strong>Recomendação não graduada</strong></p>
+                  <p><strong>Considerações:</strong> O painel entendeu que, na ausência de evidências, não há base para
+                    indicar antibacterianos profiláticos em pacientes com COVID-19. Além da ausência de evidências de
+                    benefício, tal prática pode resultar em eventos adversos, maior resistência antimicrobiana e custos.
+                    Não há dados adequados sobre coinfecção bacteriana em pacientes com COVID- 19, contudo deve-se
+                    atentar que sobreposição de infecções podem ocorrer. Entende-se que esses pacientes devem receber
+                    antibacterianos de forma semelhante aos pacientes sem COVID-19, levando-se em consideração a
+                    epidemiologia local, seguido diretrizes e protocolos locais e orientações dos serviços de controle
+                    de infecção.</p>
+
+                  <p>O resumo da evidência está descrito no <a
+                      href="https://sbpt.org.br/portal/wp-content/uploads/2020/05/Diretrizes-para-o-Tratamento-Farmacologico-da-COVID-v18mai2020.pdf"
+                      target="_blank">documento das Diretrizes.</a></p>
+
+                </div>
+              </li>
+            </ul>
+            <!--Fim ddo Accordion -->
+
+            <p>Com estudos em andamento e o surgimento de novas evidências, é possível que, no momento em que as
+              recomendações tenham sido atualizadas. Consulte os órgãos de referência para se manter atualizado.</p>
+
+            <h4 class="box-destaque text-center">(*) Este curso foi atualizado em 24 de maio de 2020</h4>
+
+          </div>
+
+        </div>
+      </div>
+      <!--fim da row-->
+      <!--fim do container-->
+    </section>
+    <!--fim do bloco2-->
+
+    <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Chegamos ao fim da aula</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #call-to-action -->
+
+    <!--==========================
+      Bloco 3 - Conclusão
+    ============================-->
+
+    <section id="bloco3" class="pb-5 pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-lg-8">
+            <p><strong>Você terminou a Aula 4 do Módulo 3 do curso COVID-19 - Manejo da infecção causada pelo novo
+                coronavírus.</strong></p>
+
+            <p>Nesta aula, você conheceu as recomendações atuais de terapias farmacológicas de suporte elaboradas por
+              sociedades de especialistas, com base na evidência científica recente e aprendeu sobre a importância da
+              realização de ensaios clínicos controlados de maior porte para identificar medicamentos que sejam eficazes
+              e seguros no tratamento da COVID-19.</p>
+
+            <p>Na próxima aula, vamos falar sobre suporte respiratório para pacientes graves.</p>
+
+            <p>Siga em frente lembrando que, até a oferta desta aula, não havia tratamento farmacológico específico,
+              comprovadamente eficaz, contra a COVID-19.</p>
+
+          </div>
+        </div>
+        <!--fim da row-->
+
+      </div>
+      <!--fim do container-->
+    </section>
+    <!--fim do bloco3-->
+
+
+    <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <!--section class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Avaliação</h1>
+          </div>
+        </div>
+      </div>
+    </section-->
+    <!--#call-to-action -->
+
+
+    <!--==========================
+      Bloco 4 - Avaliação
+    ============================-->
+    <!--section id="avaliacao" class="quizz-wrapper pb-5 pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <iframe src="https://educare.fiocruz.br/h5p-content/embed/?contentId=2032993195" width="1090" height="1025"
+              frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+          </div>
+        </div-->
+        <!--fim da row-->
+
+      <!--/div-->
+      <!--fim do container-->
+    <!--/section-->
+    <!--fim do bloco7-->
+
+    <!--==========================
+      Bloco de Navegação entre aulas
+    ============================-->
+    <section id="nav-class">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 cta-btn-previous text-center">
+            <a class="cta-btn align-middle" href="aula3.html">Aula Anterior</a>
+          </div>
+
+          <div class="col-lg-6 cta-btn-next text-center">
+            <a class="cta-btn align-middle" href="aula5.html">Próxima Aula</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--==========================
+      Barra de logos
+    ============================-->
+    <!-- Include dos logos -->
+    <div w3-include-html="../barra-de-logos-modulos.html"></div>
+
+    <!--==========================
+      Modais - Bibliografia, Créditos & Material Complementar
+    ============================-->
+
+    <!-- Include da Apresentação-->
+    <div w3-include-html="../apresentacao.html"></div>
+
+    <!-- Include da Bibliografia -->
+    <div w3-include-html="../bibliografia-modulo2.html"></div>
+
+    <!-- Include da Créditos -->
+    <div w3-include-html="../creditos.html"></div>
+
+    <!-- Include de Material Complementar -->
+    <div w3-include-html="../material-complementar.html"></div>
+
+  </main>
+
+  <a href="#" class="back-to-top serie3"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Biblioteca de JavaScripts-->
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/aos/aos.js"></script>
+  <script src="../lib/superfish/hoverIntent.js"></script>
+  <script src="../lib/superfish/superfish.min.js"></script>
+  <script src="../lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="../lib/wow/wow.min.js"></script>
+  <script src="../lib/quiz/modulo1/aula1/quiz.js"></script>
+
+  <!--Ionicons-->
+  <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+
+  <!-- Javascripts-->
+  <script src="../js/main.js"></script>
+  <script src="../js/main-timeline.js"></script>
+
+  <!--Acessibilidade-->
+  <script src="../js/jquery-2.2.1.min.js"></script>
+  <script src="../js/jquery.font-accessibility.min.js"></script>
+
+  <script>
+    $(function () {
+      /* Botões de Acessibilidade */
+      $('#font-setting-buttons').easyView({
+        container: '#acessibilidade',
+        increaseSelector: '.increase-me',
+        decreaseSelector: '.decrease-me',
+        normalSelector: '.reset-me',
+        contrastSelector: '.change-me'
+      });
+
+    });
+  </script>
+
+  <script>
+    includeHTML();
+  </script>
+
+</body>
+
+</html>

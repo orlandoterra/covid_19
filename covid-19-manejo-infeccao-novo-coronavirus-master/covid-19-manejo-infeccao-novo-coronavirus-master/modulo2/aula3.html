@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84826737-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-84826737-6');
+  </script>
+
+  <meta charset="utf-8">
+  <title>Módulo 2 | Aula 3 - Como conduzir isolamento domiciliar</title>
+  <meta content="index, follow" name="robots">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Ciência, Fiocruz, Curso, coronavírus, COVID-19" name="keywords">
+  <meta content="Módulo 2 | Manejo Clínico: Atenção Básica; Aula 3: Como conduzir isolamento domiciliar" name="description">
+
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/8bfaea11f7.js" crossorigin="anonymous"></script>
+
+  <!-- Favicons -->
+  <link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/favicon.ico" rel="icon">
+  <link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/indice.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap CSS --> 
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Biblioteca CSS -->
+  <link href="../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet"><!--Ionicons-->
+   <link href="../lib/aos/aos.css" rel="stylesheet">
+  <link href="../lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="../lib/quiz/modulo1/aula1/quiz.css" rel="stylesheet">
+
+  <!-- CSS geral das aulas e recursos visuais -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style-visual-resources.css">
+
+
+  <!-- JS de Includes-->
+  <script src="../js/include.js"></script>
+
+  <!-- JS das Atividades (H5p) -->
+  <script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+
+</head>
+
+<body id="acessibilidade">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="https://campusvirtual.fiocruz.br/" class="scrollto"><img src="../img/logo-cv-white.svg" alt="Ir para o Campus Virtual" title="Campus Virtual"/> </a>
+      </div>
+
+      <!-- Menu de Navegação -->
+      <nav id="nav-menu-container">
+        <ul class="nav-menu sf-js-enabled sf-arrows" id="menu-curso1" style="touch-action: pan-y;">
+          <li><a href="#" data-toggle="modal" data-target="#modal-apresentacao">Apresentação do curso</a></li>
+          <li class="menu-has-children"><a href="" class="sf-with-ul">Módulos</a>
+            <ul style="display: none;">
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 1</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Introdução ao novo coronavírus</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo1/aula1.html">Aula 1: Novo coronavírus: Conceitos básicos</a></li>
+                  <li><a href="../modulo1/aula2.html">Aula 2: Transmissão, sintomas e prevenção</a></li>
+                  <li><a href="../modulo1/aula3.html">Aula 3: O que fazer se você estiver doente</a></li>
+                </ul>
+              </li>
+
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 2</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Manejo Clínico</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo2/aula1.html">Aula 1: Organizando sua UBS para a Pandemia</a></li>
+                  <li><a href="../modulo2/aula2.html">Aula 2: Manejo Clínico da COVID-19</a></li>
+                  <li><a href="../modulo2/aula3.html">Aula 3: Como conduzir isolamento domiciliar</a></li>
+                  <li><a href="../modulo2/aula4.html">Aula 4: Protegendo os profissionais de saúde</a></li>
+                </ul>
+              </li>
+
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 3</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Manejo clínico: atenção especializada</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo3/aula1.html">Aula 1: Detecção precoce e classificação da severidade dos pacientes com
+                      síndrome respiratória aguda grave (SRAG)</a></li>
+                  <li><a href="../modulo3/aula2.html">Aula 2: Manejo clínico inicial dos pacientes com síndrome respiratória aguda
+                      grave</a></li>
+                  <li><a href="../modulo3/aula3.html">Aula 3: Investigação de imagem, laboratorial e diagnóstico diferencial da
+                      COVID-19</a></li>
+                  <li><a href="../modulo3/aula4.html">Aula 4: Suporte farmacológico a pacientes com COVID-19</a></li>
+                  <li><a href="../modulo3/aula5.html">Aula 5: Suporte respiratório a pacientes com COVID-19</a></li>
+                  <li><a href="../modulo3/aula6.html">Aula 6: Manejo Clínico da gestante no contexto da COVID-19</a></li>
+                  <li><a href="../modulo3/aula7.html">Aula 7: Procedimentos de proteção e controle de infecção em ambiente
+                      hospitalar</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </li>
+
+          <li><a href="#" data-toggle="modal" data-target="#modal-bibliografia">Bibliografia</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#modal-creditos">Créditos</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#modal-material-complementar">Material Complementar</a></li>
+          <li><a class="cta-btn" href="../faq.html" target="_blank">FAQ</a></li>
+          
+        </ul>
+      </nav>
+      <!-- Fim do Menu de Navegação -->
+
+    </div>
+
+    <!--Breadcrumb-->
+    <div id="breadcrumb" class="d-none serie3">
+      <div class="container">
+        <div class="row" data-aos="flip-right">
+          <div class="col-12">
+            <ul class="nav-menu">
+              <li><a href='aula1.html' target='_blank'><i class="fas fa-home"></i> Módulo 2</a> > <a href='aula2.html' target='_blank'>Aula 3</a></li>
+              <li class="float-right">            
+                <div id="font-setting-buttons">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary decrease-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary reset-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary increase-me"><i class="fas fa-font"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!--Fim do Breadcrumb-->  
+
+  </header><!-- #header -->
+
+
+  <main id="main">
+
+    <!--==========================
+      Intro Section
+    ============================-->
+    <section id="intro" class="triangle" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0">
+      <div class="intro-text">
+        <p class="headline-small serie3" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">Módulo 2 | Manejo Clínico: Atenção Básica</p>
+        <h1 data-aos="fade-in" data-aos-duration="850" data-aos-delay="600">COVID-19<br><span>Manejo da infecção causada  pelo novo coronavírus</span></h1>
+        
+      </div>
+
+    </section><!-- #intro --> 
+
+<!--==========================
+      Bloco 1  - Aula 3
+    ============================-->
+     <section id="bloco1" class="pb-5 pt-5" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="1000">
+      <div class="container">
+        <div class="section-header">
+          <p class="headline-small text-center">Aula 3</p>
+          <h2 class="section-title">Como conduzir isolamento domiciliar</h2>
+          <span class="section-divider middle"></span>
+        </div>
+
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <p>Esta é a Aula 3 do Módulo 2 do curso COVID-19 Fiocruz.</p>
+            <p>Nesta aula, vamos orientar os profissionais de saúde sobre como conduzir o isolamento domiciliar, incluindo condutas para evitar o contágio domiciliar, telemedicina e ações em caso de mudança no quadro do paciente.</p>
+            <p>Ao final, você será capaz de:</p>
+            <ul>
+              <li>aplicar o protocolo de isolamento domiciliar e telemonitoramento preconizado pelo MS;</li>
+              <li>realizar a notificação compulsória, prontuário e emitir atestados conforme as orientações do MS</li>
+              <li>Organizar o processo de trabalho para realizar atendimentos por telemedicina para triagem e acompanhamento das família
+              em isolamento.</li>
+            </ul>
+            <p>Os materiais básicos de referência são os Protocolos de Manejo Clínico de COVID-19, preconizados pelo Ministério da Saúde.</p>
+            <p>Lembramos que as orientações e procedimentos em relação ao coronavírus estão em constante mudança, à medida que aprendemos mais sobre a doença. </p>
+            <p>Para se manter atualizado, consulte sempre os links e os materiais de apoio indicados neste curso. </p>
+
+            
+          </div>
+        </div>
+
+      </div>
+    </section><!--fim do bloco1-->
+
+<!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">O paciente em isolamento domiciliar</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+      
+<!--==========================
+      Bloco 2 - O paciente em isolamento domiciliar
+    ============================-->
+    <section id="bloco2" class="pb-5 pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+         <div class="col-12 col-lg-8">
+           <p>O isolamento domiciliar é uma medida chave na contenção da COVID-19. É uma das principais estratégias de mitigação da pandemia, já que é através dele que se reduz a propagação da doença. Reduzir o tempo entre o início dos sintomas e o isolamento é vital, pois o paciente sintomático apresenta grande risco de contágio a outras pessoas.</p>
+
+          <p>Os casos leves podem ser acompanhados completamente no âmbito da APS e por telemedicina.</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--==========================
+      Bloco 3  - Quem fica em isolamento
+    ============================-->
+    <section id="bloco3" class="pb-5 pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="wow fadeInLeft" data-wow-duration="0.5s">
+              <h2 class="text-center">Quem fica em isolamento</h2>
+              <span class="section-divider middle"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <p>Pessoas com diagnóstico confirmado de COVID-19 apresentando sintomas leves, sem sinais de gravidade e com ausência de comorbidades que indiquem avaliação em centro de referência devem ficar em isolamento. A mesma conduta deve ser aplicada às pessoas com quadro clínico de  <a href="#" data-toggle="modal" data-target="#modal-sgripal">Síndrome Gripal</a>, tratados como suspeitos de COVID-19. </p>
+              <p>A vigilância ativa e continuada dos pacientes de casos leves é a principal ferramenta para o manejo. </p>
+              <p>O manejo inclui o isolamento domiciliar por 14 dias, a contar da data de início dos sintomas. Durante esse período, as pessoas devem ser conduzidas com medidas não farmacológicas, como repouso, hidratação, alimentação adequada e o uso, quando necessário, de analgésicos e antitérmicos. </p>
+              <p>A equipe deve fazer contato com essas pessoas a cada 48 horas para rever o quadro sintomatológico - preferencialmente por teleatendimento. </p>
+              <p>O isolamento inclui, também, a restrição de contatos domiciliares com o paciente com diagnóstico de infecção por coronavírus ou caso de Síndrome Gripal, como medida de precaução do cuidador. </p>
+            </div><!--fim da coluna-->
+        </div><!-- fim da row-->
+
+        <!-- Modal Síndrome GRipal-->
+        <div class="modal fade" id="modal-sgripal" tabindex="-1" role="dialog" aria-labelledby="modal-sragTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-sgripalTitle">Síndrome Gripal</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+
+              <p>Presentes na grande maioria dos casos de COVID-19:</p>
+              <ul>
+                <li>Febre</li>
+                <li>Fadiga</li>
+                <li>Tosse seca</li>
+              </ul>
+
+              <p>Outros sintomas frequentes: </p>
+              <ul>
+                <li>Anorexia</li>
+                <li>Mialgia</li>
+                <li>Dispnéia</li>
+              </ul>
+
+              <P>Sintomas menos frequentes: cefaleia, dor de garganta, rinorreia e sintomas gastrointestinais como náuseas e diarréia. Perda de olfato e paladar foram relatadas em alguns estudos.</P>
+
+              <P>ATENÇÃO: é possível que o paciente, no início, manifeste apenas uma das queixas listadas acima.</P>
+
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+          </div>
+        </div><!-- Modal Síndrome Gripal -->
+        </div><!-- fim do container-->
+    </section><!--fim do bloco3-->
+
+<!--==========================
+      Bloco 4 - Quais as medidas de precaução no domicílio
+    ============================-->
+    <section id="bloco4" class="pb-5 pt-5">
+      <div class="container">
+        <div class="row justify-content-center wow">
+          <div class="col-12 col-lg-8 wow fadeIn">
+          <h2 class="text-center">Quais as medidas de precaução no domicílio</h2>
+          <span class="section-divider middle"></span>
+          </div>
+        </div><!--Fim da row-->
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <!--Início tabela horizontal-->
+            <div class="row mt-3 mb-5">
+              <div class="col-12">
+                <div class="table-responsive" data-aos="fade-up">
+                  <table class="table table-bordered section-bg">
+                    <thead>
+                      <tr>
+                        <th class="text-center">PARA O PACIENTE</th>
+                        <th class="text-center">PARA OS DEMAIS MORADORES SEM SINTOMAS</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td width=50%>
+                          <p>O paciente em isolamento não deve receber visitas: deve permanecer em quarto isolado e bem ventilado. Caso não seja possível, deve ser mantida a distância mínima de um metro da pessoa sintomática e não se deve compartilhar materiais como copos, pratos, talheres, toalhas de rosto e banho, tampouco compartilhar a cama (puérperas que estejam amamentando devem continuar com a amamentação utilizando máscaras e medidas de higiene das mãos). </p>
+                        </td>
+
+                        <td>
+                        <p>Manter os cuidados padrão de lavar as mãos com frequência e, ao tossir ou espirrar, cobrir a boca e o nariz. Além disso, evitar o contato com as secreções do paciente. Limpar mais de uma vez por dia as superfícies comuns e os banheiros, preferencialmente com uma solução contendo alvejante (uma parte de alvejante para 99 partes de água). As roupas do paciente devem ser lavadas com sabão comum e água entre 60-90°C.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div><!--Fim da coluna-->
+            </div><!--fim da row-->
+            <!--Fim da Tabela horizontal-->
+
+            <p>Confira os demais cuidados domésticos para isolamento domiciliar.</p>
+
+            <h5 class="text-center mt-5 mb-5">ISOLAMENTO DOMICILIAR – Cuidados domésticos</h5>
+            <!--Abas-->
+            <div class="abas">
+              <ul class="nav nav-tabs" id="tab1" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="aba1-tab" data-toggle="tab" href="#aba1" role="tab" aria-controls="paciente"
+                    aria-selected="true">Isolamento do paciente</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="aba2-tab" data-toggle="tab" href="#aba2" role="tab" aria-controls="cuidador"
+                    aria-selected="false">Precauções do cuidador</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="aba3-tab" data-toggle="tab" href="#aba3" role="tab" aria-controls="geral"
+                    aria-selected="false">Precauções gerais</a>
+                </li>
+              </ul>
+            
+              <div class="tab-content p-4" id="TabContent1">
+                <!--Conteúdo Aba1-->
+                <div class="tab-pane fade show active" id="aba1" role="tabpanel" aria-labelledby="aba1-tab">
+                  <ul>
+                  
+                    <li>Permanecer em quarto isolado e bem ventilado;</li>
+                  
+                    <li>Caso não seja possível isolar o paciente em um quarto único, manter pelo menos um
+                      metro de distância;</li>
+                  
+                    <li>Dormir em cama separada (exceção: mães que estão amamentando devem continuar
+                      amamentando com o uso de máscara e medidas de higiene, como a lavagem constante das
+                      mãos);</li>
+                  
+                    <li>Limitar a movimentação do paciente pela casa. Locais compartilhados da casa (como
+                      cozinha, banheiro etc) devem estar bem ventilados;</li>
+                  
+                    <li>Utilizar máscara cirúrgica todo o tempo. Caso o paciente não tolere ficar por muito
+                      tempo, realizar medidas de higiene respiratória com mais frequência;</li>
+                  
+                    <li>Trocar máscara cirúrgica sempre que estiver úmida ou danificada;</li>
+                  
+                    <li>Em idas ao banheiro ou a outro ambiente, o paciente deve usar máscara sempre;</li>
+                  
+                    <li>Realizar higiene frequente das mãos, com água e sabão ou álcool em gel,
+                      especialmente antes de comer ou de cozinhar e após ir ao banheiro;</li>
+                  
+                    <li>Sem visitas ao paciente;</li>
+                  
+                    <li>O paciente só poderá sair de casa em casos de emergência. Ao sair, deverá usar
+                      máscara e evitar multidões, preferindo transportes individuais ou a pé, sempre que
+                      possível.</li>
+                  
+                  </ul>
+                </div>
+            
+                <!--Conteúdo Aba2-->
+                <div class="tab-pane fade" id="aba2" role="tabpanel" aria-labelledby="aba2-tab">
+                  <ul>
+                    <li>O cuidador deve utilizar uma máscara (descartável) quando estiver perto do paciente;</li>
+                  
+                    <li>Caso a máscara fique úmida ou com secreções, deve ser trocada imediatamente. Nunca tocar ou mexer na máscara enquanto estiver perto do paciente;</li>
+                  
+                    <li>Após retirar a máscara, o cuidador deve lavar as mãos;</li>
+                  
+                    <li>Deve ser realizada a higiene das mãos toda vez que parecerem sujas ou antes/depois: do contato com o paciente, de idas ao banheiro, de cozinhar e de comer. Pode ser utilizado álcool em gel quando as mãos estiverem secas e água e sabão quando as mãos parecerem oleosas ou sujas;</li>
+                  
+                    <li>Toda vez que lavar as mãos com água e sabão, dar preferência ao papel toalha.</li>
+                  </ul>
+                </div>
+            
+                <!--Conteúdo Aba3-->
+                <div class="tab-pane fade" id="aba3" role="tabpanel" aria-labelledby="aba3-tab">
+                  <ul>
+                    <li>Toda vez que lavar as mãos com água e sabão, dar preferência ao papel toalha. Caso não seja possível, utilizar toalha de tecido e trocá-la toda vez que ficar úmida;</li>
+
+                    <li>Todos os moradores da casa devem cobrir a boca e o nariz quando forem tossir ou espirrar, seja com as mãos ou com máscaras.</li>
+
+                    <li>Jogar fora as máscaras, após o uso;</li>
+
+                    <li>Evitar o contato com as secreções do paciente;</li>
+
+                    <li>Quando for descartar o lixo do paciente, utilizar luvas descartáveis;</li>
+
+                    <li>Limpar mais de uma vez por dia as superfícies que são frequentemente tocadas;</li>
+
+                    <li>Para limpar superfícies, banheiros e toaletes, use solução contendo alvejante (uma parte de alvejante para 99 partes de água);</li>
+
+                    <li>Lave roupas pessoais, roupas de cama e roupas de banho do paciente com sabão comum e água entre 60-90°C. Depois deixe secar;</li>
+
+                    <li>Caso necessário, todas as pessoas residentes da casa do paciente deverão receber atestado médico pelo período de 14 dias. Consulte o Protocolo de Manejo Clínico do Coronavirus na APS para detalhes atualizados sobre essa indicação.</li>
+                  </ul>
+                </div>
+            
+              </div>
+            </div>
+            <!--Fim das Tabs-->
+            <p class="source mt-3">Fonte: <a href="https://portalarquivos2.saude.gov.br/images/pdf/2020/marco/24/20200323-ProtocoloManejo-ver05.pdfP">Protocolo de Manejo Clínico do coronavírus na APS</a></p>
+
+          </div> <!--Fim da coluna-->
+        </div><!--fim da row-->
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="row justify-content-center wow mt-5">
+              <div class="col-12 col-lg-8 wow fadeIn">
+                <h2 class="text-center">Contato com a equipe de saúde</h2>
+                <span class="section-divider middle"></span>
+              </div>
+            </div><!--Fim da row-->
+
+            <p>O contato da equipe de saúde com o paciente deve ser realizado, no máximo, a cada 48 horas. Deve ocorrer
+              preferencialmente por teleatendimento - caso não seja possível, recomenda-se que a equipe se desloque para
+              visita domiciliar. Durante a visita deve ser utilizado EPI e tomadas medidas de prevenção de contágio. Para
+              o acompanhamento do paciente em isolamento, é importante que a equipe da APS tenha os canais de contato não
+              só do paciente, mas de todos da família ou mesmo de vizinhos. </p>
+            
+            <h5 class="mt-5 mb-5">É indicado realizar o teleatendimento sempre que possível, evitando que a pessoa com sintomas saia de casa.</h5>
+            
+            <p>Em caso de alteração no quadro e piora dos sintomas, essas pessoas devem ser orientadas a procurar o serviço
+              de saúde para que sejam reavaliadas. Recomenda-se que a triagem e a classificação de risco dessas pessoas
+              sejam realizadas preferencialmente por sistemas de teleatendimento.</p>
+            
+            <p>Se mais alguém na mesma casa apresentar sintomas de SG, deverá ser avaliado de forma a reduzir o risco de contágio de outras pessoas. A equipe de saúde deverá ser contactada, e essa pessoa será examinada em consulta médica e de enfermagem.</p>
+            
+            <p>Na hipótese de ser um novo caso diagnosticado como COVID-19 ou Síndrome Gripal leve, essa pessoa deverá estender o isolamento por mais 14 dias, a partir do início dos sintomas. A extensão de prazo só se aplica a quem
+              apresentar sintomas: os demais residentes do domicílio, se assintomáticos, estarão liberados após o primeiro
+              ciclo de 14 dias do isolamento. A equipe de saúde deverá realizar a <a href="https://notifica.saude.gov.br/"
+                target="_blank">notificação no e-SUS Notifica</a> do novo caso de Síndrome Gripal.</p>
+            
+            <h5 class="mt-5 mb-5">Período de isolamento</h5>
+            
+            <img src="../img/modulo2/aula3/info_isolamento.svg" alt="Período de isolamento" title="Período de isolamento" width="100%" height="auto" class="rounded mx-auto d-none d-sm-block mt-3 mb-5">
+
+            <img src="../img/modulo2/aula3/info_isolamento_mobile.svg" alt="Período de isolamento" title="Período de isolamento" width="100%" height="auto" class="rounded mx-auto d-block d-sm-none mt-3 mb-5">
+            
+            <h5>Encerrando o isolamento</h5>
+            
+            <p>As pessoas devem continuar seguindo as orientações de isolamento social determinadas pelas autoridades
+              locais, uma vez que não é possível ter certeza de que estão imunes contra a COVID-19 até que um teste
+              laboratorial para a detecção de anticorpos seja realizado.</p>
+          </div><!--Fim da coluna-->
+        </div> <!--fim da row-->
+      </div> <!--Fim do container-->
+    </section><!--fim do bloco4-->
+
+    <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Telemedicina no  manejo terapêutico da COVID-19</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+<!--==========================
+
+      Bloco 5 - Telemedicina no  manejo terapêutico da COVID-19
+
+    ============================-->
+    <section id="bloco5" class="pb-5 pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <p>Em 20 de março de 2020 foi publicada a Portaria n°467, que autoriza as ações de telemedicina em caráter excepcional e temporário, com interação à distância. Essa medida faz parte das ações de enfrentamento à pandemia de COVID-19. </p>
+            <p>Ações de telemedicina podem ser úteis para o monitoramento e acompanhamento dos casos em isolamento domiciliar, assim como para a realização da triagem <!--a href="aula1.html#fasttrack" target="_blank"-->Fast-track<!--/a--> sem necessidade de deslocamento do paciente.</p>
+            <p>As ações regulamentadas contemplam:</p>
+              <ul>
+                <li>atendimento pré-clínico</li>
+                <li>suporte assistencial</li>
+                <li>consultas e monitoramento </li>
+                <li>diagnóstico realizados por meio de tecnologia da informação </li>
+                <li>comunicação no âmbito do SUS. </li>
+              </ul>
+            <p>Assim, o manejo clínico pode usar sistema de telemedicina por telefone ou por vídeochamadas. Não é necessário gravar o atendimento, mas é preciso anotar as informações no prontuário clínico do paciente.</p>
+
+            <!--Box Simples -->
+            <div class="box-quote option1">
+              <h6>Durante uma consulta por telemedicina, anote no prontuário do paciente:</h6>
+              <ul>
+                <li>dados clínicos necessários para a boa condução do caso;</li>
+                <li>conduta adotada;</li>
+                <li>orientações que foram repassadas ao paciente ou cuidador;</li>
+                <li>data, hora, tecnologia da informação e comunicação utilizada para o atendimento;</li>
+                <li>identificação profissional (número de inscrição no Conselho Profissional).</li>
+              </ul>
+            </div>
+          </div>
+        </div><!--fim da row-->
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-12 col-lg-8">
+            <div class="wow fadeInLeft" data-wow-duration="0.5s">
+              <h2 class="text-center">Como organizar o teleatendimento</h2>
+              <span class="section-divider middle"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-3 mb-5" >
+          <div class="col-12 col-lg-8">
+            <p>Para organizar o teleatendimento, é necessário informar à população:</p>
+            <ul>
+              <li>número de telefone da UBS e/ou</li>
+              <li>número de celular para mensagens (como WhatsApp, por exemplo)</li>
+              <li>pessoa responsável pelas chamadas (atender o telefone e monitorar as mensagens).</li>
+            </ul>
+
+            <p>A equipe de APS deve disponibilizar, além do número de contato da UBS, um canal de comunicação como número de telefone para ligação ou envio de mensagens por app (como WhatsApp). Um membro da equipe deve ficar destacado para atender o telefone e monitorar novas mensagens regularmente. Essa pessoa vai realizar a triagem, fornecer informações iniciais e, se for o caso, alertar a unidade sobre pessoas com sintomas mais graves. </p>
+            <p>O gráfico abaixo apresenta uma sugestão de como adaptar os conceitos da Aula 1 para uma central de Teleatendimento.</p>
+
+            <img src="../img/modulo2/aula3/fluxograma2.svg" alt="teleatendimento" width="100%" height="auto" class="rounded mx-auto d-none d-sm-block mb-2">
+            <img src="../img/modulo2/aula3/fluxograma2-mobile.svg" alt="teleatendimento" width="100%" height="auto" class="rounded mx-auto d-block d-sm-none mb-2">
+
+            <!-- Box Atenção -->
+            <div class="row justify-content-center mt-5">
+              <div class="col-12 box-quote option1">
+                <h3>Atenção:</h3>
+                <p>Caso surjam dúvidas sobre a condução individual do caso durante o atendimento pré-clínico,
+                  acionar o médico da equipe e avaliar necessidade de um atendimento por telemedicina ou presencial.</p>
+              </div><!--fim da coluna-->
+            </div><!-- fim da row-->
+            <!-- Fim do Box Atenção -->
+
+            <p>O Dr. Vinicius Oliveira, médico sanitarista da Fiocruz, explica a importância da telemedicina no contexto da pandemia da COVID-19:</p>
+
+            <!--Vídeo-->
+            <div class="embed-responsive embed-responsive-16by9 mt-3 mb-5">
+              <iframe src="https://www.youtube.com/embed/KOcSKMtG4RY" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="640"height="360" frameborder="0"></iframe>
+            </div>
+
+            <!--p class="reference-title text-center mt-3"></p-->
+            <!--Fim de vídeo-->
+          </div><!--fim da coluna-->
+        </div><!--fim da row-->
+      </div><!--fim do container-->
+    </section><!--fim do bloco5-->
+
+<!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Ações de vigilância em saúde</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+  <!--==========================
+
+      Bloco 6 - AÇÕES DE VIGILÂNCIA EM SAÚDE
+
+    ============================-->
+    <section id="bloco6" class="pb-5 pt-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-4 order-1 order-lg-2 mb-4 mb-md-0">
+          <p>Todo caso de Síndrome Gripal deve ser notificado no seguinte link: <a href="http://notifica.saude.gov.br" target="_blank">http://notifica.saude.gov.br</a>. Trata-se de uma medida de vigilância epidemiológica compulsória para profissionais de saúde.</p>
+          <p>Tanto a notificação quanto o registro correto no prontuário permitem uma eventual investigação epidemiológica e formulação de políticas e estratégias de saúde.</p>
+        </div>
+        
+        <div class="col-12 col-lg-4 order-1 order-lg-2 mb-4 mb-md-0">
+          <a href="https://notifica.saude.gov.br/login" target="_blank"><img src="../img/modulo2/aula3/tela_login_sus.png" alt="Login SUS" title="Tela de Login do SUS" width="100%" height="auto" class="rounded mx-auto d-block"></a>
+          <p class="source mt-3">Tela de login do e-SUS Vigilância Epidemiológica</p>
+        </div>
+      </div>
+
+      <!--Flip Cards 2.0 CSS -->
+      <div class="row justify-content-center mt-5 mb-5">
+
+                  <!--FlipCard 1-->
+                  <div class="col-12 col-md-6 col-lg-4 mb-5">
+                        <div class="flip-card">
+                          <input type="checkbox" id="flipcard1" class="more" aria-hidden="true">
+                          <div class="flip-card-inner">
+                            <!-- FRENTE -->
+                            <div class="flip-card-front">
+                              <div class="card-title">
+                                <h3>Registro no <br>prontuário</h3>
+                              </div>
+                              <div class="card-footer">
+                                <div class="card-btn">
+                                   <label for="flipcard1" class="button" aria-hidden="true">
+                                        <svg class="ic-virar" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+                                            <g>
+                                                <g>
+                                                    <path d="M29.8,32.1c-0.4,0-0.9-0.3-1-0.7c-0.2-0.6,0.1-1.1,0.7-1.3c4.5-1.3,7.3-3.5,7.3-5.7c0-1.4-1.1-2.6-2.1-3.3
+                                                        c-0.5-0.3-0.6-1-0.2-1.5c0.3-0.5,1-0.6,1.5-0.2c1.9,1.4,2.9,3.1,2.9,4.9c0,3.2-3.2,6-8.7,7.7C30,32.1,29.9,32.1,29.8,32.1z"/>
+                                                </g>
+                                                <path d="M21.8,31l-4.5-3.4c-0.5-0.3-1.1-0.3-1.5,0.2c-0.3,0.5-0.3,1.1,0.2,1.5l2.7,2c-4.2-0.1-8-0.9-11-2.2c-2.9-1.3-4.6-3-4.6-4.7
+                                                    c0-1.6,1.5-2.9,2.7-3.7c0.5-0.3,0.6-1,0.3-1.4c-0.3-0.5-1-0.6-1.4-0.3c-2.4,1.5-3.7,3.4-3.7,5.5c0,2.6,2.1,4.9,5.8,6.6
+                                                    c2.8,1.3,6.4,2.1,10.2,2.3l-1,0.7c-0.5,0.3-0.6,1-0.3,1.5c0.2,0.3,0.5,0.5,0.9,0.5c0.2,0,0.4-0.1,0.6-0.2l4.5-3.1
+                                                    c0.3-0.2,0.4-0.5,0.5-0.8C22.3,31.5,22.1,31.2,21.8,31z"/>
+                                                </g>
+                                            <g>
+                                                <path d="M29.5,38.5h-18c-2.2,0-4-1.8-4-4v-27c0-2.2,1.8-4,4-4h18c2.2,0,4,1.8,4,4v27C33.5,36.7,31.7,38.5,29.5,38.5z M11.5,5.5
+                                                    c-1.1,0-2,0.9-2,2v27c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2v-27c0-1.1-0.9-2-2-2H11.5z"/>
+                                            </g>
+                                        </svg>
+                                    </label>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- VERSO -->
+                            <div class="flip-card-back">
+                              <div class="card-title">
+                                <p>Registro no prontuário</p>
+                              </div>
+                              <div class="card-text">
+                                <p>No prontuário, físico ou eletrônico, fichas de produção assistencial devem ser anotadas, com ao menos um dos códigos CID-10 indicados pelo Ministério da Saúde no <a href="https://portalarquivos.saude.gov.br/images/pdf/2020/April/03/guia-de-vigilancia-2020.pdf" target="_blank">Guia de Vigilância Epidemiológica 2020 - COVID-19:</a>:</p>
+
+                                <p>B34.2 - Infecção por coronavírus de localização não especificada.</p>
+                                <p>U07.1 – COVID-19, vírus identificado. É atribuído a um diagnóstico de COVID-19 confirmado por testes de laboratório.</p>
+                                <p>U07.2 – COVID-19, vírus não identificado, clínico epidemiológico.</p>
+                                <p>U04.9 - Síndrome Respiratória Aguda Grave</p>
+                                <p>J11 - Influenza devido a vírus não identificado</p>
+                                <p>Outros códigos possíveis: Influenza Identificado (J10), Resfriado comum (J00), Faringite (J02.9), Amigdalite (J03.9), Laringite e Traqueíte (J04.1-3) e IVAS (J06).</p>
+
+                              </div>
+                              <div class="card-footer">
+                                <label for="flipcard1" class="button return" aria-hidden="true">
+                                        <i class="fas fa-arrow-left"></i>
+                                    </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!--Fim Flipcard 1--> 
+
+                  <!--FlipCard 2-->
+                      <div class="col-12 col-md-6 col-lg-4 mb-5">
+                        <div class="flip-card">
+                          <input type="checkbox" id="flipcard2" class="more" aria-hidden="true">
+                          <div class="flip-card-inner">
+                            <!-- FRENTE -->
+                            <div class="flip-card-front">
+                              <div class="card-title">
+                                <h3>Notificação <br>compulsória</h3>
+                              </div>
+                              <div class="card-footer">
+                                <div class="card-btn">
+                                   <label for="flipcard2" class="button" aria-hidden="true">
+                                        <svg class="ic-virar" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+                                            <g>
+                                                <g>
+                                                    <path d="M29.8,32.1c-0.4,0-0.9-0.3-1-0.7c-0.2-0.6,0.1-1.1,0.7-1.3c4.5-1.3,7.3-3.5,7.3-5.7c0-1.4-1.1-2.6-2.1-3.3
+                                                        c-0.5-0.3-0.6-1-0.2-1.5c0.3-0.5,1-0.6,1.5-0.2c1.9,1.4,2.9,3.1,2.9,4.9c0,3.2-3.2,6-8.7,7.7C30,32.1,29.9,32.1,29.8,32.1z"/>
+                                                </g>
+                                                <path d="M21.8,31l-4.5-3.4c-0.5-0.3-1.1-0.3-1.5,0.2c-0.3,0.5-0.3,1.1,0.2,1.5l2.7,2c-4.2-0.1-8-0.9-11-2.2c-2.9-1.3-4.6-3-4.6-4.7
+                                                    c0-1.6,1.5-2.9,2.7-3.7c0.5-0.3,0.6-1,0.3-1.4c-0.3-0.5-1-0.6-1.4-0.3c-2.4,1.5-3.7,3.4-3.7,5.5c0,2.6,2.1,4.9,5.8,6.6
+                                                    c2.8,1.3,6.4,2.1,10.2,2.3l-1,0.7c-0.5,0.3-0.6,1-0.3,1.5c0.2,0.3,0.5,0.5,0.9,0.5c0.2,0,0.4-0.1,0.6-0.2l4.5-3.1
+                                                    c0.3-0.2,0.4-0.5,0.5-0.8C22.3,31.5,22.1,31.2,21.8,31z"/>
+                                                </g>
+                                            <g>
+                                                <path d="M29.5,38.5h-18c-2.2,0-4-1.8-4-4v-27c0-2.2,1.8-4,4-4h18c2.2,0,4,1.8,4,4v27C33.5,36.7,31.7,38.5,29.5,38.5z M11.5,5.5
+                                                    c-1.1,0-2,0.9-2,2v27c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2v-27c0-1.1-0.9-2-2-2H11.5z"/>
+                                            </g>
+                                        </svg>
+                                    </label>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- VERSO -->
+                            <div class="flip-card-back">
+                              <div class="card-title">
+                                <p>Notificação compulsória</p>
+                              </div>
+                              <div class="card-text">
+                                <p>A notificação deve ser preenchida logo após as medidas de manejo clínico. </p>
+                                <p>É importante que a notificação seja realizada nesse momento para garantir que todos os dados necessários à investigação epidemiológica estejam preenchidos. </p>
+                                <p>Caso a UBS não tenha acesso à internet, é preciso anotar as informações necessárias e fazer a notificação assim que possível. </p>
+
+                              </div>
+                              <div class="card-footer">
+                                <label for="flipcard2" class="button return" aria-hidden="true">
+                                        <i class="fas fa-arrow-left"></i>
+                                    </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!--Fim Flipcard 2-->    
+      </div> 
+      <!--Fim de Flip Cards CSS -->  
+
+      <!--div class="row justify-content-center mt-3 mb-5" >
+        <div class="col-12 col-md-6 col-lg-6">
+          <p>Essas são as informações que deverão ser preenchidas no e-SUS Notifica:</p>
+          <img src="../img/modulo2/aula3/tela_notif_sus.png" alt="Tela e-Sus" title="Tela e-Sus" width="100%" height="auto" class="rounded mx-auto d-block mt-3 mb-5">
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-3 mb-5">
+        <div class="col-12 col-md-6 col-lg-8">
+          <p>Tela final do e-SUS Vigilância Epidemiológica - Lista das notificações realizadas</p>
+          <img src="../img/modulo2/aula3/tela_final_sus.png" alt="Tela e-Sus" title="Tela e-Sus" width="100%" height="auto"
+            class="rounded mx-auto d-block mt-3 mb-5">
+        </div>
+      </div-->
+    </div><!--fim do container-->
+    </section><!--fim do bloco6-->
+
+<!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Exames laboratoriais</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+<!--==========================
+
+      Bloco 7 - Exames laboratoriais
+
+    ============================-->
+    <section id="bloco7" class="pb-5 pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <p> Segundo a Sociedade Brasileira de Patologia Clínica/Medicina Laboratorial, a detec- ção do vírus por RT-PCR em tempo real permanece sendo o teste laboratorial de escolha para o diagnóstico de pacientes sintomáticos na fase aguda, para amostras coletadas até o 8.º dia do início dos sintomas.</p>
+            <p>O diagnóstico laboratorial precoce possibilita também a busca e identificação de contatos de modo a tornar mais efetiva as ações não farmacológicas de controle, monitorar e limitar o avanço da doença e, principalmente, subsidiar os gestores para a tomada de decisão em nível nacional, regional e local.</p>
+            <p>Indivíduos doentes com quadros leves, moderados ou graves devem ser testados por diagnóstico molecular nos serviços de saúde.</p>
+          </div>
+        </div><!--fim da row-->
+      </div><!--fim do container-->
+    </section><!--fim do bloco7-->
+
+<!--==========================
+      Bloco 8 - Tipos de exames
+    ============================-->
+    <section id="bloco8" class="pb-5 pt-3">
+      <div class="container">
+          <div class="row justify-content-center wow">
+              <div class="col-12 col-lg-8 wow fadeIn">
+                <h2 class="text-center">Tipos de exames</h2>
+                <span class="section-divider middle"></span>
+              </div>
+          </div><!--Fim da row-->
+
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <p>Os exames laboratoriais para diagnóstico de COVID-19 são divididos basicamente em 3 tipos.</p>
+              <p>O teste molecular detecta o genoma viral (RNA), sendo realizado por técnicas como Reação em Cadeia da Polimerase (RT-PCR),  teste de ácido nucleico (NAAT) e outras.</p>
+              <p>Os testes rápidos utilizam métodos mais simples e são capazes de dar o resultado em questão de minutos.</p>
+              <p>Eles se subdividem em testes de antígenos virais, que detectam a presença do vírus, e testes de anticorpos (IgM e IgG). 
+              <p>Os testes de detecção de antígenos têm sido muito utilizados para o diagnóstico laboratorial de Covid19 (fase aguda) em pacientes sintomáticos, já que detectam a infecção ativa. Sua sensibilidade parece ter uma relação direta com a carga viral da pessoa testada, ou seja, na medida em que a carga viral é elevada, o teste tem mais chances de dar positivo. São úteis no diagnóstico mais rápido da doença e requerem uma estrutura laboratorial mais simples quando comparados ao exame de RT-PCR, sem dispensar o treinamento, experiência e técnica de coleta adequados. No entanto, são menos sensíveis em casos de quantidades menores de carga viral, mais susceptíveis a resultados de falsos negativos.</p>
+              <p>É importante frisar que os anticorpos podem vir a ser detectáveis após cerca de sete dias desde o início da infecção. Portanto, são marcadores tardios do diagnóstico da doença. Sua utilidade principal é epidemiológica e permite, por exemplo, que profissionais de saúde retornem ao trabalho curados, conforme veremos na Aula 4.</p>
+              <p>Outra ação de vigilância em saúde importante é a busca ativa de novos casos suspeitos de Síndrome Gripal na comunidade. Por isso, o treinamento de profissionais para reconhecimento de sinais e sintomas clínicos de Síndrome Gripal é de extrema importância na APS, particularmente para os agentes comunitários de saúde, já que é uma de suas principais funções. </p>
+              <p>O teleatendimento é uma ferramenta promissora para a realização de busca ativa, que pode ser adaptada à realidade local em consonância com as iniciativas dos governos estaduais e federal. </p>
+              <p>Incentive seus colegas e outros profissionais enviando o link desse curso ou de outras iniciativas educacionais que você conheça.</p>
+
+              <!--Box Simples -->
+              <div class="box-quote option1">
+                <h4>Copie o link abaixo e divulgue o curso para seus colegas:</h4>
+                <p><a href="https://bit.ly/2z3YXue" target="_blank">https://bit.ly/2z3YXue</a></p>
+              </div>
+            </div>
+          </div><!--fim da row-->
+      </div><!--fim do container-->
+    </section><!--fim do bloco8-->
+
+<!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Chegamos ao fim da aula</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+<!--==========================
+
+      Bloco 9 - Conclusão
+
+    ============================-->
+  <section id="bloco9" class="pb-5 pt-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        
+        <div class="col-12 col-lg-8">
+          <p><b>Você terminou a Aula 3 do Módulo 2 do curso COVID-19</b></p>
+          <p>Nessa aula, você viu como conduzir o isolamento e as condutas para evitar o contágio domiciliar; a importância da telemedicina e das notificações.</p>
+          <p>Na próxima aula, vamos falar sobre a proteção do profissional de saúde no contexto da COVID-19. </p>
+          <p>Siga em frente!</p>
+          <p>E lembre-se de sempre consultar a versão mais atualizada dos protocolos, na página do <a href="https://coronavirus.saude.gov.br/profissional-gestor" target="_blank">Ministério da Saúde.</a></p>
+
+        </div>
+      </div><!--fim da row-->
+
+    </div><!--fim do container-->
+  </section><!--fim do bloco9-->
+
+ <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Atividade</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+<!--==========================
+
+      Bloco 10 - Atividade
+
+    ============================-->
+    <section id="avaliacao" class="quizz-wrapper pb-5 pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-lg-8">
+          
+           <iframe src="https://educare.fiocruz.br/h5p-content/embed/?contentId=1928855016" width="1090" height="1025" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+          </div>
+        </div><!--fim da row-->
+
+      </div><!--fim do container-->
+    </section><!--fim do bloco10-->
+
+<!--==========================
+      Bloco de Navegação entre aulas
+    ============================-->
+    <section id="nav-class" >
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 cta-btn-previous text-center">
+              <a class="cta-btn align-middle" href="aula3.html">Aula Anterior</a>
+            </div>
+
+            <div class="col-lg-6 cta-btn-next text-center">
+              <a class="cta-btn align-middle" href="aula4.html">Próxima Aula</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!--==========================
+      Barra de logos
+    ============================-->
+     <!-- Include dos logos -->
+      <div w3-include-html="../barra-de-logos-modulos.html"></div>
+
+  <!--==========================
+      Modais - Bibliografia, Créditos & Material Complementar
+    ============================-->
+
+    <!-- Include da Apresentação-->
+    <div w3-include-html="../apresentacao.html"></div>
+
+     <!-- Include da Bibliografia -->
+    <div w3-include-html="../bibliografia-modulo2.html"></div>
+
+    <!-- Include da Créditos -->
+    <div w3-include-html="../creditos.html"></div>
+
+    <!-- Include de Material Complementar -->
+    <div w3-include-html="../material-complementar.html"></div>
+
+  </main>
+
+  <a href="#" class="back-to-top serie3"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Biblioteca de JavaScripts-->
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/aos/aos.js"></script>
+  <script src="../lib/superfish/hoverIntent.js"></script>
+  <script src="../lib/superfish/superfish.min.js"></script>
+  <script src="../lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="../lib/wow/wow.min.js"></script>
+  <script src="../lib/quiz/modulo1/aula1/quiz.js"></script>
+
+  <!--Ionicons-->
+  <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+
+  <!-- Javascripts-->
+  <script src="../js/main.js"></script>
+  <script src="../js/main-timeline.js"></script>
+
+  <!--Acessibilidade-->
+  <script src="../js/jquery-2.2.1.min.js"></script>
+  <script src="../js/jquery.font-accessibility.min.js"></script>
+
+  <script>
+  $(function(){
+    /* Botões de Acessibilidade */
+    $('#font-setting-buttons').easyView({
+      container: '#acessibilidade',
+      increaseSelector: '.increase-me',
+      decreaseSelector: '.decrease-me',
+      normalSelector: '.reset-me',
+      contrastSelector: '.change-me'
+    });
+
+  });
+  </script>
+
+  <script>
+    includeHTML();
+  </script>
+
+</body>
+</html>

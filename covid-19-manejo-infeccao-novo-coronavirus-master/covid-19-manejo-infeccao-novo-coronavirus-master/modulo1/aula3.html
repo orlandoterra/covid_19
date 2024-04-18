@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84826737-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-84826737-6');
+  </script>
+
+  <meta charset="utf-8">
+  <title>Módulo 1 | Aula 3 - O que fazer se você estiver doente?</title>
+  <meta content="index, follow" name="robots">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Ciência, Fiocruz, Curso, Ciência Aberta" name="keywords">
+  <meta content="Módulo 1: Introdução ao novo coronavírus; Aula 2: Transmissão, Sintomas, Diagnóstico e Prevenção" name="description">
+
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/8bfaea11f7.js" crossorigin="anonymous"></script>
+
+  <!-- Favicons -->
+  <link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/favicon.ico" rel="icon">
+  <link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/indice.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap CSS --> 
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Biblioteca CSS -->
+  <link href="../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet"><!--Ionicons-->
+   <link href="../lib/aos/aos.css" rel="stylesheet">
+  <link href="../lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="../lib/quiz/modulo1/aula1/quiz.css" rel="stylesheet">
+
+  <!-- CSS geral das aulas e recursos visuais -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style-visual-resources.css">
+
+  <!-- JS de Includes-->
+  <script src="../js/include.js"></script>
+
+  <!-- JS das Atividades (H5p) -->
+  <script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+
+</head>
+
+<body id="acessibilidade">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="https://campusvirtual.fiocruz.br/" class="scrollto"><img src="../img/logo-cv-white.svg" alt="Ir para o Campus Virtual" title="Campus Virtual"/> </a>
+      </div>
+
+      <!-- Menu de Navegação -->
+      <nav id="nav-menu-container">
+        <ul class="nav-menu sf-js-enabled sf-arrows" id="menu-curso1" style="touch-action: pan-y;">
+          <li><a href="#" data-toggle="modal" data-target="#modal-apresentacao">Apresentação do curso</a></li>
+          <li class="menu-has-children"><a href="" class="sf-with-ul">Módulos</a>
+            <ul style="display: none;">
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 1</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Introdução ao novo coronavírus</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo1/aula1.html">Aula 1: Novo coronavírus: Conceitos básicos</a></li>
+                  <li><a href="../modulo1/aula2.html">Aula 2: Transmissão, sintomas e prevenção</a></li>
+                  <li><a href="../modulo1/aula3.html">Aula 3: O que fazer se você estiver doente</a></li>
+                </ul>
+              </li>
+
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 2</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Manejo Clínico</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo2/aula1.html">Aula 1: Organizando sua UBS para a Pandemia</a></li>
+                  <li><a href="../modulo2/aula2.html">Aula 2: Manejo Clínico da COVID-19</a></li>
+                  <li><a href="../modulo2/aula3.html">Aula 3: Como conduzir isolamento domiciliar</a></li>
+                  <li><a href="../modulo2/aula4.html">Aula 4: Protegendo os profissionais de saúde</a></li>
+                </ul>
+              </li>
+
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 3</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Manejo clínico: atenção especializada</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo3/aula1.html">Aula 1: Detecção precoce e classificação da severidade dos pacientes com
+                      síndrome respiratória aguda grave (SRAG)</a></li>
+                  <li><a href="../modulo3/aula2.html">Aula 2: Manejo clínico inicial dos pacientes com síndrome respiratória aguda
+                      grave</a></li>
+                  <li><a href="../modulo3/aula3.html">Aula 3: Investigação de imagem, laboratorial e diagnóstico diferencial da
+                      COVID-19</a></li>
+                  <li><a href="../modulo3/aula4.html">Aula 4: Suporte farmacológico a pacientes com COVID-19</a></li>
+                  <li><a href="../modulo3/aula5.html">Aula 5: Suporte respiratório a pacientes com COVID-19</a></li>
+                  <li><a href="../modulo3/aula6.html">Aula 6: Manejo Clínico da gestante no contexto da COVID-19</a></li>
+                  <li><a href="../modulo3/aula7.html">Aula 7: Procedimentos de proteção e controle de infecção em ambiente
+                      hospitalar</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </li>
+
+          <li><a href="#" data-toggle="modal" data-target="#modal-bibliografia">Bibliografia</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#modal-creditos">Créditos</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#modal-material-complementar">Material Complementar</a></li>
+          <li><a class="cta-btn" href="../faq.html" target="_blank">FAQ</a></li>
+          
+        </ul>
+      </nav>
+      <!-- Fim do Menu de Navegação -->
+
+    </div>
+
+
+    <!--Breadcrumb-->
+    <div id="breadcrumb" class="d-none serie3">
+      <div class="container">
+        <div class="row" data-aos="flip-right">
+          <div class="col-12">
+            <ul class="nav-menu">
+              <li><a href='aula1.html' target='_blank'><i class="fas fa-home"></i> Módulo 1</a> > <a href='aula3.html' target='_blank'>Aula 3</a></li>
+              <li class="float-right">            
+                <div id="font-setting-buttons">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary decrease-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary reset-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary increase-me"><i class="fas fa-font"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!--Fim do Breadcrumb-->  
+
+  </header><!-- #header -->
+
+
+  <main id="main">
+
+    <!--==========================
+      Intro Section
+    ============================-->
+    <section id="intro" class="triangle" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0">
+      <div class="intro-text">
+        <p class="headline-small serie3" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">Módulo 1: Introdução ao novo coronavírus</p>
+        <h1 data-aos="fade-in" data-aos-duration="850" data-aos-delay="600">COVID-19<br><span>Manejo da infecção causada  pelo novo coronavírus</span></h1>
+        
+      </div>
+
+    </section><!-- #intro --> 
+
+<!--==========================
+      Bloco 1  - Aula 3
+    ============================-->
+   <section id="bloco1" class="pb-5 pt-5" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="1000">
+      <div class="container">
+        <div class="section-header">
+          <p class="headline-small text-center">Aula 3</p>
+          <h2 class="section-title">O que fazer se você estiver doente?</h2>
+          <span class="section-divider middle"></span>
+        </div>
+
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <p>Chegamos à última aula do Módulo 1! </p>
+            <p>Sabemos que é uma grande preocupação entender exatamente o que se deve fazer mediante a apresentação dos sinais e sintomas da COVID-19. Nesse sentido, preparamos esta aula com as principais orientações a serem seguidas, no caso de sintomas. </p>
+            <p>Ao final, você vai ser capaz de:</p>
+            <ul>
+              <li>Conhecer os locais onde procurar ajuda;</li>
+              <li>Aplicar as medidas de isolamento;</li>
+              <li>Compreender o tratamento sintomático.</li>
+             
+            </ul>
+            <p>Lembramos, mais uma vez, que as orientações e procedimentos em relação ao coronavírus estão em constante mudança. Para se manter atualizado, consulte sempre os links e os materiais de apoio indicados neste curso. </p>
+            
+          </div>
+        </div>
+
+      </div>
+   </section><!--fim do bloco1-->
+
+     <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Identificar os sinais e sintomas</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+      
+
+    <!--==========================
+      Bloco 2 - Transmissão
+    ============================-->
+    <section id="bloco2" class="pb-5 pt-5">
+        <div class="container">
+          <div class="row justify-content-center wow">
+              <!--div class="col-12 col-lg-8 wow fadeIn">
+                <h2 class="text-center">Transmissão</h2>
+                <span class="section-divider middle"></span>
+              </div-->
+          </div><!--Fim da row-->
+
+          <div class="row justify-content-center">
+           <div class="col-12 col-lg-8">
+             <p>Como os sintomas da COVID-19 são bastante parecidos com os da gripe, os casos devem ser avaliados individualmente. Com o aumento de casos suspeitos, muitos diagnósticos serão feitos apenas com exame clínico. </p>
+              <p>Na tabela abaixo é possível conhecer os sinais e sintomas que diferenciam um resfriado ou gripe dos sintomas da COVID-19.</p>
+            
+              <img src="../img/modulo1/aula3/info_sintomas_ms_novo.jpg" width="100%" height="auto" class="rounded mx-auto d-block my-5">
+
+              <p class="mt-3">Esses são sintomas de referência, podendo estar ou não presentes. É sempre importante considerar a avaliação da equipe de saúde. A presença de quaisquer desses sintomas, isolados ou associados, justificam a suspeita e a investigação para COVID-19, principalmente no contexto atual de altos números de casos.</p>
+
+              <p>Os sinais e sintomas do coronavírus são principalmente respiratórios, semelhantes aos de um resfriado. Podem causar, também,  infecção do trato respiratório inferior, como as pneumonias.</p>
+              <p>Vamos relembrar os sintomas comuns ocasionados pela COVID-19?</p>
+              <ul>
+                <li>Febre (>37,8ºC);</li>
+                 <li>Tosse;</li>
+                <li>Dispneia (falta de ar);</li>
+                <li> Mialgia e fadiga;</li>
+              </ul>
+            </div><!--fim da coluna-->
+          </div><!--fim da row-->
+        </div><!--fim do container-->
+    </section><!--fim do bloco2-->
+
+<!--==========================
+      Bloco 3  - Sintomas leves 
+    ============================-->
+    <section id="bloco3" class="pb-5 pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="wow fadeInLeft" data-wow-duration="0.5s">
+              <h2 class="text-center">Sintomas leves</h2>
+              <span class="section-divider middle"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <p>Como os sintomas da COVID-19 são bastante parecidos com os da gripe, os casos devem ser avaliados individualmente. Com o aumento de casos suspeitos, a disponibilidade de testes laboratoriais para a confirmação da doença pode ser insuficiente, e muitos diagnósticos poderão ser feitos a partir de critérios clínicos e epidemiológicos. </p>
+
+              <p>Os profissionais de saúde, que estão sob alto risco e não podem deixar de atender os pacientes, devem ser testados em caso de sintomas.</p>
+
+              <p>A maioria dos casos de COVID-19 são assintomáticos ou apresentam sintomas leves a moderados. A orientação é que todos os pacientes com suspeita de infecção pelo SARS-CoV-2 busquem atendimento. O médico irá avaliar o paciente e verificar a melhor conduta a ser tomada. A maioria dos casos pode ser tratada em casa. </p>
+
+              <p>Segundo a Organização Pan-Americana da Saúde, 81% dos infectados pelo novo coronavírus têm sintomas leves da doença, como tosse e coriza; 14% apresentam sintomas graves e 5% evoluem para um quadro crítico, que pode levar à morte.</p>
+
+            </div><!--fim da coluna-->
+
+            <!--Saiba Mais-->
+            <div class="row justify-content-center mb-5 mt-5 mx-auto">
+              <div class="saiba-mais col-10 col-lg-12 aos-init aos-animate" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
+                <div class="box-quote multi-border">
+                  <h5><i class="fas fa-question-circle" data-fa-transform="grow-25"></i>Saiba mais:</h5>
+                  <div class="saiba-mais-content">
+                    <p><a href="https://www.saude.gov.br/noticias/agencia-saude/46247-perguntas-e-respostas-novo-coronavirus" target="_blank">Tem dúvidas sobre o coronavírus? O Ministério da Saúde te responde!</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Fim do Saiba Mais-->
+        </div><!-- fim da row-->
+      </div><!-- fim do container-->
+    </section><!--fim do bloco3-->
+ 
+<!--==========================
+      Bloco 4  - Medidas de prevenção
+    ============================-->
+    <section id="bloco4" class="section-bg2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="wow fadeInLeft" data-wow-duration="0.5s">
+              <h2 class="text-center">Sintomas graves</h2>
+              <span class="section-divider middle"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 order-2 order-lg-1">
+            <p>A COVID-19 exige maior atenção para os grupos de risco, como idosos, pessoas com doenças respiratórias, imunossuprimidos, pessoas com diabetes, cardiopatias e hipertensão, gestantes e mulheres com até 45 dias de pós-parto.</p>
+            <p>Pessoas do grupo de risco e/ou que apresentem sintomas mais intensos, como dificuldade para respirar, febre alta e mal-estar devem procurar imediatamente a unidade de atendimento em saúde mais próxima.</p>
+
+            <p><strong>Conheça aqui alguns canais de atendimento que podem orientar suas dúvidas:</strong></p>
+
+            <ol>
+            <li>Para esclarecer dúvidas, ligue no número 136, do Ministério da Saúde;</li>
+           
+            <li>Procure o site da Secretaria de Saúde da sua cidade para informações sobre onde buscar atendimento. Normalmente será a Unidade Básica de Saúde mais próxima de você. </li>
+            </ol>
+          </div>
+
+          <!--div class="col-12 col-lg-4 order-1 order-lg-2 mb-4 mb-md-0">
+            <img src="../img/modulo1/aula3/ic_podcast.svg" alt="podcast" width="80%" height="auto" class="rounded mx-auto d-block">
+            <p class="text-center mt-3"><strong>Para entender melhor sobre os Grupos de Riscos clique acima e ouça o podcast da reportagem de Regina Pinheiro, da Rádio Senado, com o médico infectologista Alexandre Cunha. Fonte: Agência Senado</strong></p>
+          </div-->
+        </div> 
+
+        <!--Saiba Mais-->
+        <div class="row justify-content-center mb-5 mt-5"> 
+            <div class="saiba-mais col-8 col-lg-8 aos-init aos-animate" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
+              <div class="box-quote multi-border">
+                <h5><i class="fas fa-question-circle" data-fa-transform="grow-25"></i>Saiba mais:</h5>
+                <div class="saiba-mais-content">
+                  <p>Saiba mais detalhes em: <a href="https://www.saude.gov.br/images/pdf/2020/marco/21/Informa----es-Sobre-Coronav--rus.pdf" target="_blank">Tem dúvidas sobre o coronavírus? O Ministério da Saúde de responde!</a></p>
+                 </div>
+              </div>
+            </div>
+        </div>
+        <!--Fim do Saiba Mais-->  
+      </div><!--fim do container-->
+
+      <div class="container mt-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <div class="wow fadeInLeft" data-wow-duration="0.5s">
+                <h2 class="text-center">Isolamento Domiciliar</h2>
+                <span class="section-divider middle"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mt-3 mb-5">
+            <div class="col-12 col-lg-8">
+              <p>Saiba como deve ser o isolamento domiciliar de casos confirmados de coronavírus:</p>
+            </div><!--fim da coluna-->
+
+            <div class="col-12 col-lg-8 mb-4 mb-md-0">
+            <!--Vídeo-->
+            <div class="embed-responsive embed-responsive-16by9 mt-3 mb-5">
+            <iframe src="https://www.youtube.com/embed/8bfdxpsfvDY" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="640" height="360" frameborder="0"></iframe>
+            </div>
+            <!--p class="reference-title text-center mt-3"></p-->
+            <!--Fim de vídeo--> 
+            <!--Saiba Mais-->
+            <div class="row justify-content-center mt-5"> 
+            <div class="saiba-mais col-10 col-lg-12 aos-init aos-animate" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
+            <div class="box-quote multi-border">
+              <h5><i class="fas fa-question-circle" data-fa-transform="grow-25"></i>Saiba mais:</h5>
+              <div class="saiba-mais-content">
+                <p>Saiba mais: <a href="https://www.unasus.gov.br/especial/covid19/pdf/28" target="_blank">Guia do Ministério da Saúde para isolamento domiciliar</a></p>
+               </div>
+            </div>
+            </div>
+            </div>
+            <!--Fim do Saiba Mais-->  
+            </div><!--fim da coluna-->
+          </div><!-- fim da row-->
+      </div><!--Fim do container-->
+    </section><!--fim do bloco4-->
+
+    <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Tratamento</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+
+      Bloco 5 - Tratamento
+
+    ============================-->
+    <section id="bloco5" class="pb-5 pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <p>Apesar da ocorrência de pesquisas e polêmicas sobre o possível uso de determinados medicamentos disponíveis, ainda não foi confirmado nenhum medicamento para tratar a doença. Por isso, o tratamento é padronizado e válido para qualquer “Síndrome Gripal”. Aprofundaremos o tratamento de casos mais graves nos módulos a seguir. </p>
+          </div>
+        </div><!--fim da row-->
+      </div><!--fim do container-->
+    </section><!--fim do bloco5-->
+
+<!--==========================
+      Bloco 6 - Combatendo fake news
+    ============================-->
+    <section id="bloco6" class="section-bg pt-5">
+      <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Combatendo fake news</h2>
+            <span class="section-divider middle"></span>
+          </div>
+
+          <div class="row wow justify-content-center">
+              <div class="col-12 col-lg-8">
+                <p>Fake news são notícias falsas que circulam pela internet. Em momentos de crise, como a pandemia do coronavírus, o volume de informações erradas ou mentirosas aumenta, principalmente nas redes sociais. Mas as redes sociais também são canais onde há informação confiável! Você pode colaborar na divulgação de informações corretas, seguindo e compartilhando canais seguros - e  ainda aproveita para se manter atualizado no assunto. Esses são alguns desses canais:</p>
+
+                <div class="row justify-content-center align-items-center mt-lg-5 mb-lg-5">
+                <div class="col-12 col-lg-2">
+                  <img class="img-fluid mx-auto d-block" src="../img/ic_insta.png"/>
+                </div>
+                <div class="col-8 col-lg-10">
+                  <ul class="mx-auto mx-lg-0">
+                    <li> <a href="https://www.instagram.com/tv/B-QEGZujspr/?igshid=1nw9dwdhl3dax" target="_blank">@rodrigostabeli</a> - biomédico  e pesquisador da Fiocruz</li>
+                    <li> Nesse vídeo <a href=" https://coronavirus.saude.gov.br/">aqui</a> ele explica sobre a doença COVID-19 </li>
+                  </ul>
+                </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <p><strong>Páginas especiais sobre coronavírus</strong></p>
+                    <ul class="mb-5">
+                      <li><a href="https://coronavirus.saude.gov.br/">Ministério da Saúde </a></li>
+                      <li> <a href="https://portal.fiocruz.br/coronavirus">Fiocruz</a> </li>
+                      <li><a href="https://www.unasus.gov.br/especial/covid19"> UNA-SUS - Universidade Aberta do SUS </a></li>
+                      <li> <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">Organização Mundial da Saúde</a> </li>
+                      <li> <a href="https://www.paho.org/bra/index.php?option=com_content&view=article&id=6101:covid19&Itemid=875">Organização Panamericana da Saúde</a> </li>
+                    </ul>
+                  </div>
+                </div>   
+               </div><!--fim da coluna-->
+           </div><!--fim da row-->
+      </div> <!-- fim container -->
+    </section><!-- #bloco6 -->    
+
+    <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Chegamos ao fim da aula</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+	<!--==========================
+
+      Bloco 7 - Conclusão
+
+    ============================-->
+	<section id="bloco7" class="pb-5 pt-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-lg-8">
+          <p>Você terminou a Aula 3 do Módulo 1 do curso COVID-19</p>
+					<p>Parabéns! Você chegou ao final do módulo e agora será capaz de dar as primeiras orientações para quem suspeita estar com a doença.</p>
+          <p>O próximo módulo é voltado para profissionais de saúde que atuam no atendimento nas Unidades Básicas de Saúde para a COVID-19.</p>
+				</div>
+			</div><!--fim da row-->
+		</div><!--fim do container-->
+	</section><!--fim do bloco7-->
+
+ <!--==========================
+      Capa - Capítulos
+    ============================-->
+  <section  class="capa-capitulos">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Atividade</h1>
+        </div>
+       </div>
+    </div>
+  </section><!-- #call-to-action -->
+
+	<!--==========================
+
+      Bloco 8 - Atiividade
+
+    ============================-->
+	<section id="avaliacao" class="quizz-wrapper pb-5 pt-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-lg-8">
+          <iframe src="https://educare.fiocruz.br/h5p-content/embed/?contentId=2614691125" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+				</div>
+			</div><!--fim da row-->
+		</div><!--fim do container-->
+	</section><!--fim do bloco8-->
+
+  <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Certificação</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+  <!--==========================
+
+      Bloco 9 - Avaliação Moodle
+
+    ============================-->
+  <section id="avaliacao-moodle" class="quizz-wrapper pb-5 pt-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <h3 class="text-center">Responda o questionário de avaliação para receber o certificado do Módulo 1</h3>
+          <p class="text-center mt-5"><a href="https://cursos.campusvirtual.fiocruz.br/mod/quiz/view.php?id=36088" class="cta-btn"><i class="fas fa-external-link-alt mr-2"></i> Ir para o questionário<span></a></p>
+        </div>
+      </div><!--fim da row-->
+    </div><!--fim do container-->
+  </section><!--fim do bloco9-->
+
+  <!--==========================
+      Bloco 10 - Navegação entre aulas
+    ============================-->
+  <section id="nav-class" >
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 cta-btn-previous text-center">
+              <a class="cta-btn align-middle" href="aula2.html">Aula Anterior</a>
+            </div>
+            <div class="col-lg-6 cta-btn-next text-center">
+             <!--  <a class="cta-btn align-middle" href="https://cursos.campusvirtual.fiocruz.br/mod/quiz/view.php?id=36088">Fazer avaliação</a> -->
+             <a class="cta-btn align-middle" href="../modulo2/aula1.html">Ir para módulo 2</a>
+          </div>
+        </div>
+      </div>
+  </section>
+      
+  <!--==========================
+      Barra de logos
+    ============================-->
+     <!-- Include dos logos -->
+      <div w3-include-html="../barra-de-logos-modulos.html"></div>
+
+  <!--==========================
+      Modais - Bibliografia, Créditos & Material Complementar
+    ============================-->
+
+    <!-- Include da Apresentação -->
+    <div w3-include-html="../apresentacao.html"></div>
+    
+     <!-- Include da Bibliografia -->
+    <div w3-include-html="../bibliografia-modulo1.html"></div>
+
+    <!-- Include da Créditos -->
+    <div w3-include-html="../creditos.html"></div>
+
+    <!-- Include da Créditos -->
+    <div w3-include-html="../material-complementar.html"></div>
+
+  </main>
+
+  <a href="#" class="back-to-top serie3"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Biblioteca de JavaScripts-->
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/aos/aos.js"></script>
+  <script src="../lib/superfish/hoverIntent.js"></script>
+  <script src="../lib/superfish/superfish.min.js"></script>
+  <script src="../lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="../lib/wow/wow.min.js"></script>
+  <script src="../lib/quiz/modulo1/aula1/quiz.js"></script>
+
+  <!--Ionicons-->
+  <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+
+  <!-- Javascripts-->
+  <script src="../js/main.js"></script>
+  <script src="../js/main-timeline.js"></script>
+
+  <!--Acessibilidade-->
+  <script src="../js/jquery-2.2.1.min.js"></script>
+  <script src="../js/jquery.font-accessibility.min.js"></script>
+
+  <script>
+  $(function(){
+    /* Botões de Acessibilidade */
+    $('#font-setting-buttons').easyView({
+      container: '#acessibilidade',
+      increaseSelector: '.increase-me',
+      decreaseSelector: '.decrease-me',
+      normalSelector: '.reset-me',
+      contrastSelector: '.change-me'
+    });
+
+  });
+  </script>
+
+  <script>
+      includeHTML();
+    </script>
+
+</body>
+</html>

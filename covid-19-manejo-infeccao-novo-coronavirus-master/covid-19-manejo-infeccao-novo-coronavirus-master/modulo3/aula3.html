@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84826737-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-84826737-6');
+  </script>
+
+  <meta charset="utf-8">
+  <title>Módulo 3 | Aula 3 - Investigação de imagem, laboratorial e diagnóstico diferencial da COVID-19</title>
+  <meta content="index, follow" name="robots">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Ciência, Fiocruz, Curso, coronavírus, COVID-19" name="keywords">
+  <meta content="Módulo 3 | Manejo clínico: Casos graves; Aula 3: Investigação de imagem, laboratorial e diagnóstico diferencial da COVID-19" name="description">
+
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/8bfaea11f7.js" crossorigin="anonymous"></script>
+
+  <!-- Favicons -->
+  <link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/favicon.ico" rel="icon">
+  <link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/indice.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap CSS --> 
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Biblioteca CSS -->
+  <link href="../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet"><!--Ionicons-->
+   <link href="../lib/aos/aos.css" rel="stylesheet">
+  <link href="../lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="../lib/quiz/modulo1/aula1/quiz.css" rel="stylesheet">
+
+  <!-- CSS geral das aulas e recursos visuais -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style-visual-resources.css">
+
+  <!-- JS de Includes-->
+  <script src="../js/include.js"></script>
+
+  <!-- JS das Atividades (H5p) -->
+  <script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+
+</head>
+
+<body id="acessibilidade">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="https://campusvirtual.fiocruz.br/" class="scrollto"><img src="../img/logo-cv-white.svg" alt="Ir para o Campus Virtual" title="Campus Virtual"/> </a>
+      </div>
+
+
+    
+      <!-- Menu de Navegação -->
+      <nav id="nav-menu-container">
+        <ul class="nav-menu sf-js-enabled sf-arrows" id="menu-curso1" style="touch-action: pan-y;">
+          <li><a href="#" data-toggle="modal" data-target="#modal-apresentacao">Apresentação do curso</a></li>
+          <li class="menu-has-children"><a href="" class="sf-with-ul">Módulos</a>
+            <ul style="display: none;">
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 1</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Introdução ao novo coronavírus</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo1/aula1.html">Aula 1: Novo coronavírus: Conceitos básicos</a></li>
+                  <li><a href="../modulo1/aula2.html">Aula 2: Transmissão, sintomas e prevenção</a></li>
+                  <li><a href="../modulo1/aula3.html">Aula 3: O que fazer se você estiver doente</a></li>
+                </ul>
+              </li>
+
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 2</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Manejo Clínico</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo2/aula1.html">Aula 1: Organizando sua UBS para a Pandemia</a></li>
+                  <li><a href="../modulo2/aula2.html">Aula 2: Manejo Clínico da COVID-19</a></li>
+                  <li><a href="../modulo2/aula3.html">Aula 3: Como conduzir isolamento domiciliar</a></li>
+                  <li><a href="../modulo2/aula4.html">Aula 4: Protegendo os profissionais de saúde</a></li>
+                </ul>
+              </li>
+
+              <li class="menu-has-children"><a href="#" class="sf-with-ul">Módulo 3</a>
+                <ul style="display: none;">
+                  <li>
+                    <h5>Manejo clínico: atenção especializada</h5>
+                  </li>
+                  <li><span class="section-divider"></span></li>
+                  <li><a href="../modulo3/aula1.html">Aula 1: Detecção precoce e classificação da severidade dos pacientes com
+                      síndrome respiratória aguda grave (SRAG)</a></li>
+                  <li><a href="../modulo3/aula2.html">Aula 2: Manejo clínico inicial dos pacientes com síndrome respiratória aguda
+                      grave</a></li>
+                  <li><a href="../modulo3/aula3.html">Aula 3: Investigação de imagem, laboratorial e diagnóstico diferencial da
+                      COVID-19</a></li>
+                  <li><a href="../modulo3/aula4.html">Aula 4: Suporte farmacológico a pacientes com COVID-19</a></li>
+                  <li><a href="../modulo3/aula5.html">Aula 5: Suporte respiratório a pacientes com COVID-19</a></li>
+                  <li><a href="../modulo3/aula6.html">Aula 6: Manejo Clínico da gestante no contexto da COVID-19</a></li>
+                  <li><a href="../modulo3/aula7.html">Aula 7: Procedimentos de proteção e controle de infecção em ambiente
+                      hospitalar</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="#" data-toggle="modal" data-target="#modal-bibliografia">Bibliografia</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#modal-creditos">Créditos</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#modal-material-complementar">Material Complementar</a></li>
+          <li><a class="cta-btn" href="../faq.html" target="_blank">FAQ</a></li>
+          
+        </ul>
+      </nav>
+      <!-- Fim do Menu de Navegação -->
+
+    </div>
+
+
+    <!--Breadcrumb-->
+    <div id="breadcrumb" class="d-none serie3">
+      <div class="container">
+        <div class="row" data-aos="flip-right">
+          <div class="col-12">
+            <ul class="nav-menu">
+              <li><a href='aula1.html' target='_blank'><i class="fas fa-home"></i> Módulo 3</a> > <a href='aula2.html' target='_blank'>Aula 3</a></li>
+              <li class="float-right">            
+                <div id="font-setting-buttons">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary decrease-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary reset-me"><i class="fas fa-font"></i></a>
+                    <a class="btn btn-outline-secondary increase-me"><i class="fas fa-font"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!--Fim do Breadcrumb-->  
+
+  </header><!-- #header -->
+
+   <main id="main">
+    <!--==========================
+      Intro Section
+    ============================-->
+    <section id="intro" class="triangle" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0">
+      <div class="intro-text">
+        <p class="headline-small serie3" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">Módulo 3 | Módulo 3 | Manejo clínico: atenção especializada</p>
+        <h1 data-aos="fade-in" data-aos-duration="850" data-aos-delay="600">COVID-19<br><span>Manejo da infecção causada  pelo novo coronavírus</span></h1>
+      </div>
+    </section><!-- #intro --> 
+
+    <!--==========================
+      Bloco 1  - Aula 3
+    ============================-->
+    <section id="bloco1" class="pb-5 pt-5" data-aos="fade-in" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="1000">
+      <div class="container">
+        <div class="section-header">
+          <p class="headline-small text-center">Aula 3</p>
+          <h2 class="section-title">Investigação de imagem, laboratorial e diagnóstico diferencial da COVID-19</h2>
+          <span class="section-divider middle"></span>
+        </div>
+
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <p>Esta é a Aula 3 do Módulo 3 do curso COVID-19 Fiocruz.</p>
+            <p>Nesta aula, vamos compartilhar o conhecimento científico atual na investigação de pacientes internados com suspeita ou diagnóstico confirmado de COVID-19.</p>
+            <p>Ao final, você será capaz de:</p>
+            <ul>
+              <li>Rever os exames laboratoriais para a definição etiológica;</li>
+              <li>Conhecer os exames de admissão e monitoramento da evolução clínica de um paciente internado com a COVID-19; </li>
+              <li>Reconhecer os principais quadros clínicos que fazem parte do diagnóstico diferencial da COVID-19. </li>
+            </ul>
+            <p>Os materiais básicos de referência são:</p>
+             <ul>
+              <li><a href="https://portalarquivos.saude.gov.br/images/pdf/2020/May/08/Diretriz-Covid19-v4-07-05.20h05m.pdf" target="_blank">Diretrizes para Diagnóstico e Tratamento da COVID-19, da Secretaria de Ciência, Tecnologia, Inovação e Insumos Estratégicos em Saúde (SCTIE);</a></li>
+
+              <li><a href="https://www.gov.br/saude/pt-br/coronavirus/publicacoes-tecnicas/recomendacoes/orientacoes-para-manejo-de-pacientes-com-covid-19/@@download/file/Orienta%C3%A7%C3%B5es%20para%20manejo%20de%20pacientes%20com%20COVID-19.pdf" target="_blank">Orientações para manejo de pacientes com COVID-19</a>; e</li>
+
+              <li>Guia de Cuidados Clínicos para as Infecções Respiratórias Agudas Graves, da Organização Mundial da Saúde (<a href="https://apps.who.int/iris/bitstream/handle/10665/331736/WHO-2019-nCoV-SARI_toolkit-2020.1-eng.pdf" target="_blank">"Clinical Care for Severe Acute Respiratory Infection – Toolkit”</a>)</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section><!--fim do bloco1-->
+
+     <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Exames de admissão</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+      
+    <!--==========================
+      Bloco 2 - Exames de admissão
+    ============================-->
+    <section id="bloco2" class="pb-5 pt-5">
+        <div class="container">
+          <div class="row justify-content-center">
+           <div class="col-12 col-lg-8">
+             <p>Os exames apontados no quadro são de admissão e devem ser igualmente utilizados para avaliar a evolução clínica dos pacientes.</p>
+
+            <!--Início tabela horizontal-->
+            <div class="row mt-3 mb-5">
+              <div class="col-12">
+                <div class="table-responsive" data-aos="fade-up">
+                  <table class="table table-bordered section-bg">
+                    <thead>
+                      <tr>
+                        <th class="text-center">EXAMES DE ADMISSÃO</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <ul>
+                            <li><a href="#rx" class="scrollLink">RX</a> ou <a href="#tomografia" class="scrollLink">Tomografia computadorizada de tórax</a> </li>
+                            <li><a href="#bloco4" class="scrollLink">Teste rápido para influenza </a></li>
+                            <li><a href="#bloco4" class="scrollLink">Teste de biologia molecular para o SARS-CoV2 (tópico 4.1)</a></li>
+                            <li>Gasometria arterial</li>
+                            <li>Hemograma completo</li>
+                            <li>Coagulograma (TAP e TTPa)</li>
+                            <li>Fibrinogênio</li>
+                            <li>Glicemia</li>
+                            <li>Ureia e creatinina - avaliação da função renal</li>
+                            <li>Transaminases: ALT e AST  - avaliação da função hepática </li>
+                            <li>Bilirrubina total e frações - avaliação da função hepática </li>
+                            <li>Troponina sérica - marcador de lesão cardíaca</li>
+                            <li>Marcadores inflamatórios: </li>
+                            <li>procalcitonina sérica e/ou </li>
+                            <li>proteína C-reativa</li>
+                            <li>D-dímero: quando superior a 1 μg/L na admissão, há maior chance de mortalidade hospitalar (<a href="https://www.sciencedirect.com/science/article/pii/S0140673621012034?dgcid=coauthor" target="_blank">The Lancet</a>)</li>
+                            <li>Lactato desidrogenase sérica</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div> 
+              </div>
+            </div>
+            <!--Fim tabela horizontal-->
+
+            <p>Ressalte-se a importância da realização da oximetria de pulso ou, quando possível, da gasometria arterial (mais precisa, porém mais dolorosa) para a avaliação e o acompanhamento dos níveis de oxigenação do paciente, bem como para orientar as decisões relativas ao tipo de oxigenoterapia e à ventilação mecânica. Essa questão é abordada, em detalhe, na <a href='aula5.html' target='_blank'>Aula 5</a>.</p>
+
+            <p>A periodicidade das coletas dos exames citados poderá variar de acordo com as condições clínicas dos pacientes.</p>
+
+            </div>
+            <!-- Fim da coluna -->
+            </div>
+            <!-- Fim da row -->
+        </div>
+        <!-- Fim do container -->
+    </section>
+
+    <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Abordagem laboratorial inicial</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Bloco 3  - Abordagem laboratorial inicial
+    ============================-->
+    <section id="bloco3" class="pb-5 pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <p> As anormalidades laboratoriais mais comuns em pacientes com doença grave são: </p>
+              <ul>
+              <li>Leucopenia</li>
+              <li>Linfopenia</li>
+              <li>Leucocitose</li>
+              <li>Transaminases hepáticas elevadas</li>
+              </ul>
+
+              <p>Outras anormalidades incluem: neutrofilia, trombocitopenia, elevação de creatinina sérica e elevação de lactato desidrogenase sérica e marcadores inflamatórios.</p>
+
+              <!--Início tabela horizontal-->
+              <div class="row mt-3 mb-5">
+                <div class="col-12">
+                  <div class="table-responsive" data-aos="fade-up">
+                    <table class="table table-bordered section-bg">
+                      <thead>
+                        <tr>
+                          <th class="text-center">EXAMES DE ADMISSÃO</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <ul>
+                              <li>Gasometria arterial</li>
+                              <li>Hemograma completo</li>
+                              <li>Coagulograma (TAP e TTPa)</li>
+                              <li>Fibrinogênio</li>
+                              <li>Glicemia</li>
+                              <li>Ureia e creatinina - avaliação da função renal)</li>
+                              <li>Transaminases: ALT e AST - avaliação da função hepática </li>
+                              <li>Bilirrubina total e frações - avaliação da função hepática </li>
+                              <li>Troponina sérica - marcador de lesão cardíaca</li>
+                              <li>Marcadores inflamatórios:</li>
+                              <li>procalcitonina sérica e/ou </li>
+                              <li>proteína C-reativa</li>
+                              <li>D-dímero</li>
+                              <li>Lactato desidrogenase sérica</li>
+                            </ul>
+                          </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                    </div> 
+                  </div>
+              </div>
+              <!--Fim tabela horizontal-->
+
+              <p>A Dra. Denise Machado Medeiros, médica intensivista do Instituto Nacional de Infectologia Evandro Chagas (INI/Fiocruz), fala sobre os exames e os marcadores laboratoriais. </p>
+
+              <!--Vídeo-->
+              <div class="embed-responsive embed-responsive-16by9 mt-3">
+                <iframe src="https://educare.fiocruz.br/file-storage/x7ccogU2#t=0.6" width="500" height="300" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+              <!--p class="reference-title text-center mt-3"></p-->
+              <!--Fim de vídeo--> 
+            </div>
+            <!--fim da coluna-->
+        </div>
+        <!-- fim da row-->
+    </div><!--fim do container-->
+  </section><!--fim do bloco3-->
+
+
+    <!--==========================
+      Bloco 4  - Manejo clínico de casos graves 
+    ============================-->
+    <section id="bloco4" class="pb-5 pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="wow fadeInLeft" data-wow-duration="0.5s">
+              <h2 class="text-center">Exames laboratoriais de definição etiológica da COVID-19</h2>
+              <span class="section-divider middle"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">     
+              <p>A decisão de fazer os exames de <strong>testes de biologia molecular para SARS-CoV 2 e Influenza</strong> deve ser baseada em fatores clínicos e epidemiológicos. A coleta e testes de amostras adequadas de pacientes que atendem à definição de casos suspeitos de COVID-19 é importante para a confirmação diagnóstica, o tratamento clínico e controle do surto.</p>
+
+              <p>Conforme indicação da <a href='http://covid19br.org/main-site-covida/wp-content/uploads/2020/04/COVID-19-Testes-Diagnosticos-Rede-CoVida_finalL.pdf' target='_blank'>Rede CoVida - Testes diagnósticos da COVID-19</a>:</p>
+
+              <ul class="mb-5">
+                <li>O RT-PCR deve ser solicitado preferencialmente entre 3 e 7 dias após contato com caso suspeito, podendo ser realizado no momento do início dos sintomas.</li>
+
+                <li>Para o RT-PCR, deve ser colhido o material de oro-faringe ou escarro (não usar sangue nem urina);</li>
+
+                <li>O teste para detecção de anticorpos (teste rápido ou ELISA) só deve ser solicitado após 7 dias do início dos sintomas.</li>
+
+                <li>Estão disponíveis dois tipos de testes rápidos, de antígeno e de anticorpo, por meio da metodologia de imunocromatografia. O teste rápido de antígeno detecta proteína do vírus em amostras coletadas de naso/orofaringe, e deve ser realizado na fase de infecção ativa (fase aguda) e o teste rápido de anticorpos que detecta IgM e IgG (fase convalescente) em amostras de sangue total, soro ou plasma. Confira no vídeo o <a href='https://www.ibmp.org.br/pt-br/teste-rapido-covid-ag/' target='_blank'>Guia de coleta e utilização do teste rápido Covid Ag</a> produzido pelo Instituto de Biologia Molecular do Paraná.</li>
+
+              </ul>
+
+              <p>Confira no vídeo o Guia de coleta e utilização do teste rápido Covid Ag produzido pelo Instituto de Biologia Molecular do Paraná: <a href="https://www.ibmp.org.br/pt-br/teste-rapido-covid-ag/" target="_blank">https://www.ibmp.org.br/pt-br/teste-rapido-covid-ag/</a></p>
+
+
+              <p>A coleta de amostra respiratória para esses exames deve ser feita por “swab” nasal (narinas direita e esquerda) e “swab” de orofaringe. </p>
+
+              <!--Início tabela horizontal-->
+              <div class="row mt-3 my-5">
+                <div class="col-12">
+                  <div class="table-responsive mb-3">
+                    <table class="table table-bordered section-bg">
+                      <thead>
+                        <tr>
+                          <th class="text-center">SWAB NASAL</th>
+                          <th class="text-center">SWAB DE OROFARINGE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td width="50%">
+                                <h5>Técnica para “swab” de nasofaringe</h5><br><br>
+                                <p><strong>Material necessário:</strong></p>
+                                <ul>
+                                  <li class="mb-5">“Swab” com haste flexível (alumínio).</li>
+                                </ul>
+
+                                <img class="img-fluid aos-init aos-animate" data-aos="flip-left" src="../img/modulo3/aula4/info_swab_01.jpg" alt="" width="100%">
+
+                                <p><strong>Técnica:</strong></p>
+                                <ol>
+                                  <li>Aplique as precauções padrão para contato e gotícula ou aerossol;</li>
+                                  <li>Insira o “swab” em uma narina até a nasofaringe;</li>
+                                  <li>Deixe o “swab” no local por alguns segundos;</li>
+                                  <li>Em seguida, remova lentamente o “swab” enquanto o gira sobre a superfície da nasofaringe posterior;</li>
+                                  <li>Retire o “swab” do local de coleta; insira-o no tubo de transporte ou em um recipiente com meio para transporte viral;</li>
+                                  <li>Repita o procedimento com outro “swab” para a segunda narina a fim de fornecer uma amostra combinada ideal;</li>
+                                  <li>Etiquete o recipiente da amostra;</li>
+                                  <li>Após a coleta, transporte imediatamente a amostra para o laboratório para a realização do RT-PCR e detecção de antígeno viral. Se houver demora no transporte do material, coloque a amostra em gelo ou em refrigeração. </li>
+                                </ol>
+
+                                <p>Em caso de “swab” nasofaríngeo em lactentes ou crianças jovens:</p>
+                                <ul>
+                                  <li>Use um “swab” de tamanho apropriado: meça a distância do nariz ao ouvido (filtrum ao tragus);</li>
+                                  <li>Insira o “swab” até a metade dessa distância, parando se encontrar resistência;</li>
+                                  <li>Insira o “swab” horizontalmente, abaixo da concha inferior, e não diago</li>
+                                </ul>
+                          </td>
+
+                          <td>
+                            <h5>Técnica para “swab” da faringe posterior ou “swab” da garganta</h5><br>
+                            <p><strong>Material necessário:</strong></p>
+                            <ul>
+                              <li>Swab” com haste rígida (plástico);</li>
+                              <li>Abaixador de língua.</li>
+                            </ul>
+
+                            <img class="img-fluid aos-init aos-animate" data-aos="flip-left" src="../img/modulo3/aula4/info_swab_02.jpg" alt="" width="100%">
+
+                            <p><strong>Técnica:</strong></p>
+                            <ol>
+                              <li>Aplique as precauções padrão para contato e gotícula ou aerossol;</li>
+                              <li>Peça a pessoa que abra a boca e diga "ah" para elevar a úvula;</li>
+                              <li>Pressione a língua com o abaixador de língua para afastá-la do caminho;</li>
+                              <li>Aplique o “swab” na faringe posterior evitando tocar nas tonsilas e não toque na língua com o “swab”;</li>
+                              <li>Inseri-o no tubo de transporte ou em um recipiente com meio para transporte viral. Quebre a ponta do aplicador para garantir o fechamento do frasco;</li>
+                              <li>Etiquete o recipiente da amostra;</li>
+                              <li>Após a coleta, transporte imediatamente a amostra para o laboratório para a realização do RT-PCR e detecção de antígeno viral. Se houver demora no transporte do material, coloque a amostra em gelo ou em refrigeração.</li>
+                            </ol>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="source mb-5 text-center"> <strong>Fonte:</strong> Cuidados Clínicos de Infecções Respiratórias Agudas Graves  <a href='https://www.who.int/publications-detail/clinical-care-of-severe-acute-respiratory-infections-tool-kit' target='_blank'>Tool kit (Clinical care of severe acute respiratory infections – Tool kit - OMS)</a> </p>
+                </div><!--Fim da coluna-->
+              </div><!--fim da row-->
+              <!--Fim da Tabela horizontal-->
+
+              <!--Box Simples -->
+              <p style="font-size:18px;" class="text-center mt-3 mb-5"><strong>É fundamental o uso de Equipamentos de Proteção Individual (EPI) adequados para as coletas (luvas, jalecos descartáveis, máscaras cirúrgicas ou respiradores com a N-95, óculos de proteção e protetores faciais). Para saber mais sobre procedimentos de proteção, veja a <a href="aula7.html" target="_blank">Aula 7 - Procedimentos de proteção e controle de infecção em ambiente hospitalar. </a></strong></p>
+            <!--fim do Box Simples--> 
+
+            <p>O teste molecular é realizado com maior frequência para detecção da presença do RNA do vírus SARS-Cov-2 é o RT-PCR. Vale ressaltar que esse teste, em geral, é positivo nos primeiros dias da infecção (até o 7o dia do início dos sintomas), sendo importante para identificação de casos na sua fase inicial e, eventualmente, para identificar os pacientes que permanecem capazes de transmitir o SARS-CoV-2 por tempo mais prolongado. O teste molecular pode dar negativo se realizado em uma fase posterior da doença, ou pode ser um “falso negativo”, não descartando totalmente a possibilidade de COVID-19.</p>
+
+            <p>Já o teste sorológico - sejam os testes rápidos imunocromatográficos ou os testes tradicionais de ELISA - visam identificar a presença de anticorpos contra o vírus, em geral detectáveis a partir do 8o dia e, principalmente, após o 14o dia . Também existe a possibilidade de resultado “falso negativo”, bem como não há garantia de que o resultado positivo assegure a imunidade contra a doença. Portanto, os testes sorológicos em geral não são úteis para o manejo clínico imediato, mas podem ser importantes em estudos epidemiológicos e em decisões relativas ao retorno de profissionais às atividades, entre outras possibilidades.</p>
+
+            <p>Os testes rápidos de antígeno da COVID-19 (Swab Nasofaríngeo) possuem a metodologia imunocromatográfica rápida para detecção qualitativa dos antígenos do SARS-COV-2, nas amostras coletadas com Swab nasofaríngeo de pacientes sintomáticos respiratórios com suspeita de infecção por SARS-COV-2 e são avaliados em conjunto com a apresentação clínica e os resultados de outros exames laboratoriais. Um antígeno geralmente é detectável nas amostras do trato respiratório superior durante a fase aguda da infecção. O teste rápido de detecção de antígeno tem maior probabilidade de ter um bom desempenho em pacientes com altas cargas virais, que geralmente aparecem na fase pré-sintomática e sintomática da doença (nos primeiros 05 a 07 dias da doença). Dessa forma, o teste rápido de detecção de antígeno oferece uma excelente oportunidade de diagnóstico precoce e a interrupção da transmissão por meio de isolamento direcionado dos casos infecciosos e seus contatos próximos. Pacientes que apresentam mais de 5 a 7 dias após o início dos sintomas são mais propensos a ter cargas virais mais baixas e a probabilidade de resultados falso-negativos é maior com os testes rápido de antígeno, por essa razão não são indicados para esses casos. </p>
+
+            <p>Vale destacar que o teste para diagnóstico diferencial ou identificação de infecção  concomitante por influenza deve ser realizado precocemente, visto que existe terapia medicamentosa específica para essa doença (Oseltamivir) que deve ser iniciada, caso o resultado seja positivo ou caso haja suspeita de influenza e sinais de gravidade clínica. Para saber mais sobre Suporte Farmacológico, consulte a <a href='aula4.html' target='_blank'>Aula 4</a>.</p>
+
+            <p>Ressalte-se ainda que outros exames podem ser necessários para diagnóstico diferencial, caso haja suspeita de outras doenças de etiologia viral ou bacteriana.</p>
+
+            <p>Para mais informações sobre testagem para SARS-Cov-2, consulte:</p>
+            <ul>
+              <li><a href='https://portalarquivos.saude.gov.br/images/pdf/2020/April/19/BE12-Boletim-do-COE.pdf' target='_blank'>Ministério da Saúde - Boletim COE COVID-19, de 19/04/2020</a></li>
+
+              <li><a href='https://covid19br.org/main-site-covida/wp-content/uploads/2020/04/COVID-19-Testes-Diagnosticos-Rede-CoVida_finalL.pdf' target='_blank'>Rede Covida. Testes diagnósticos da COVID-19. Bases das indicações e seus usos</a>. Abril de 2020.</li>
+
+              <li>Brasil. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Análise em Saúde e Doenças não Transmissíveis. Diagnosticar para cuidar [recurso eletrônico] / Ministério da Saúde, Secretaria de Vigilância em Saúde. – Brasília : Ministério da Saúde, 2021.</li>
+            </ul>
+            </div>
+        </div>
+      </div><!-- fim do container-->
+    </section><!--fim do bloco4-->
+
+   <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Abordagem por exames de imagem</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+  <!--==========================
+
+      Bloco 5 - Abordagem por exames de imagem
+
+    ============================-->
+   <section id="bloco5" class="pt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="wow fadeInLeft" data-wow-duration="0.5s">
+              <h2 id="rx" class="text-center">Radiografia de tórax</h2>
+              <span class="section-divider middle"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 ">  
+
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 order-1 order-lg-1">  
+                  <p>No Raio X de tórax, a doença evolui com infiltrados pulmonares unilaterais em 25% dos pacientes e com infiltrados pulmonares bilaterais em 75% dos pacientes.</p>
+                </div>
+
+                <div class="col-12 col-lg-6 order-2 order-lg-2 mb-4 mb-md-0">
+                    <img class="img-fluid rounded mx-auto d-block" src="../img/modulo3/aula4/img_pulmao.jpg" alt="Raio X do pulmão">
+                    <p class="reference-title text-center mt-0 mb-2">Raio-X de tórax AP de paciente com COVID-19 em ventilação mecânica. Presença de opacificações bilaterais difusas em paciente com maior comprometimento pulmonar.</p>
+                    <p class="source text-center mb-5"><strong>Fonte: </strong> <a href="https://avasus.ufrn.br/local/avasplugin/cursos/curso.php?id=324" target="_blank">Curso COVID-19: Manejo do paciente com distúrbios respiratórios - Unidade 1</a></p>
+                </div>
+              </div>
+              <!--img class="img-fluid rounded mx-auto d-block" src="../img/modulo3/aula4/img_pulmao.jpg" alt="Raio X do pulmão"-->
+
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                  <div class="wow fadeInLeft" data-wow-duration="0.5s">
+                    <h2 id="tomografia" class="text-center">Tomografia computadorizada de tórax</h2>
+                    <span class="section-divider middle"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 order-1 order-lg-1">
+                  <p>A tomografia computadorizada de tórax apresenta achados anormais, relatados <a href="https://portalarquivos.saude.gov.br/images/pdf/2020/April/13/Diretrizes-COVID-13-4.pdf" target="_blank">em até 97% dos pacientes.</a> Até o momento, os casos publicados apresentaram predomínio de alterações alveolares, como opacidades em vidro fosco, consolidações focais e opacidades mistas (incluindo opacidades com halo invertido), geralmente com acometimento bilateral e multifocal, distribuição periférica e predomínio nos campos pulmonares médios, inferiores e posteriores. Pequenas opacidades nodulares em vidro fosco são o achado mais comum em crianças.</p>
+
+                  <p>Porém, vale assinalar que existem padrões variados de acometimento pulmonar, que podem gerar outros tipos de alterações na TC de tórax.</p>
+
+                  <p>A velocidade e letalidade do coronavírus resultaram em mudanças rápidas e contínuas nas práticas para o tratamento da COVID-19. O aprendizado e as vacinas impactaram positivamente o combate a COVID-19. Diante disso, a iniciativa internacional <a href='https://www.choosingwisely.org/' target='_blank'>Choosing Wisely</a> reuniu abordagens práticas, baseadas em evidências científicas, orientadas para pacientes e profissionais de saúde que são de fácil execução. O uso racional de recursos está entre essas recomendações, Assim, não é indicado realizar exame de tomografia computadorizada de tórax rotineiramente como forma de orientar o tratamento, visto que não há dados que fundamentam esse uso.</p>
+                </div>
+
+                <div class="col-12 col-lg-6 order-2 order-lg-2 mb-4 mb-md-0">
+                  <img class="img-fluid rounded mx-auto d-block" src="../img/modulo3/aula4/img_tomo.jpg" alt="Tomografia">
+                  <p class="reference-title text-center mb-2">Imagens de TCAR de tórax (cortes axiais) demonstrando opacidades em vidro fosco multifocais e bilaterais, com predomínio periférico e posterior, que são achados pulmonares típicos da infecção por COVID-19 (confirmada laboratorialmente por RT-PCR).</p>
+                  <p class="source text-center mb-0"><strong>Fonte: </strong> <a href="https://www.scielo.br/scielo.php?pid=S1806-37132020000201003&script=sci_arttext&tlng=pt" target="_blank">Araújo-Filho <em>et al</em>.(2020)</a></p>
+                </div>
+              </div>
+
+              <div class="row justify-content-center mt-5">
+                <div class="col-12">
+
+
+                <p>A Dra. Claudia Costa, pneumologista, professora coordenadora da disciplina de pneumologia da Uerj e responsável pela instalação da área de pré-atendimento hospitalar na mesma Universidade, fala sobre o padrão tomográfico clássico da COVID-19.</p>
+
+                <!--Vídeo-->
+                <div class="embed-responsive embed-responsive-16by9 mt-3">
+                  <iframe src="https://educare.fiocruz.br/file-storage/Xe66S5K_#t=0.6" width="500" height="300" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+                <!--Fim de vídeo-->
+                <p class="reference-title">A Sociedade Brasileira de Pneumologia e Tisiologia promoveu uma série de debates sobre atendimento e procedimentos médicos no contexto da COVID-19. Você pode assistir ao debate completo <a href='https://youtu.be/RxvnZ0OqBNc' target='_blank'>aqui</a>.</p> 
+              </div>
+
+            </div>
+
+            <div class="row justify-content-center mt-5 mb-3">
+              <div class="col-12 col-lg-10">
+                <!--Box Simples -->
+                <div class="box-quote text-center">
+                    <h5 class="text-center mb-5">US como alternativa de imagem para diagnóstico de COVID-19</h5>
+
+                    <p>A Dra. Claudia Costa, pneumologista, professora coordenadora da disciplina de pneumologia da Uerj e responsável pela instalação da área de pré-atendimento hospitalar na mesma Universidade, explica como o ultrassom tem sido usado para o diagnóstico da doença.</p>
+
+                    <!--Vídeo-->
+                    <div class="embed-responsive embed-responsive-16by9 mt-3">
+                      <iframe src="https://educare.fiocruz.br/file-storage/kOvMtnto#t=0.6" width="500" height="300" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+                    <!--Fim de vídeo-->
+                </div>
+                <!--fim do Box Simples-->
+              </div> 
+            </div>
+        </div><!-- Fim da row -->
+      </div><!--fim do container-->
+  </section><!--fim do bloco5-->
+
+  <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Reconhecer os principais quadros clínicos que fazem parte do diagnóstico diferencial da COVID-19</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+  <!--==========================
+
+      Bloco 6 - Reconhecer os principais quadros clínicos que fazem parte do diagnóstico diferencial da COVID-19
+
+    ============================-->
+  <section id="bloco6" class="pb-5 pt-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <p>É muito importante que alguns diagnósticos diferenciais sejam levados em conta durante o manejo inicial dos pacientes com suspeita da COVID-19.</p>
+
+          <h5>Agentes virais</h5>
+          <!--Início tabela horizontal-->
+          <div class="row mt-3 mb-5">
+            <div class="col-12">
+              <div class="table-responsive" data-aos="fade-up">
+                <table class="table table-bordered section-bg">
+                  <thead>
+                    <tr>
+                      <th class="text-center">Vírus mais comuns</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Vírus respiratório sincicial, parainfluenza, rinovírus, adenovírus, enterovírus (EVD68), metapneumovírus humano, bocavírus e influenza</td>
+                    </tr>
+                  </tbody>
+
+                  <thead>
+                    <tr>
+                      <th class="text-center">Vírus menos comuns, exceto em situações de risco ou aumento de risco por conta de uma epidemia</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Varicela-zoster, sarampo, coronavírus humanos, incluindo COVID-19, MERS e SARS e hantavírus</td>
+                    </tr>
+                  </tbody>
+                  
+                  <thead>
+                    <tr>
+                      <th class="text-center">Em casos de imunossupressão (ex. HIV)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Citomegalovírus e herpes simples, além dos indicados acima</td>
+                    </tr>
+                  </tbody>
+
+                </table>
+              </div> 
+            </div>
+          </div>
+          <!--Fim tabela horizontal-->
+
+          <h5>Agentes bacterianos</h5>
+          <!--Início tabela horizontal-->
+          <div class="row mt-3 mb-5">
+              <div class="col-12">
+                <div class="table-responsive" data-aos="fade-up">
+                  <table class="table table-bordered section-bg">
+                    <thead>
+                      <tr>
+                        <th class="text-center">Bactérias mais comuns</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td> Streptococcus pneumoniae, Hemophilus influenzae, Moraxella catarrhalis, Legionella pneumophila, non-pneumophila Legionella, Chlamydia pneumonia, Mycoplasma pneumoniae, Klebsiella pneumonia, Staphylococcus aureus.</td>
+                      </tr>
+                    </tbody>
+                    
+                    <thead>
+                      <tr>
+                        <th class="text-center">Bactérias menos comuns, exceto em situações de risco ou em países com alta prevalência</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Mycobacterium tuberculosis, Burkholderia pseudomallei, Rickettsial infections, Coxiella burnetti (Q fever), Leptospira spp, Chlamydia psittaci, Bortedella pertussis, Salmonella sp. </td>
+                      </tr>
+                    </tbody>
+                    
+                    <thead>
+                      <tr>
+                        <th class="text-center">Agentes resistentes</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p><strong>Fatores de risco para agentes multirresistentes</strong></p>
+                          <p>Terapia antimicrobiana intravenosa a menos que 90 dias</p>
+                          <p><strong>Os agentes resistentes incluem</strong></p>
+                          <ul>
+                            <li>S. aureus resistente a meticilina (MRSA)</li>
+                            <li>Agentes não fermentadores como a Pseudomonas aeruginosa e o Acinetobacter baumannii</li>
+                            <li>Agentes produtores de beta-lactamase de espectro expandido (ESBL) como a E. coli, a Klebsiella e o Enterobacter</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div> 
+              </div>
+          </div>
+          <!--Fim tabela horizontal-->
+
+          <!--Início tabela horizontal-->
+          <div class="row mt-3 mb-2">
+              <div class="col-12">
+                <div class="table-responsive" data-aos="fade-up">
+                  <table class="table table-bordered section-bg">
+                    <thead>
+                      <tr>
+                        <th class="text-center">Outras infecções endêmicas</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Malária, dengue, chikungunya, tuberculosis e HIV</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div> 
+              </div>
+          </div>
+          <!--Fim tabela horizontal-->
+
+          <p class="source text-center mb-4"><strong>Fonte:</strong> <a href="https://apps.who.int/iris/handle/10665/331736?locale-attribute=en&" target="_blank">World Health Organization</a></p>
+
+          <p>Entretanto, em períodos epidêmicos como o atual, a infecção pelo SARS-CoV2 precisa sempre ser aventada em casos suspeitos, devendo ser confirmada por testes laboratoriais específicos. </p>
+          <p>O Brasil, de uma forma geral, possui várias doenças endêmicas que têm numerosos sinais e sintomas, que também estão relacionados à doença causada pela SARS-Cov2. O diagnóstico pode diferenciar de acordo, por exemplo, com as faixas etárias e as áreas geográficas. Assim, em crianças as etiologias virais comuns em meses mais frios são o vírus sincicial respiratório (em menores de 2 anos) e os vírus influenza (gripe), parainfluenza, rinovírus e adenovírus (resfriados comuns).</p>
+
+          <p>O quadro a seguir compara algumas doenças respiratórias frequentes, destacando seus sintomas e sinais mais comuns.</p>
+
+          <img class="img-fluid aos-init aos-animate" data-aos="flip-left" src="../img/modulo3/aula4/tabela_sintomas.jpg" alt=""/>
+          <p class="source text-center"><strong>Fonte:</strong> <a href="https://www.unasus.gov.br/especial/covid19/imagem/13" target="_blank">Universidade Aberta do SUS (UNA-SUS).</a></p>
+          <p>Em um momento em que ainda há casos de sarampo sendo detectados no Brasil, é importante que essa doença viral entre no diagnóstico diferencial da COVID-19, mesmo entre adolescentes e adultos jovens. </p>
+          <p>Dengue, Zika e Chikungunya são patologias virais que também devem ser descartadas uma vez que podem cursar com sinais e sintomas iniciais semelhantes àqueles descritos para a COVID-19. Nesses casos, é muito importante o conhecimento sobre a distribuição de casos nas áreas geográficas, dados fornecidos pelos sistemas de vigilância em saúde dos municípios.</p>
+          <p>Doenças bacterianas respiratórias podem apresentar sintomatologias iniciais semelhantes, e o principal agente causador comunitário é o Streptococcus pneumoniae, sendo o Hemophilus influenzae e a Moraxella catarrhalis agentes secundários. É importante lembrar que as infecções pulmonares bacterianas podem aparecer também como complicações pulmonares secundárias à COVID-19. </p>
+          <h5>Questão geográfica</h5>
+          <p>Em áreas da região Amazônica, a malária deve ser sempre aventada como diagnóstico diferencial, principalmente em épocas de maior disseminação da doença - entre junho e setembro -, períodos de seca. Outro fator importante com relação à região é a diferença no que se refere à variação sazonal do vírus influenza. Segundo o Ministério da Saúde, sua circulação na região segue o período sazonal da doença, potencializado pelas chuvas e enchentes e consequente aglomeração de pessoas. Portanto, é nesse período que se observa uma maior circulação do vírus.</p>
+
+        </div>
+      </div><!--fim da row-->
+
+    </div><!--fim do container-->
+  </section><!--fim do bloco7-->
+
+  <!--==========================
+    Capa - Capítulos
+  ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Chegamos ao fim da aula</h1>
+          </div>
+         </div>
+      </div>
+    </section><!-- #call-to-action -->
+
+  <!--==========================
+
+      Bloco 7 - Conclusão
+
+  ============================-->
+
+  <section id="bloco7" class="pb-5 pt-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        
+        <div class="col-12 col-lg-8">
+          <p><b> Você terminou a Aula 3 do Módulo 3 do curso COVID-19 - Manejo da infecção causada pelo novo coronavírus.</b></p>
+          <p>Nesta aula, você revisou os exames laboratoriais para a definição etiológica, conheceu os exames de admissão e monitoramento da evolução clínica de um paciente internado com a COVID-19 e aprendeu a reconhecer os principais quadros clínicos que fazem parte do diagnóstico diferencial da doença. </p>
+          <p>Na próxima aula, vamos falar sobre suporte farmacológico a pacientes com covd-19.</p>
+          <p>Siga em frente!</p>
+         
+        </div>
+      </div><!--fim da row-->
+
+    </div><!--fim do container-->
+  </section><!--fim do bloco7-->
+  
+ <!--==========================
+      Capa - Capítulos
+    ============================-->
+    <section  class="capa-capitulos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="cta-title" data-aos="zoom-in-down" data-aos-easing="ease-out-back">Atividade</h1>
+          </div>
+         </div>
+      </div>
+    </section>
+    <!--#call-to-action -->
+
+  <!--==========================
+
+      Bloco 8 - Atividade
+
+    ============================-->
+  <section id="avaliacao" class="quizz-wrapper pb-5 pt-5">
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-12 col-lg-8">
+        
+          <iframe src="https://educare.fiocruz.br/h5p-content/embed/?contentId=241696617" width="1090" height="1025" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+          <p class="source text-center mt-3">Adaptado do <a href="https://www.unasus.gov.br/cursos/curso/46172" target="_blank">Curso Manejo clínico da COVID-19 na Atenção Especializada (NESCON, 2020)</a></p>
+
+        </div>
+      </div><!--fim da row-->
+
+    </div><!--fim do container-->
+  </section><!--fim do bloco8-->
+
+    <!--==========================
+      Bloco de Navegação entre aulas
+    ============================-->
+    <section id="nav-class" >
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 cta-btn-previous text-center">
+              <a class="cta-btn align-middle" href="aula2.html">Aula Anterior</a>
+            </div>
+
+            <div class="col-lg-6 cta-btn-next text-center">
+              <a class="cta-btn align-middle" href="aula4.html">Próxima Aula</a>
+          </div>
+        </div>
+    </div>
+    </section>
+   <!--==========================
+      Barra de logos
+    ============================-->
+     <!-- Include dos logos -->
+      <div w3-include-html="../barra-de-logos-modulos.html"></div>
+
+  <!--==========================
+      Modais - Bibliografia, Créditos & Material Complementar
+    ============================-->
+
+    <!-- Include da Apresentação-->
+    <div w3-include-html="../apresentacao.html"></div>
+
+     <!-- Include da Bibliografia -->
+    <div w3-include-html="../bibliografia-modulo3.html"></div>
+
+    <!-- Include da Créditos -->
+    <div w3-include-html="../creditos.html"></div>
+
+    <!-- Include de Material Complementar -->
+    <div w3-include-html="../material-complementar.html"></div>
+
+  </main>
+
+  <a href="#" class="back-to-top serie3"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Biblioteca de JavaScripts-->
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/aos/aos.js"></script>
+  <script src="../lib/superfish/hoverIntent.js"></script>
+  <script src="../lib/superfish/superfish.min.js"></script>
+  <script src="../lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="../lib/wow/wow.min.js"></script>
+  <script src="../lib/quiz/modulo1/aula1/quiz.js"></script>
+
+  <!--Ionicons-->
+  <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+
+  <!-- Javascripts-->
+  <script src="../js/main.js"></script>
+  <script src="../js/main-timeline.js"></script>
+
+  <!--Acessibilidade-->
+  <script src="../js/jquery-2.2.1.min.js"></script>
+  <script src="../js/jquery.font-accessibility.min.js"></script>
+
+  <script>
+  $(function(){
+    /* Botões de Acessibilidade */
+    $('#font-setting-buttons').easyView({
+      container: '#acessibilidade',
+      increaseSelector: '.increase-me',
+      decreaseSelector: '.decrease-me',
+      normalSelector: '.reset-me',
+      contrastSelector: '.change-me'
+    });
+
+  });
+  </script>
+
+  <script>
+    includeHTML();
+  </script>
+
+</body>
+</html>
